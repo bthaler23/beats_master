@@ -4,8 +4,8 @@
 
 [Trello][trello]
 
-[heroku]: https://trello.com/b/O68PaBg1/beatsmaster
-[trello]: https://trello.com/
+[heroku]: https://heroku.com/
+[trello]: https://trello.com/b/O68PaBg1/beatsmaster
 
 
 ## Minimum Viable Product
