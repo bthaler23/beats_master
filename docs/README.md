@@ -37,3 +37,27 @@ this app will have implemented these features with smooth, bug-free navigation, 
 [state]: ./sample-state.md
 
 ## Implementation Timeline
+
+### Phase 1: Backend setup and Front End User Authentication (1.5 days)
+
+**Objective:** Functioning rails project with front-end Authentication
+
+### Phase 2: Songs Model, API, and components (1.5 days)
+
+**Objective:** Users can upload songs, and view other user's songs
+
+### Phase 3: Song List View (1 day)
+
+**Objective:** Users can view a stream page with randomized songs, along with access to other users songs
+
+### Phase 4: Progress Bar Component (2 days)
+
+**Objective:** Users can play a song and have it's state stored and persists throughout navigation of websites
+
+### Phase 5: Comments (1 day)
+
+**Objective:** Users can add comments to a song's view page, at the moment in time the song is playing
+
+## Phase 6: Search Bar (1 day)
+
+**Objective:** Users can search through the website for songs
