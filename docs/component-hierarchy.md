@@ -1,7 +1,7 @@
 ## Component Hierarchy
 
 **App**
-- Navbar
+- NavbarContainer
 - ProgressBarContainer
 
 **NavbarContainer**
@@ -16,11 +16,13 @@
 - ProgressBar
   - PlaySong
 
-**SplashScreen**
+**Splash**
+- AuthButtons
 - SplashImage
 - SearchBar
   - Upload
   - SearchContainer
+- TrackTileIndex
 
 **TrackTileIndex**
 - TrackTileComponent
@@ -29,8 +31,13 @@
 - SignIn
 - CreateAccount
 
+**Stream**
+- NavbarContainer
+- StreamTitle
+- StreamContainer
+- SideBar
+
 **StreamContainer**
-- Stream
 - SongListContainer
 
 **SongListContainer**
@@ -46,6 +53,12 @@
   - ArtistList
     - Artist
 
+**SongView**
+- NavbarContainer
+- SongComponent
+- Comments
+
+
 **Comments**
 - ArtistImage
 - AddComment
@@ -59,3 +72,13 @@
 **UserView**
 - ProfileBanner
 - SongListContainer
+
+
+|Path         | Component   |
+|-------------|-------------|
+| /           | App         |
+| /           | Splash      |
+| /stream     | Stream      |
+| /users/:id  | UserView    |
+| /songs/:id  | SongView    |
+| /upload     | Upload      |
