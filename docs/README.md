@@ -4,7 +4,7 @@
 
 [Trello][trello]
 
-[heroku]: http://www.herokuapp.com
+[heroku]: https://trello.com/b/O68PaBg1/beatsmaster
 [trello]: https://trello.com/
 
 
@@ -58,6 +58,6 @@ this app will have implemented these features with smooth, bug-free navigation, 
 
 **Objective:** Users can add comments to a song's view page, at the moment in time the song is playing
 
-## Phase 6: Search Bar (1 day)
+### Phase 6: Search Bar (1 day)
 
 **Objective:** Users can search through the website for songs
