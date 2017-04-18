@@ -4,7 +4,7 @@
 
 [Trello][trello]
 
-[heroku]: https://heroku.com/
+[heroku]: https://beats-master.herokuapp.com/#/
 [trello]: https://trello.com/b/O68PaBg1/beatsmaster
 
 

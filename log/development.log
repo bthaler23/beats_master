@@ -2892,3 +2892,2627 @@ Completed 200 OK in 51ms (Views: 50.5ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:01:31 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:16:31 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (383.4ms)
+Completed 200 OK in 509ms (Views: 509.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/users/email_exists?email=bthaler%40Bellsouth.net" for ::1 at 2017-04-18 17:16:36 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@Bellsouth.net"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@Bellsouth.net"]]
+Completed 200 OK in 82ms (Views: 0.3ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/api/users/" for ::1 at 2017-04-18 17:16:40 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"bthaler23", "password"=>"[FILTERED]", "email"=>"bthaler@Bellsouth.net"}}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'bthaler@Bellsouth.net' LIMIT 1
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'bthaler23' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Completed 200 OK in 192ms (Views: 0.3ms | ActiveRecord: 4.7ms)
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-18 17:16:41 -0400
+Processing by Api::SessionsController#destroy as JSON
+Completed 404 Not Found in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-18 17:16:43 -0400
+Processing by Api::SessionsController#destroy as JSON
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:16:45 -0400
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-18 17:16:48 -0400
+Processing by Api::SessionsController#destroy as JSON
+Completed 404 Not Found in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 17:18:54 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (296.9ms)
+Completed 200 OK in 352ms (Views: 352.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:18:55 -0400
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 17:19:01 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 29ms (Views: 0.2ms | ActiveRecord: 6.5ms)
+
+
+Started POST "/api/session/" for ::1 at 2017-04-18 17:19:03 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"", "password"=>"[FILTERED]", "email"=>"bthaler@bellsouth.net"}}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "QbJkNiU0uu8N7F8LgvL2jg"], ["updated_at", "2017-04-18 21:19:03.911979"], ["id", 1]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered api/users/show.json.jbuilder (62.8ms)
+Completed 200 OK in 211ms (Views: 93.2ms | ActiveRecord: 3.0ms)
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-18 17:19:04 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "QbJkNiU0uu8N7F8LgvL2jg"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "INZsXsJGqcUt1BMsgd25IA"], ["updated_at", "2017-04-18 21:19:04.919760"], ["id", 1]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (0.9ms)
+Completed 200 OK in 17ms (Views: 5.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 17:20:08 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:20:08 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:20:49 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 65ms (Views: 65.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:20:49 -0400
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 17:20:53 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 17:21:00 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 342ms (Views: 341.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-24efc96cdf1194ce575f4bc3cae23a3e1da54473ea13742ff28b57c46591b504.js?body=1" for ::1 at 2017-04-18 17:21:00 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:21:00 -0400
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 17:21:03 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 17:21:13 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 66ms (Views: 65.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:21:13 -0400
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 17:21:16 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 17:22:08 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 458ms (Views: 457.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-f322dcb5822c76779a5c2b2ea1fc60fa3f2a1a1940fa94c9a161cc2aeb4ac2f5.js?body=1" for ::1 at 2017-04-18 17:22:09 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:22:09 -0400
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 17:22:12 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 17:22:20 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 80ms (Views: 80.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:22:20 -0400
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 17:22:23 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 17:22:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 346ms (Views: 345.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-ebb7c45e14203bbb3ecd06e0e229a067c4c05a1fc242cd483576711f4405f937.js?body=1" for ::1 at 2017-04-18 17:22:26 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:22:26 -0400
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 17:22:29 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 17:22:39 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 371ms (Views: 371.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-924d5956a6e6f35b6edcad6a370eee9bcf305ae4fc56d11b05146a82018fa1af.js?body=1" for ::1 at 2017-04-18 17:22:39 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:22:40 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:29:14 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 513ms (Views: 512.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8ddb25446957d03da5ca377bf42daacdb1dc2e374ad03030f25428355d53a21f.css?body=1" for ::1 at 2017-04-18 17:29:15 -0400
+
+
+Started GET "/assets/bundle.self-0784b3b87635207cdd7d6c73ea1fb58f595ca41805c8ffa7d23ae9ee80c57cf6.js?body=1" for ::1 at 2017-04-18 17:29:15 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:29:15 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:29:21 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 49ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:29:22 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:29:56 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 322ms (Views: 321.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-a69c07ba7b614323ac4b4b0b672a8ff1b1bb36915b544ed1c6097cb4b0ef3128.js?body=1" for ::1 at 2017-04-18 17:29:56 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:29:56 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:30:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 356ms (Views: 355.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-b90eecdbbdce84edb2229265215085ccb373c2b2c3e3eb711bab871ccd8e1c3d.js?body=1" for ::1 at 2017-04-18 17:30:26 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:30:27 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:30:30 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 26ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:30:30 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:31:38 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 536ms (Views: 536.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-28389590101165c9aba981b79f2d0a7714500448fb778faf01eb574dae409e6a.js?body=1" for ::1 at 2017-04-18 17:31:38 -0400
+
+
+Started GET "/assets/application.self-f8664e7a21e5b4e7a121932009cc7d3006ea543df6074d0258b8a4bb91d09c71.css?body=1" for ::1 at 2017-04-18 17:31:38 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:31:39 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:31:52 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 60ms (Views: 59.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:31:52 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:31:54 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 381ms (Views: 381.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-73a26d3d2fda9fa97f71031d0b694b61c5f24a9b48b9714b49f79ba72fcbcc19.js?body=1" for ::1 at 2017-04-18 17:31:55 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:31:55 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:32:29 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 70ms (Views: 69.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ad30b31ffd8a5373fffe49d6cd2876399cd1c10ecbf6fc4149ec5837515c5465.css?body=1" for ::1 at 2017-04-18 17:32:29 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:32:29 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:32:33 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 38ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:32:34 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:32:52 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 63ms (Views: 61.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-819d1cc66bb1230ab242edf14c280104916fdf07be1064b25a1a12e950ae353f.css?body=1" for ::1 at 2017-04-18 17:32:52 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:32:52 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:32:55 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 35ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:32:55 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:35:08 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 422ms (Views: 422.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-999a130835b98689011be019093f72575c63e0ccde0373a8b53cb3bf9f01e63e.js?body=1" for ::1 at 2017-04-18 17:35:09 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:35:09 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:35:17 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 33ms (Views: 32.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:35:17 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:35:40 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 40ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:35:40 -0400
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 17:35:45 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/session/" for ::1 at 2017-04-18 17:35:46 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"", "password"=>"[FILTERED]", "email"=>"bthaler@bellsouth.net"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "gibmhazLW_fR7wSqWmvFjg"], ["updated_at", "2017-04-18 21:35:47.038688"], ["id", 1]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (2.6ms)
+Completed 200 OK in 141ms (Views: 53.4ms | ActiveRecord: 2.7ms)
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-18 17:35:48 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "gibmhazLW_fR7wSqWmvFjg"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.9ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "SlohZyjpL4Yfpx4rLHxCBQ"], ["updated_at", "2017-04-18 21:35:48.076530"], ["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (0.9ms)
+Completed 200 OK in 13ms (Views: 5.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 17:36:35 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 356ms (Views: 355.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-4e1a160144fcba57c26a021b7825c6ed3dfa5da4aef959c42cafa07a1737f507.js?body=1" for ::1 at 2017-04-18 17:36:35 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:36:35 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:36:56 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 47ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7e2730415dcbad74076df192c1df1d6d640200d2a3f94ed20cb2f6b6059c9305.css?body=1" for ::1 at 2017-04-18 17:36:56 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:36:56 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:37:04 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 31ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:37:04 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:37:16 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 43ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-544e2756513f93615a2eb4bb5a78a7c77d81a74e9a9a976c23ed6df1cf9a3112.css?body=1" for ::1 at 2017-04-18 17:37:16 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:37:16 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:37:32 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 37ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a20017159d518d3f2264f75c8e6b7f23bef40dc80ab280c0c83029da6a14c37a.css?body=1" for ::1 at 2017-04-18 17:37:32 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:37:32 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:37:34 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 26ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:37:34 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:37:37 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 58ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:37:37 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:37:48 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 28ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:37:48 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:37:57 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 57ms (Views: 56.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a94389f6f140c387460c01f5da77bd9f70174677a18132eab36f1c36c2b28c0c.css?body=1" for ::1 at 2017-04-18 17:37:57 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:37:57 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:38:05 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 38ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a9752c152e236055d116a0fe3f30c2cc9803cd9306459a05c42e971e9722c9d2.css?body=1" for ::1 at 2017-04-18 17:38:06 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:38:06 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:38:09 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 29ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:38:09 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:38:16 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 49ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-975c41af6172309549045fcfbc49a970e736818a03bc4239a230fa9df8b1a05a.css?body=1" for ::1 at 2017-04-18 17:38:16 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:38:16 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:38:23 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:38:23 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:38:40 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 46ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ecd72506c2c0c05b42d0cd91c52c689c70efe1aafdcd66ffd044829e18c4ad78.css?body=1" for ::1 at 2017-04-18 17:38:40 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:38:40 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:38:42 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 31ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:38:43 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:38:45 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 38ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:38:46 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:38:56 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 28ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:38:56 -0400
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 17:39:02 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 17:39:03 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 32ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:39:03 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:39:23 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 39ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:39:24 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:39:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 384ms (Views: 383.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-18324c18f33d343e53df566ca92a18a869f6d5852f3d640f6b5faf3bebbff552.js?body=1" for ::1 at 2017-04-18 17:39:27 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:39:27 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:39:29 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:39:30 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:41:05 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 385ms (Views: 384.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-f60fa79da4bba50d91d74e269f39b35a1e96553ce31bc787308eace72fa13500.js?body=1" for ::1 at 2017-04-18 17:41:06 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:41:06 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:41:08 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 30ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:41:08 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:41:11 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 37ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:41:11 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:41:16 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 36ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:41:16 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:43:02 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 519ms (Views: 518.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-3a0f9300f37321d059aeb8021a899e104b684988d0cd6aabef780d3d1477a43c.js?body=1" for ::1 at 2017-04-18 17:43:03 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:43:03 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:44:10 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 67ms (Views: 67.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:44:11 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:44:19 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 28ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:44:19 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:44:58 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 375ms (Views: 375.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-5a850facb626da1d02e493463968fca666cd866dcfa62a30a66086b23cc98289.js?body=1" for ::1 at 2017-04-18 17:44:59 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:44:59 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:45:35 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 38ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:45:35 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:45:37 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 327ms (Views: 326.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-1f825ebf2ed1876543123682cea1f2a03d6f75ce21a72b4a6b5b1f18d530317b.js?body=1" for ::1 at 2017-04-18 17:45:38 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:45:38 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:45:41 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 29ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:45:42 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:48:12 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 376ms (Views: 375.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-fc7db60f56322a4e13304b1e28f37e625a23a1233b2800d59295f910ab4ca7c6.css?body=1" for ::1 at 2017-04-18 17:48:13 -0400
+
+
+Started GET "/assets/bundle.self-aad3f58fc485d264f98d87d1be2b69cafdc088bf98970777f896f7c78b41fee4.js?body=1" for ::1 at 2017-04-18 17:48:13 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:48:13 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:48:24 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 25ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:48:24 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:48:47 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 59ms (Views: 58.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d2f6b9e8c441772db5820ffd9ac7498c897b3de7de01a2b85ece5e788e2ec845.css?body=1" for ::1 at 2017-04-18 17:48:47 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:48:47 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:48:51 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 36ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:48:51 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:48:57 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 68ms (Views: 67.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1d86bb76ef3c08440e1a1ada78a8be845e71b4588fd3bc678ebafb1e249c4029.css?body=1" for ::1 at 2017-04-18 17:48:57 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:48:57 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:49:00 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 39ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:49:00 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:49:07 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 49ms (Views: 48.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9ba5c9e1547ebbb8c79112c19635096985e852879d73cb139f5ba33420b3bc1e.css?body=1" for ::1 at 2017-04-18 17:49:07 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:49:07 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:49:09 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 30ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:49:09 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:49:51 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 41ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-5d5f882c9b5a5fc856a575d0db92b9ad776b748a3fed314d236354eeb5bed48e.css?body=1" for ::1 at 2017-04-18 17:49:51 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:49:51 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:52:33 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 224ms (Views: 223.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b05764ef6a21e28dfa87d0e9d839e33032fccf7a3f885a09c8f62f17742b7295.css?body=1" for ::1 at 2017-04-18 17:52:34 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:52:34 -0400
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 17:52:39 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/session/" for ::1 at 2017-04-18 17:52:40 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"", "password"=>"[FILTERED]", "email"=>"bthaler@bellsouth.net"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "HqQgHrUtSO5i3nRP3EiVTg"], ["updated_at", "2017-04-18 21:52:40.313969"], ["id", 1]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered api/users/show.json.jbuilder (14.2ms)
+Completed 200 OK in 151ms (Views: 69.0ms | ActiveRecord: 2.6ms)
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-18 17:53:06 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "HqQgHrUtSO5i3nRP3EiVTg"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "tJnrRvH6JRJ2Z-tpOLFCiA"], ["updated_at", "2017-04-18 21:53:06.756057"], ["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (1.0ms)
+Completed 200 OK in 14ms (Views: 5.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 17:53:34 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 122ms (Views: 121.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d714981f7f01b0939fef80a409eec9db1c34541aa055f79e74e7d322c929d6cb.css?body=1" for ::1 at 2017-04-18 17:53:34 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:53:35 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:53:36 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 34ms (Views: 34.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:53:37 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:53:39 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 37ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:53:40 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:57:18 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (15.6ms)
+Completed 500 Internal Server Error in 428ms (ActiveRecord: 0.0ms)
+
+Sprockets::Rails::Helper::AssetNotPrecompiled - Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( css_reset.css )` to `config/initializers/assets.rb` and restart your server:
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:363:in `raise_unless_precompiled_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:348:in `find_debug_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:229:in `block in lookup_debug_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:242:in `block in resolve_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:241:in `resolve_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:228:in `lookup_debug_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:170:in `block in stylesheet_link_tag'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:169:in `stylesheet_link_tag'
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3137674956006388845_70269524211900'
+  actionview (4.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.8) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.8) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.8) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.8) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.5) lib/rack/etag.rb:24:in `call'
+  rack (1.6.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.5) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/29e01cc300038fa1/variables" for ::1 at 2017-04-18 17:57:18 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:57:27 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+Sprockets::Rails::Helper::AssetNotPrecompiled - Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( css_reset.css )` to `config/initializers/assets.rb` and restart your server:
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:363:in `raise_unless_precompiled_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:348:in `find_debug_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:229:in `block in lookup_debug_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:242:in `block in resolve_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:241:in `resolve_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:228:in `lookup_debug_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:170:in `block in stylesheet_link_tag'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:169:in `stylesheet_link_tag'
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3137674956006388845_70269524211900'
+  actionview (4.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.8) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.8) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.8) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.8) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.5) lib/rack/etag.rb:24:in `call'
+  rack (1.6.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.5) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/0244dbab2a76180f/variables" for ::1 at 2017-04-18 17:57:28 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:58:12 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (371.5ms)
+Completed 500 Internal Server Error in 430ms (ActiveRecord: 0.0ms)
+
+Sprockets::Rails::Helper::AssetNotPrecompiled - Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( css_reset.css )` to `config/initializers/assets.rb` and restart your server:
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:363:in `raise_unless_precompiled_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:348:in `find_debug_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:229:in `block in lookup_debug_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:242:in `block in resolve_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:241:in `resolve_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:228:in `lookup_debug_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:170:in `block in stylesheet_link_tag'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:169:in `stylesheet_link_tag'
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___520760603260575101_70333092467780'
+  actionview (4.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.8) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.8) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.8) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.8) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.5) lib/rack/etag.rb:24:in `call'
+  rack (1.6.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.5) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/34aac8e1814f8a5f/variables" for ::1 at 2017-04-18 17:58:13 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:00:21 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms)
+
+Sprockets::Rails::Helper::AssetNotPrecompiled - Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( css_reset.css )` to `config/initializers/assets.rb` and restart your server:
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:363:in `raise_unless_precompiled_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:348:in `find_debug_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:229:in `block in lookup_debug_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:242:in `block in resolve_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:241:in `resolve_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:228:in `lookup_debug_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:170:in `block in stylesheet_link_tag'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:169:in `stylesheet_link_tag'
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___520760603260575101_70333098933960'
+  actionview (4.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.8) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.8) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.8) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.8) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.5) lib/rack/etag.rb:24:in `call'
+  rack (1.6.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.5) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/e781af5abbeb21b1/variables" for ::1 at 2017-04-18 18:00:21 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:00:23 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+Sprockets::Rails::Helper::AssetNotPrecompiled - Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( css_reset.css )` to `config/initializers/assets.rb` and restart your server:
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:363:in `raise_unless_precompiled_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:348:in `find_debug_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:229:in `block in lookup_debug_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:242:in `block in resolve_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:241:in `resolve_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:228:in `lookup_debug_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:170:in `block in stylesheet_link_tag'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:169:in `stylesheet_link_tag'
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___520760603260575101_70333098933960'
+  actionview (4.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.8) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.8) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.8) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.8) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.8) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.8) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.5) lib/rack/etag.rb:24:in `call'
+  rack (1.6.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.5) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/d8d667a68616e01d/variables" for ::1 at 2017-04-18 18:00:23 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:04:20 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 432ms (Views: 431.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/css_reset.self-8c5d8f313aec16f2a1e61bb3870d27394db21654013b411e9b1ebb046fea18b2.css?body=1" for ::1 at 2017-04-18 18:04:21 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:04:21 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:04:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 35ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:04:27 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:05:12 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 134ms (Views: 133.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:05:13 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:05:16 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 38ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:05:16 -0400
+
+
+Started GET "/api/users/email_exists?email=" for ::1 at 2017-04-18 18:05:31 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>""}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", ""]]
+Completed 200 OK in 53ms (Views: 0.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 18:05:32 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 23ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 18:06:11 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 36ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-f3a90d9ab13725afef5122d5ed7ebc9c300a08d7f793aaeb114b6f50f5c2a441.css?body=1" for ::1 at 2017-04-18 18:06:11 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:06:27 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c6cd8b88ada717cc2da0602e015e4409d1e3c6b3a541c439c98533a0a6e62c34.css?body=1" for ::1 at 2017-04-18 18:06:27 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:06:34 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 30ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 18:06:48 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 25ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 18:07:27 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 31ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9c82a3518c29bfcedc6c5b1aa78d0b5e363bd7e79bcde015d7e33f776ecc77f2.css?body=1" for ::1 at 2017-04-18 18:07:27 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:07:31 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 23ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 18:07:44 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 18:07:57 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 23ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 18:08:15 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 35ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e17c04f9099b2556d1f31a83130cfae79f1d739a93da2f9535333be9434b2219.css?body=1" for ::1 at 2017-04-18 18:08:16 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:08:19 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 20ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/users/email_exists?email=" for ::1 at 2017-04-18 18:08:22 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>""}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", ""]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 18:08:24 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 28ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 18:08:34 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 30ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-5d13c1511b9e2bba312eabb1b3a1636579a87169dd928c3def73bd2c5b66d4d5.css?body=1" for ::1 at 2017-04-18 18:08:34 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:08:44 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 21ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 18:08:52 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-cf8db915dd63f13bf2ed5c7e86dc2fe2c9efeb4cd699833b04d88a2618f77ba6.css?body=1" for ::1 at 2017-04-18 18:08:52 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:08:55 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 23ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 18:09:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 33ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-aecc0dbf11ff9b561779c5cdcb1f030b1ecd02be1f710b105780948b383b7854.css?body=1" for ::1 at 2017-04-18 18:09:26 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:09:31 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 33ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c4f535266b3e16b39a6fcb630e7cd77a71d58d35ce36fecc4042f18d8e4c8505.css?body=1" for ::1 at 2017-04-18 18:09:31 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:09:39 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 35ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6037021a6412c8e84309e934cd1787d4a6da9431d791fc44dc2b373ccf2bd423.css?body=1" for ::1 at 2017-04-18 18:09:39 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:10:46 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 34ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-bc605c26443af5b406daee014fc9a03d6e376f1667b50c4cb63e40d847c8ff03.css?body=1" for ::1 at 2017-04-18 18:10:46 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:10:46 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:10:57 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 37ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d7cb0cafb1259fa1376db053f55bd52d8a93f95dca4574c27b87e7509eb61165.css?body=1" for ::1 at 2017-04-18 18:10:57 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:10:57 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:12:27 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 95ms (Views: 94.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b9eb9e263e1514e67e492380488b0dcc5a0c497502cebfa3c4f57286f3065e83.css?body=1" for ::1 at 2017-04-18 18:12:27 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:12:28 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:12:42 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 42ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2fa34b401cc9cc1e8d135836145cbe811b183fb8dc8de259e4046292dde165b0.css?body=1" for ::1 at 2017-04-18 18:12:42 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:12:42 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:12:51 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 54ms (Views: 53.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0c2ba6324a2a2c2a53e12823ea31be78beea0e9bdb66662326d84a7bc58c6b24.css?body=1" for ::1 at 2017-04-18 18:12:51 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:12:52 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:13:05 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 57ms (Views: 56.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-99f05308f7d63a3db0f86673ed15e8e44497e22831dc508411d41e314031692f.css?body=1" for ::1 at 2017-04-18 18:13:05 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:13:05 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:13:15 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 45ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-5db759888a923e68155c2c69294d14b2de1a146d4050e903f78983a65e9268f6.css?body=1" for ::1 at 2017-04-18 18:13:15 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:13:15 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:13:19 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 34ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:13:19 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:13:23 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 24ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:13:23 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:13:40 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 51ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-bde0c0d8b5c83ea5bcedaa5ebf0b873393ad5c07ecdc76e13470f05db9f66d65.css?body=1" for ::1 at 2017-04-18 18:13:40 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:13:41 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:13:45 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 45ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-eef299d17ee416b07c3a87b5cb66f9d4f67de9d385a43c0054b5a8b08f0f82ca.css?body=1" for ::1 at 2017-04-18 18:13:45 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:13:46 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:13:52 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 43ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ccab0b5aff8e8cfd4df97fd0871c8e8f73eee34efdedb986abdc44848710be0c.css?body=1" for ::1 at 2017-04-18 18:13:52 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:13:53 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:14:17 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 34ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:14:17 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:14:29 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 53ms (Views: 53.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a15450e6101a199eb50c8480e25ca8da8a89a05e5d2707844db5ff27f7eda332.css?body=1" for ::1 at 2017-04-18 18:14:29 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:14:29 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:14:37 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-661ca98930cc00c28883f48fb6c95e3bb266c508065a221d37fe7c6c6b71eb07.css?body=1" for ::1 at 2017-04-18 18:14:37 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:14:37 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:14:44 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 76ms (Views: 75.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:14:44 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:15:22 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 73ms (Views: 72.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-20fef4f2c4afc2b31832692ae56ebd4df70e328c5d8f17e6b501371b37791f1b.css?body=1" for ::1 at 2017-04-18 18:15:22 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:15:22 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:15:29 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 53ms (Views: 52.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-60e13e87ca57db66312ba5017a2568ff8346bf3039e9b92a551c54748c05f863.css?body=1" for ::1 at 2017-04-18 18:15:29 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:15:29 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:15:37 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 60ms (Views: 60.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b79ed1f77d10f71cf5be47b852a884bf2397fd83191bd59a212904fa013f05d0.css?body=1" for ::1 at 2017-04-18 18:15:37 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:15:37 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:15:45 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 85ms (Views: 84.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7ad33152f593ce0a9c3c06b2af942974cef99373e541338cd301b198aa7b02c5.css?body=1" for ::1 at 2017-04-18 18:15:45 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:15:45 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:15:49 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 36ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:15:49 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:16:20 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 54ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a03eb7a7d730104509a32b2fd9223d05c787495a86a10036995018982124ca39.css?body=1" for ::1 at 2017-04-18 18:16:21 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:16:21 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:16:37 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 136ms (Views: 136.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-899c9c7b0e407e058173231fc49dd03a57d487aa8b19d3c66c71e862217bc90c.css?body=1" for ::1 at 2017-04-18 18:16:37 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:16:38 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:16:55 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 64ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3b180d93561b70e542c7476585cb4bd4495c89983f41fd6ba58440b9c9811282.css?body=1" for ::1 at 2017-04-18 18:16:55 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:16:55 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:17:06 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 42ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-fab29199d47ddd405129e5deed4ed2823f69fa7d4dd6d9c2159768def9b0054b.css?body=1" for ::1 at 2017-04-18 18:17:06 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:17:06 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:17:36 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 46ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a77798b83c4d215df79537e14520895cff60febc68afbc56e2201100351676ff.css?body=1" for ::1 at 2017-04-18 18:17:36 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:17:36 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:17:54 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 62ms (Views: 61.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-28faa5bba25e618c69371b7ab253f72d6efb1b8251378194b53ea298d577e1dc.css?body=1" for ::1 at 2017-04-18 18:17:54 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:17:54 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:18:02 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 59ms (Views: 59.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d8f9ab9b55654825129ca881e33b363927cd3e4993d7e2d3a46ac19c67f0a983.css?body=1" for ::1 at 2017-04-18 18:18:02 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:18:02 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:18:15 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 56ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e385bb6a4f764207a3a0dc22dafd5235e7657c07ea0987aedbc318d8e52ca8c2.css?body=1" for ::1 at 2017-04-18 18:18:15 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:18:15 -0400
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 18:20:07 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 5.6ms)
+
+
+Started POST "/api/session/" for ::1 at 2017-04-18 18:20:09 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"", "password"=>"[FILTERED]", "email"=>"bthaler@bellsouth.net"}}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.8ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "zPg3EkZVOvuBo9xHUgSJOg"], ["updated_at", "2017-04-18 22:20:10.022315"], ["id", 1]]
+  [1m[35m (9.6ms)[0m  COMMIT
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered api/users/show.json.jbuilder (96.7ms)
+Completed 200 OK in 534ms (Views: 123.9ms | ActiveRecord: 12.2ms)
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-18 18:20:11 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "zPg3EkZVOvuBo9xHUgSJOg"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "lUVb1XrbaNieEH70qQwutg"], ["updated_at", "2017-04-18 22:20:11.469602"], ["id", 1]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (1.0ms)
+Completed 200 OK in 14ms (Views: 5.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 18:23:02 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 124ms (Views: 123.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c1c82fe4ecda8fd6f0682198ccb566f0f5cd25d672c476f121f5dd4a933a4a7f.css?body=1" for ::1 at 2017-04-18 18:23:02 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:23:03 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:23:28 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 100ms (Views: 99.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1c95c2d4a166c823f4d61a082e112a86b66e9f478f23004c9db3a912db75131a.css?body=1" for ::1 at 2017-04-18 18:23:28 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:23:28 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:23:42 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 62ms (Views: 61.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-67dd7de5cffed0ad6ad98c8ecbd8920bcac3b956f0218d8ad6a8392ddc581320.css?body=1" for ::1 at 2017-04-18 18:23:42 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:23:42 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:24:11 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 53ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9438fbbbe15cd9bc6d6446d78639a25a0426b9b1ce5476171bb772fd305ba2cb.css?body=1" for ::1 at 2017-04-18 18:24:11 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:24:11 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:24:36 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-31ed8502729bce23fbbd351b09bf5357fe90711c76fb98797f5a66f56702bb1a.css?body=1" for ::1 at 2017-04-18 18:24:36 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:24:36 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:24:54 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 43ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2bc8904ad998c4e88ddb868c60c95bcae72af954e501ba20ed8c0a1be1d657c1.css?body=1" for ::1 at 2017-04-18 18:24:55 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:24:55 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:24:57 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 36ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:24:57 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:25:04 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 40ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4dfc3765fe39b831cd1bd03c1a785d3b330909f5eaf9e08daea553938b2616b4.css?body=1" for ::1 at 2017-04-18 18:25:04 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:25:04 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:25:52 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 118ms (Views: 116.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ab88e8d7fff324b428cb2cdb729343c573242260fec15046f2ff25dbfc4fbe5d.css?body=1" for ::1 at 2017-04-18 18:25:52 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:25:52 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:26:08 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 60ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3bb144dc638bcb3dfaf7ae62cce8f203a76a3168472fe31eeba9d2e7ffcbd4f2.css?body=1" for ::1 at 2017-04-18 18:26:08 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:26:08 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:26:28 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 115ms (Views: 114.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2f6b780ac2736e44ac687107a20c6b548d062c7a8e5d17c3f8df8b4c5b2f1865.css?body=1" for ::1 at 2017-04-18 18:26:29 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:26:29 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:28:13 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 30ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:28:13 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:28:23 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 30ms (Views: 29.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:28:24 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:30:28 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 161ms (Views: 160.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-57f69afcd609c8abb2e9f9724eba8c1e013e560642edc607ac2a92a498e32b1d.css?body=1" for ::1 at 2017-04-18 18:30:28 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:30:29 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:30:31 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 29ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:30:31 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:30:33 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 30ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:30:33 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:30:45 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 53ms (Views: 52.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-fe3ab008d11097c7e5112adc75b982b5981045003ed372ff8df3d11aa4da02e3.css?body=1" for ::1 at 2017-04-18 18:30:45 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:30:45 -0400
+
+
+Started GET "/assets/image_path('zelda_landing')" for ::1 at 2017-04-18 18:30:45 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/image_path('zelda_landing')"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (53.1ms)
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (188.4ms)
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (140.9ms)
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (251.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 18:30:59 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 166ms (Views: 166.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6d8417ce203928391197cadb65d73ea55ac9de75ca48a9dbc9bcc1485a21c680.css?body=1" for ::1 at 2017-04-18 18:30:59 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:30:59 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:31:01 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:31:01 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:31:05 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:31:06 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:31:51 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 58ms (Views: 58.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-cb8e8913e1ff5b15ce569b19aefe65f941bc4cbe5cb4544082cf1684abaa27d0.css?body=1" for ::1 at 2017-04-18 18:31:51 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:31:51 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:37:44 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 535ms (Views: 532.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-4e644ce580320d3bc81465771d47642f51b6b5c35e615946d8ea9da1f4577969.js?body=1" for ::1 at 2017-04-18 18:37:44 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:37:45 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:38:16 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 523ms (Views: 522.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-13f78bad602bbaae084ab2a6877aa4296e819187fba2511fcd386a8dabc8c31e.js?body=1" for ::1 at 2017-04-18 18:38:16 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:38:17 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:38:53 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 57ms (Views: 56.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0d90955af5e81de355fadf91dc0a57ba7dbdc9b6d8da7ae63b52f77b1fc32f71.css?body=1" for ::1 at 2017-04-18 18:38:54 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:38:54 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:38:55 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:38:55 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:38:57 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 25ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:38:57 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:39:01 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 175ms (Views: 174.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:39:01 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:39:27 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 59ms (Views: 58.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b2273f2e29d910374d1e929acd9ac3478510ad281e76bb3863668a2c50169c32.css?body=1" for ::1 at 2017-04-18 18:39:27 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:39:27 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:40:09 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 142ms (Views: 142.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-621fbdf5accfa34431feed6307565b9aef6a4af3d219fc18a9870dc638ff8e65.css?body=1" for ::1 at 2017-04-18 18:40:10 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:40:10 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:40:34 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 73ms (Views: 72.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-fcc0e8d2be403b3713f7778928c38c84bd5587355df1549229e812c4018a28cf.css?body=1" for ::1 at 2017-04-18 18:40:34 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:40:34 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:40:45 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 61ms (Views: 60.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2feaa3c84b340ea1aa881cc3edcc5acf01a64928cf8db41a3b0cec5c96bef868.css?body=1" for ::1 at 2017-04-18 18:40:45 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:40:45 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:41:01 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 50ms (Views: 49.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-696e2f043ccbf12ddb7957b99195e43f721f9bc991235d98c92be04813231dc5.css?body=1" for ::1 at 2017-04-18 18:41:01 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:41:01 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:41:31 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 45ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ed35b88ededab46fac870a71296f3744819f8768acb0487cd3f6a02967a60c63.css?body=1" for ::1 at 2017-04-18 18:41:31 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:41:31 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:42:52 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 47ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c01dad4a2e3338ddbe2c88178a3465adf427bd385165d91cf769ef4dcc00cc02.css?body=1" for ::1 at 2017-04-18 18:42:52 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:42:52 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:43:56 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 62ms (Views: 62.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-cb3f8e757d140e5233f583d021656ba260a0b3ab8a86d354a8648a128f53f840.css?body=1" for ::1 at 2017-04-18 18:43:57 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:43:57 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:44:21 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 73ms (Views: 72.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d2714abf256184383327863e7202a0be2448fe62595b22bfdeaf144b27111398.css?body=1" for ::1 at 2017-04-18 18:44:21 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:44:21 -0400
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 18:44:39 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/session/" for ::1 at 2017-04-18 18:44:40 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"", "password"=>"[FILTERED]", "email"=>"bthaler@bellsouth.net"}}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.7ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "9jDXgVz-KLg64lz7emhjRA"], ["updated_at", "2017-04-18 22:44:40.610033"], ["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered api/users/show.json.jbuilder (4.6ms)
+Completed 200 OK in 145ms (Views: 58.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 18:44:42 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "9jDXgVz-KLg64lz7emhjRA"]]
+  Rendered api/users/_user.json.jbuilder (0.9ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:44:42 -0400
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-18 18:44:43 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "9jDXgVz-KLg64lz7emhjRA"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "Zpdf2-WxKtH2SjPSY2QBew"], ["updated_at", "2017-04-18 22:44:43.696938"], ["id", 1]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (1.0ms)
+Completed 200 OK in 12ms (Views: 5.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 18:44:57 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 33ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:44:57 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:45:01 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 30ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:45:01 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:45:42 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 62ms (Views: 61.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8abedc999fb7a593c18a3aaef7ae0d81c596a74f0b5d2b32a312122d4d43ef1d.css?body=1" for ::1 at 2017-04-18 18:45:42 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:45:42 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 18:46:59 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 158ms (Views: 158.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:46:59 -0400

@@ -38,7 +38,7 @@ class SessionFormWithoutRouter extends React.Component {
         <form onSubmit={this.handleSubmit}>
           <h1>{this.props.formType}</h1>
           <label>Create Username:</label>
-          <input type="text" onChange={this.handleUserName} value={this.state.username}/><br/>
+          <input type="text" onChange={this.handleUserName} value={this.state.username} autoFocus/><br/>
           <label>Choose Password:</label>
           <input type="text" onChange={this.handlePassword} value={this.state.password}/><br/>
           <input type="submit"/>
@@ -49,7 +49,7 @@ class SessionFormWithoutRouter extends React.Component {
         <form onSubmit={this.handleSubmit}>
           <h1>{this.props.formType}</h1>
           <label>Password:</label>
-          <input type="text" onChange={this.handlePassword} value={this.state.password}/><br/>
+          <input type="text" onChange={this.handlePassword} value={this.state.password} autoFocus/><br/>
           <input type="submit"/>
         </form>
       );
