@@ -3,3 +3,4 @@ bundle.js
 bundle.js.map
 node_modules/
 tmp/
+.DS_Store

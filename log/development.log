@@ -2773,3 +2773,122 @@ Completed 200 OK in 181ms (Views: 181.2ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 16:55:09 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:00:49 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1146.6ms)
+Completed 200 OK in 1364ms (Views: 1363.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-900f44456ecd3cdf993bb20d42d5413b1a0d1bf45aa61325aab50557b827ac5c.js?body=1" for ::1 at 2017-04-18 17:00:51 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:00:52 -0400
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 17:00:57 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 111ms (Views: 0.2ms | ActiveRecord: 5.6ms)
+
+
+Started POST "/api/session/" for ::1 at 2017-04-18 17:00:59 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"", "password"=>"[FILTERED]", "email"=>"bthaler@bellsouth.net"}}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "6SUF1gwfhblDScVAENz0tg"], ["updated_at", "2017-04-18 21:01:00.154886"], ["id", 1]]
+  [1m[35m (17.3ms)[0m  COMMIT
+  Rendered api/users/_user.json.jbuilder (1.8ms)
+  Rendered api/users/show.json.jbuilder (64.9ms)
+Completed 200 OK in 279ms (Views: 91.2ms | ActiveRecord: 19.7ms)
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-18 17:01:01 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "6SUF1gwfhblDScVAENz0tg"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "-VvpQICwsTb3Hivtsy9CvA"], ["updated_at", "2017-04-18 21:01:01.318935"], ["id", 1]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (2.1ms)
+Completed 200 OK in 18ms (Views: 7.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/users/email_exists?email=asldkjf" for ::1 at 2017-04-18 17:01:03 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"asldkjf"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "asldkjf"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 17:01:06 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 37ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:01:06 -0400
+
+
+Started GET "/api/users/email_exists?email=james%40james.com" for ::1 at 2017-04-18 17:01:11 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"james@james.com"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "james@james.com"]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/users/" for ::1 at 2017-04-18 17:01:22 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"jamesmayo", "password"=>"[FILTERED]", "email"=>"james@james.com"}}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.7ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'james@james.com' LIMIT 1
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'jamesmayo' LIMIT 1[0m
+  [1m[35mSQL (42.3ms)[0m  INSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["username", "jamesmayo"], ["email", "james@james.com"], ["password_digest", "$2a$10$7b8wy6KfeL7uKbL0R/VUi.lYPvI4Mil4Jr8wmJVUoHK.gO6ug6aS."], ["session_token", "dscd6ejIXp_793-RfXRx5w"], ["created_at", "2017-04-18 21:01:22.662678"], ["updated_at", "2017-04-18 21:01:22.662678"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'james@james.com' AND "users"."id" != 2) LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'jamesmayo' AND "users"."id" != 2) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "vhW6LdBvKvsAtZXIcrEoBQ"], ["updated_at", "2017-04-18 21:01:22.710160"], ["id", 2]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (1.0ms)
+Completed 200 OK in 137ms (Views: 9.5ms | ActiveRecord: 45.9ms)
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-18 17:01:23 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "vhW6LdBvKvsAtZXIcrEoBQ"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'james@james.com' AND "users"."id" != 2) LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'jamesmayo' AND "users"."id" != 2) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "nkpNJlnIKOFCOlsmihwcPw"], ["updated_at", "2017-04-18 21:01:23.713978"], ["id", 2]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (0.9ms)
+Completed 200 OK in 13ms (Views: 5.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 17:01:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 32ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:01:26 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 17:01:31 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 51ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 17:01:31 -0400
