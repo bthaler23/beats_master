@@ -2219,3 +2219,557 @@ Started GET "/assets/bundle.self-87afb7a7ac85e2e59f748c027737baa3c433dd2f81d7da6
 
 
 Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:29:11 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 15:32:42 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 478ms (Views: 478.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-509c9c1cc0d65ce2759f193e1701a67789cd8e1ba9da9bcca3c516479c1a5814.js?body=1" for ::1 at 2017-04-18 15:32:43 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:32:43 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 15:33:03 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 424ms (Views: 423.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-c8a69542778ac4167f2537d768da1bc11c9d002d94b16b2525bb61e04662b5df.js?body=1" for ::1 at 2017-04-18 15:33:04 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:33:04 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 15:33:12 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:33:12 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 15:33:14 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:33:14 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 15:33:45 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 356ms (Views: 355.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-378649d6345e7dda2fcf7159cae3ae0487bcfe77b4b14f6bf77295c0ae7aa081.js?body=1" for ::1 at 2017-04-18 15:33:45 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:33:45 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 15:33:55 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 306ms (Views: 305.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-611401d273de367a81179fd81853b02be0610a10e4bb60657f6253b96e5a6bef.js?body=1" for ::1 at 2017-04-18 15:33:56 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:33:56 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 15:35:31 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 479ms (Views: 478.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-b99e3d9ffb2d8265fa64b5ad71fa636e3520493816f9e5103d4ae7bfb13d73a5.js?body=1" for ::1 at 2017-04-18 15:35:32 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:35:32 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 15:35:41 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 42ms (Views: 41.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:35:42 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 15:35:44 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 347ms (Views: 346.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-5bfcd39323e028852fbaa14865f26b512af578fb033faf5ffb0529a29556b2d9.js?body=1" for ::1 at 2017-04-18 15:35:44 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:35:44 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 15:35:53 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 344ms (Views: 343.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-0c2c91c5fe161b79e04a9e7eb3897a4ef618ba8a8dfc1fe09c7a7f5f7cfe74a1.js?body=1" for ::1 at 2017-04-18 15:35:54 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:35:54 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 15:35:56 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 38ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:35:56 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 15:36:15 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 334ms (Views: 333.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-9d31780913d792332a9aebebf50635abfe5ae20805e09c7dce810ce938e2e6b8.js?body=1" for ::1 at 2017-04-18 15:36:16 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:36:16 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 15:36:45 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 332ms (Views: 331.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-06f031032963b87481dbe6a9472c2ae13744ed763b31cf34fc98795832b501c9.js?body=1" for ::1 at 2017-04-18 15:36:45 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:36:45 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 15:36:54 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 412ms (Views: 412.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-6da4c60f58563fe87beaaa8930443acbf0e5d2da5fb0f529c9d5246787ed32ec.js?body=1" for ::1 at 2017-04-18 15:36:55 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:36:55 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 15:36:58 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 25ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:36:58 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 15:42:22 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (554.6ms)
+Completed 200 OK in 785ms (Views: 783.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-ee1edfc5257126285056b6547134b83056c2875ececdb0ae485828392cfb07ca.js?body=1" for ::1 at 2017-04-18 15:42:23 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:42:23 -0400
+
+
+Started GET "/assets/zelda_landing-ba82f548b0a64640dfa1e659d9bd1d2caaf5c3568ecd9c939bfcadd2c04934e4.jpg" for ::1 at 2017-04-18 15:42:23 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 15:42:35 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 70ms (Views: 70.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:42:36 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 15:42:38 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 369ms (Views: 368.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-8eed2c4e712091d8d0dbb7f15311e2d2846c2506d092cac953475cd48eb26e0b.js?body=1" for ::1 at 2017-04-18 15:42:38 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:42:38 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 15:42:41 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 38ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:42:41 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 15:44:32 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 490ms (Views: 489.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-dc0ae561ced81faa58565d5083f47ed00fe58f8e3e447f26d6a522217e236b9e.css?body=1" for ::1 at 2017-04-18 15:44:32 -0400
+
+
+Started GET "/assets/bundle.self-0773573d89d8fe85443884c187bef17b493909db921760fa29693ec6e87ef423.js?body=1" for ::1 at 2017-04-18 15:44:32 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:44:32 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 15:44:36 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:44:36 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 15:44:40 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 52ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9ebf3732bad143e71c4a3119d7499e24996ccda56e83f903354b9683e9d3f43e.css?body=1" for ::1 at 2017-04-18 15:44:40 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:44:41 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 15:44:43 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 26ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:44:43 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 15:44:49 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 30ms (Views: 29.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:44:49 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 15:45:08 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 61ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-230116cbfb3fcc4e895360b7fbd2f38f9defcd9a06a8312d72355e8ed7932213.css?body=1" for ::1 at 2017-04-18 15:45:09 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:45:09 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 15:45:15 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 49ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-94e8f178cb47bbe4cbfbb92a365d86de16c45e4aed251f8e8398860d801e616b.css?body=1" for ::1 at 2017-04-18 15:45:15 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:45:15 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 15:46:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 388ms (Views: 387.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-99e4ee52cbfb726df77c35bea3aed8c255bee9780b088ea626f63c9e9b4c2c13.css?body=1" for ::1 at 2017-04-18 15:46:27 -0400
+
+
+Started GET "/assets/bundle.self-b3fd8dbf16fccb01f5fe24fef4d52b09b283e95bcc2adc9e2fcd7eb24647aad1.js?body=1" for ::1 at 2017-04-18 15:46:27 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:46:27 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 15:46:28 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 25ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:46:28 -0400
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 15:46:34 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 15:47:56 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 27ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:47:57 -0400
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 15:48:00 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/session/" for ::1 at 2017-04-18 15:48:03 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"", "password"=>"[FILTERED]", "email"=>"bthaler@bellsouth.net"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "Z05qeKtu81qUzaOtvFxkdg"], ["updated_at", "2017-04-18 19:48:03.293668"], ["id", 1]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered api/users/show.json.jbuilder (14.5ms)
+Completed 200 OK in 149ms (Views: 68.5ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 15:49:54 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "Z05qeKtu81qUzaOtvFxkdg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (33.1ms)
+Completed 200 OK in 548ms (Views: 546.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bundle.self-69310bced1cb76c2a1ab07c0a10bc01a9204ed7f8e64585d01401016535eefc8.js?body=1" for ::1 at 2017-04-18 15:49:55 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:49:55 -0400
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-18 15:49:56 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "Z05qeKtu81qUzaOtvFxkdg"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.7ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "9EaE1qAHs-oFQlOZPYNMpw"], ["updated_at", "2017-04-18 19:49:56.789758"], ["id", 1]]
+  [1m[36m (4.9ms)[0m  [1mCOMMIT[0m
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (1.2ms)
+Completed 200 OK in 63ms (Views: 50.8ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.nt" for ::1 at 2017-04-18 15:50:02 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.nt"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.nt"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 15:50:04 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 31ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:50:04 -0400
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 15:50:08 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/session/" for ::1 at 2017-04-18 15:50:10 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"", "password"=>"[FILTERED]", "email"=>"bthaler@bellsouth.net"}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "e9B-4xSLSgut9V-T_1nRAQ"], ["updated_at", "2017-04-18 19:50:10.193096"], ["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered api/users/_user.json.jbuilder (0.0ms)
+  Rendered api/users/show.json.jbuilder (0.8ms)
+Completed 200 OK in 91ms (Views: 5.2ms | ActiveRecord: 2.6ms)
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-18 15:50:11 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "e9B-4xSLSgut9V-T_1nRAQ"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "jJ05QZx8NJle9cQ3LpYaaQ"], ["updated_at", "2017-04-18 19:50:11.311683"], ["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (1.0ms)
+Completed 200 OK in 13ms (Views: 6.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 15:58:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 436ms (Views: 435.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-75e078270280fbce83dfa4479e096d23569e0166eb09f424b29229b9a76027db.js?body=1" for ::1 at 2017-04-18 15:58:25 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 15:58:26 -0400
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 15:58:41 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/session/" for ::1 at 2017-04-18 15:58:44 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"", "password"=>"[FILTERED]", "email"=>"bthaler@bellsouth.net"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "t_zeNOZubWLe6qCDhRlSdg"], ["updated_at", "2017-04-18 19:58:44.424276"], ["id", 1]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered api/users/show.json.jbuilder (15.5ms)
+Completed 200 OK in 149ms (Views: 64.8ms | ActiveRecord: 2.1ms)
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-18 15:58:48 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "t_zeNOZubWLe6qCDhRlSdg"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "_6CAz1uj1ajLWF2xDGd_Zw"], ["updated_at", "2017-04-18 19:58:48.857031"], ["id", 1]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (0.8ms)
+Completed 200 OK in 11ms (Views: 5.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 16:05:40 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 491ms (Views: 490.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-bbd53c4df4fee4904a7057b5cca16dd8ca1548de42ecfe02a1cb3a163a169a7b.css?body=1" for ::1 at 2017-04-18 16:05:40 -0400
+
+
+Started GET "/assets/bundle.self-77115bf7b2b6ad7556b573fcd075bcb5428823901d744b3dd34ad95129b6197c.js?body=1" for ::1 at 2017-04-18 16:05:40 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 16:05:40 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 16:05:59 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 263ms (Views: 263.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b630987432d658bc8783e6d47de951e665c1b0072225334c7a879fa41aa32f73.css?body=1" for ::1 at 2017-04-18 16:06:00 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 16:06:00 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 16:06:14 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 87ms (Views: 86.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7a3ac0f5dbfb16bdcb1bb966f7e7b90a7870e952080d86c27a52db88ea7d41ff.css?body=1" for ::1 at 2017-04-18 16:06:14 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 16:06:14 -0400
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 16:06:18 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/session/" for ::1 at 2017-04-18 16:06:21 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"", "password"=>"[FILTERED]", "email"=>"bthaler@bellsouth.net"}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.7ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "wPFjVpGZ8a-QL-P528mJ-g"], ["updated_at", "2017-04-18 20:06:21.573661"], ["id", 1]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered api/users/show.json.jbuilder (3.0ms)
+Completed 200 OK in 134ms (Views: 52.9ms | ActiveRecord: 2.7ms)
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-18 16:06:23 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "wPFjVpGZ8a-QL-P528mJ-g"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.8ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "LMgpbwwprB87qO4PxvVd_Q"], ["updated_at", "2017-04-18 20:06:23.148891"], ["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  Rendered api/users/_user.json.jbuilder (0.0ms)
+  Rendered api/users/show.json.jbuilder (0.9ms)
+Completed 200 OK in 12ms (Views: 5.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 16:55:08 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 181ms (Views: 181.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 16:55:09 -0400

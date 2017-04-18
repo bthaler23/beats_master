@@ -1,14 +1,15 @@
 import React from 'react';
+import { withRouter } from 'react-router';
 
-class SessionForm extends React.Component {
+class SessionFormWithoutRouter extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = { username: "", password: ""};
     this.handleUserName = this.handleUserName.bind(this);
-    // this.handleEmail = this.handleEmail.bind(this);
     this.handlePassword = this.handlePassword.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    // this.handleEmail = this.handleEmail.bind(this);
   }
 
   handleUserName(e) {
@@ -58,5 +59,6 @@ class SessionForm extends React.Component {
 
 }
 
+const SessionForm = withRouter(SessionFormWithoutRouter);
 
 export default SessionForm;

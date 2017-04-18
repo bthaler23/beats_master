@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import App from './app';
 import Stream from './stream/stream';
-import LandingPage from './landing_page/landing_page';
+import LandingPageContainer from './landing_page/landing_page_container';
 
 
 
@@ -27,7 +27,7 @@ const Root = ({ store }) => {
     <Provider store={store}>
       <Router history={ hashHistory }>
         <Route path="/" component={ App } >
-          <IndexRoute component={LandingPage} onEnter={ checkLoggedIn } />
+          <IndexRoute component={LandingPageContainer} onEnter={ checkLoggedIn } />
           <Route path="stream" component={ Stream } onEnter={ authenticateUser }/>
         </Route>
       </Router>

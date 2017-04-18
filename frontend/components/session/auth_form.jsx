@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter } from 'react-router';
+// import { withRouter } from 'react-router';
 import { email_exists } from '../../util/session_api_util';
 import SessionFormContainer from './session_form_container';
 
@@ -35,7 +35,7 @@ class AuthForm extends React.Component {
     const form = this.state.form;
 
     if (form) {
-      return (<SessionFormContainer formType={form} email={this.state.email} router={this.props.router}/>);
+      return (<SessionFormContainer formType={form} email={this.state.email} />);
     } else {
       return (
         <form onSubmit={this.handleSubmit}>

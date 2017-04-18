@@ -15,5 +15,26 @@
  */
 
 .landing_page {
-  background: grey;
+  background: white;
+}
+
+.splash_image {
+  display: flex;
+  justify-content: center;
+}
+
+.auth_form {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -150px;
+  z-index: 9999;
+  background: white;
+  border: orange solid 2px;
 }
