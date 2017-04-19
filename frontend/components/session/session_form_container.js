@@ -2,11 +2,11 @@ import { connect } from 'react-redux';
 import { login, logout, signup } from '../../actions/session_actions';
 import SessionForm from './session_form';
 
-const mapStateToProps = ({errors}, {email, formType, router}) => {
+const mapStateToProps = ({session}, {email, formType, router}) => {
   // debugger
   return {
     router,
-    errors,
+    errors: session.errors,
     email,
     formType
   };

@@ -7,7 +7,7 @@ class AuthForm extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {email: ""};
+    this.state = {email: "", errors: ""};
     // debugger
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -15,14 +15,18 @@ class AuthForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    (email_exists(this.state.email)).then ((answer) => {
+      if (this.state.email.length > 3) {
+        (email_exists(this.state.email)).then ((answer) => {
       // debugger
-      if (answer) {
-        this.setState({form: 'login'});
-      } else {
-        this.setState({form: 'signup'});
-      }
-    });
+        if (answer) {
+          this.setState({form: 'login'});
+        } else {
+          this.setState({form: 'signup'});
+        }
+      });
+    } else {
+      this.setState({errors: "Email must be longer than 3 characters"});
+    }
   }
 
   handleChange(e) {
@@ -40,6 +44,7 @@ class AuthForm extends React.Component {
       return (
         <form onSubmit={this.handleSubmit}>
           <ul className="form">
+            <h4>{this.state.errors}</h4>
             <input type="text" onChange={this.handleChange} value={this.state.email} placeholder="Enter Email Here" autoFocus/>
             <input type="submit" value="Continue"/>
           </ul>

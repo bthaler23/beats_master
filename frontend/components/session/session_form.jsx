@@ -28,18 +28,26 @@ class SessionFormWithoutRouter extends React.Component {
     const temp_user = Object.assign({}, this.state);
     temp_user.email = this.props.email;
     const user = {user: temp_user};
-    this.props.processForm(user).then(() => this.props.router.push("/stream"));
+    this.props.processForm(user).then(() => {
+       this.props.router.push("/stream")
+     });
   }
+
+  renderErrors() {
+    return (
+      this.props.errors.map((error, i) => (<div key={`error-${i}`}>{error}</div>)));
+  };
 
 
   render() {
     if (this.props.formType === "signup") {
       return (
         <form onSubmit={this.handleSubmit}>
+          {this.renderErrors()}
           <ul className="form">
-            <h1>{this.props.formType}</h1>
-            <input type="text" onChange={this.handleUserName} value={this.state.username} placeholder="Create Username Here"autoFocus/><br/>
-            <input type="text" onChange={this.handlePassword} value={this.state.password} /><br/>
+            <h1>Create Account</h1>
+            <input type="text" onChange={this.handleUserName} value={this.state.username} placeholder="Create Username Here" autoFocus/><br/>
+            <input type="text" onChange={this.handlePassword} value={this.state.password} placeholder="Enter Your Password" /><br/>
             <input type="submit" value="Continue"/>
           </ul>
         </form>
@@ -47,10 +55,10 @@ class SessionFormWithoutRouter extends React.Component {
     } else {
       return (
         <form onSubmit={this.handleSubmit}>
+          {this.renderErrors()}
           <ul className="form">
             <h1>{this.props.formType}</h1>
-            <label>Password: </label>
-            <input type="password" onChange={this.handlePassword} value={this.state.password} autoFocus/><br/>
+            <input type="password" onChange={this.handlePassword} value={this.state.password} placeholder="Password" autoFocus/><br/>
             <input type="submit"/>
           </ul>
         </form>
