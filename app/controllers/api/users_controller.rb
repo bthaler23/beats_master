@@ -11,6 +11,17 @@ class Api::UsersController < ApplicationController
 
   end
 
+  def show
+    @user = User.find(params[:id])
+
+    if @user
+      render :show
+    else
+      render json: @user.errors
+    end
+
+  end
+
   def email_exists
     # debugger
     user_exists = User.email_exists?(params[:email])

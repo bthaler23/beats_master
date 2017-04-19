@@ -6,6 +6,7 @@ const mapStateToProps = ({session}, ownProps) => {
   if (session.currentUser) {
     return ({
       username: session.currentUser.username,
+      userId: session.currentUser.id
     });
   } else {
     return ({});

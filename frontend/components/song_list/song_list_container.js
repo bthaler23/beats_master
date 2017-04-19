@@ -4,7 +4,7 @@ import SongList from './song_list';
 
 const mapStateToProps = ({songs}, ownProps) => {
   return {
-    songs: Object.values(songs)
+    songs: Object.values(songs.songs)
   };
 };
 

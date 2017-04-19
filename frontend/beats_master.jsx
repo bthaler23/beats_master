@@ -2,10 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/root';
-import * as Action from './actions/song_actions';
+import * as Action from './actions/user_actions';
+// import * as APIUtil from './util/user_api_util'
 
-window.fetchSongs = Action.fetchSongs
-window.fetchSong = Action.fetchSong
+window.fetchUser = Action.fetchUser;
+// window.fetchSongs = Action.fetchSongs
+// window.fetchSong = Action.fetchSong
+
 
 document.addEventListener('DOMContentLoaded', () => {
     let store;

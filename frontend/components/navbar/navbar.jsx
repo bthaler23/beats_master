@@ -8,6 +8,14 @@ class NavbarWithoutRouter extends React.Component {
     super(props);
 
     this.handleLogout = this.handleLogout.bind(this);
+    this.handleUserPage = this.handleUserPage.bind(this);
+    this.handleHome = this.handleHome.bind(this);
+  }
+
+
+  handleHome(e) {
+    e.preventDefault();
+    this.props.router.push('/stream');
   }
 
   handleLogout(e) {
@@ -15,15 +23,20 @@ class NavbarWithoutRouter extends React.Component {
     this.props.logout().then(() => this.props.router.push('/'));
   }
 
+  handleUserPage(e) {
+    e.preventDefault();
+    this.props.router.push(`/${this.props.userId}`)
+  }
+
   render() {
     //Replace search with search component
     return (
       <ul className="navbar">
-        <button className="left_search">Logo</button>
-        <button className="left_search">Home</button>
+        <button className="left_search" onClick={this.handleHome}>Logo</button>
+        <button className="left_search" onClick={this.handleHome}>Home</button>
         <div className="search">Search</div>
         <button>Upload</button>
-        <button>{this.props.username}</button>
+        <button onClick={this.handleUserPage}>{this.props.username}</button>
         <button onClick={this.handleLogout}>Logout</button>
       </ul>
     );
