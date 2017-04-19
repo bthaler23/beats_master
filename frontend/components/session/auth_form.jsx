@@ -39,9 +39,10 @@ class AuthForm extends React.Component {
     } else {
       return (
         <form onSubmit={this.handleSubmit}>
-          <label>Enter Email:</label>
-          <input type="text" onChange={this.handleChange} value={this.state.email} autoFocus/>
-          <input type="submit"/>
+          <ul className="form">
+            <input type="text" onChange={this.handleChange} value={this.state.email} placeholder="Enter Email Here" autoFocus/>
+            <input type="submit" value="Continue"/>
+          </ul>
         </form>
       );
     }

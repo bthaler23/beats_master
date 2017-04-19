@@ -16,10 +16,16 @@ class NavbarWithoutRouter extends React.Component {
   }
 
   render() {
+    //Replace search with search component
     return (
-      <section>
+      <ul className="navbar">
+        <button className="left_search">Logo</button>
+        <button className="left_search">Home</button>
+        <div className="search">Search</div>
+        <button>Upload</button>
+        <button>{this.props.username}</button>
         <button onClick={this.handleLogout}>Logout</button>
-      </section>
+      </ul>
     );
   }
 }

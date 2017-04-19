@@ -47,6 +47,7 @@ class LandingPage extends React.Component {
               <button onClick={this.handleAuth}>Sign Up</button>
             </ul>
         </div>
+
       </section>
 
     );

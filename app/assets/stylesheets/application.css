@@ -24,8 +24,12 @@ body {
   width: 80%;
   height: 100vh;
   margin: 0 auto;
-  font-family: sans-serif;
+  font-family: 'Antic', sans-serif;
   background: #ffffff;
+}
+
+h1 {
+  text-transform: capitalize;
 }
 
 /*Landing Page*/
@@ -48,31 +52,35 @@ body {
   justify-content: flex-end;
 }
 
-.landing_nav button {
-  margin: 10px;
-  width: 50px;
-  height: 30px;
-  color: white;
-  border:  white 1px solid;
-  padding: 10px;
-  z-index: 2;
-}
-
-.landing_nav button:last-child {
-  background: orange;
-  border: orange 1px solid;
-  font: white;
-  padding: 10px;
-  z-index: 2;
-
-}
-
-
 .splash_image img {
   width: 100%;
   height: 80%;
 
 }
+
+.landing_nav button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 10px;
+  width: 95px;
+  height: 30px;
+  color: white;
+  border:  white 1px solid;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+
+.landing_nav button:last-child {
+  background: #FF5500;
+  border: #FF5500 1px solid;
+  font: white;
+  margin-right: 20px;
+
+}
+
+
 
 input[type="text"] {
   border: grey 1px solid;
@@ -96,7 +104,32 @@ input[type="text"] {
 }
 
 input[type="submit"] {
-  border: 1px orange solid;
+  border: 1px #FF5500 solid;
+  border-radius: 5px;
+  color: white;
+  background-color: #FF5500;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.form h1 {
+  display: flex;
+  align-self: center;
+  font-size: 30px;
+  margin: 30px 0;
+}
+
+.form input {
+  margin: 4px 0;
+}
+
+.form input:last-child {
+  display: flex;
+  justify-content: center;
 }
 
 /*For Modals
@@ -115,4 +148,54 @@ input[type="submit"] {
 
 .none {
   display: none;
+}
+
+/*Stream*/
+
+.stream {
+  position: relative;
+}
+
+.stream h1 {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 30px;
+  border-bottom: 1px solid #e6e6e6;
+
+}
+
+/*Navbar*/
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 45px;
+  width: 100%;
+  background: #333333;
+}
+
+.navbar button {
+  display: flex;
+  color: #CCCCC2;
+  justify-content: center;
+  width:20%;
+}
+
+.navbar button:hover {
+  color: white;
+}
+
+.navbar .left_search {
+  border-right: black 1px solid;
+}
+
+.navbar .search {
+  align-self: center;
+  margin-left: 30px;
+  border-radius: 5px;
+  width: 300px;
+  height: 20px;
+  background-color: grey;
 }

@@ -5516,3 +5516,3656 @@ Completed 200 OK in 158ms (Views: 158.0ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 18:46:59 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 19:37:37 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 225ms (Views: 224.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-824ed62ad66fde470ddbce5653dadc98f290c3b19aef26a09bae971f52c08efd.css?body=1" for ::1 at 2017-04-18 19:37:38 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 19:37:41 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 38ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 19:42:53 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 138ms (Views: 137.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6a1ac5b852a46934a939094e1a02dfcfa0784d107b291647b8281acf182e4f3e.css?body=1" for ::1 at 2017-04-18 19:42:53 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 19:46:46 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 191ms (Views: 189.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4e60f69f837f9fa59dbb6a282326bb62559f6ce3345e6cf4f3dce44287d509d6.css?body=1" for ::1 at 2017-04-18 19:46:46 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 19:46:46 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 19:47:27 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 56ms (Views: 55.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a52ea140d5f263ac0a47e276117e5665fd7e6757c8beeab15a1feb0fa772e3b4.css?body=1" for ::1 at 2017-04-18 19:47:27 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 19:47:37 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 24ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 19:47:42 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 54ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-83d27ce89cdf7db5319c118dbba6123873adee7ebef6945bd048abf318fca52f.css?body=1" for ::1 at 2017-04-18 19:47:42 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 19:48:01 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 56ms (Views: 55.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a54a7b477361f6751f13f430db6b3b209e8d3249145c3a8d1b0f3839d8a860d7.css?body=1" for ::1 at 2017-04-18 19:48:01 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 19:48:15 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 68ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-dec030c13b7e728af296cab8223e7d8a68a2e02b0354bdfd2bd333123c41fcd2.css?body=1" for ::1 at 2017-04-18 19:48:15 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 19:48:57 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 58ms (Views: 57.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-31843e80338f09f0137966f75be2d4e2fba6fc759f4526962490d9d576c4eaf7.css?body=1" for ::1 at 2017-04-18 19:48:57 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 19:48:57 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 19:52:02 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 207ms (Views: 206.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-050afe8eb1a1b7068f93e3ae666e8d3d8901ea8744b4e0dd678367fcca512595.css?body=1" for ::1 at 2017-04-18 19:52:03 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 19:52:03 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 19:53:35 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 115ms (Views: 115.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0c54a15813698cbc436fbc5f5dbaeac0edcb1b06e5e7798c9c24021f9600d0c0.css?body=1" for ::1 at 2017-04-18 19:53:35 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 19:53:47 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 60ms (Views: 59.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9235c9e0d26e556717262c1fa96d3e268dd84252bfe5ba1e62d7744b72eb1ac3.css?body=1" for ::1 at 2017-04-18 19:53:47 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 19:53:51 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 71ms (Views: 70.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b73a2cbd962202fb7eacb1a239b605f7454f880f3d468f93baa7cdac667dee58.css?body=1" for ::1 at 2017-04-18 19:53:51 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 19:53:59 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 42ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-bbecfecb818881890027d88ebf6867581837353626cdfd67875989c721104766.css?body=1" for ::1 at 2017-04-18 19:53:59 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 19:54:03 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 34ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 19:54:10 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 43ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9a4fff4d14e7e16fe4e3eaaf41b7496fe27143cac26b318803efe765d8390bb0.css?body=1" for ::1 at 2017-04-18 19:54:11 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 19:54:16 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 39ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-23869bc71bb79b909db7b4d97991a1a01eee5231af6052f377fcdebfe7bf0725.css?body=1" for ::1 at 2017-04-18 19:54:16 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 19:54:21 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 34ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 19:54:35 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 29ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 19:54:39 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 23ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 19:56:41 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 372ms (Views: 371.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-d864d0aa426cee99daefa23a66cb0e310c5d8cfbf0ba4e8ff3a210088e5edead.js?body=1" for ::1 at 2017-04-18 19:56:41 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 19:56:48 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 229ms (Views: 228.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-26beb040009bc53cf70b80a2211426c093b14b5cde75395109f0894137788acc.js?body=1" for ::1 at 2017-04-18 19:56:48 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 19:56:53 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 19:57:19 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 59ms (Views: 58.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0012ab1ab80cbae2442069f7900781890f9f55bab1b027532acf7e445721afc1.css?body=1" for ::1 at 2017-04-18 19:57:19 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 19:57:21 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 26ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 19:57:23 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 25ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 19:57:34 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 29ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 19:57:36 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 383ms (Views: 382.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-bd84c4f99ca143f4c1f415e469f4506128df9d4b5c94a68751901efa166e7195.js?body=1" for ::1 at 2017-04-18 19:57:37 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 19:57:54 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 19:57:56 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 327ms (Views: 326.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-b630eb6460f5d8dec29f4e81e838aeeae802973666e30dfef15b8ea18316f265.js?body=1" for ::1 at 2017-04-18 19:57:56 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 19:57:59 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 28ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 19:58:41 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 60ms (Views: 59.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ca78924209ddab46ce8612adee082d36366c341c596bad5930048ef1026c2653.css?body=1" for ::1 at 2017-04-18 19:58:41 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 19:58:43 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 25ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 19:58:49 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 53ms (Views: 52.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ce7fa0ed58f1b7685d94e13757ecac6c3a3a3c585c290d7282d698dbc94f4771.css?body=1" for ::1 at 2017-04-18 19:58:49 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 19:58:56 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 30ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6075974e367c8b7f3bc8c02c4d24fa651660b7db47d9d8157ef80de3ac2f494a.css?body=1" for ::1 at 2017-04-18 19:58:56 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 19:59:18 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 46ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a3263a1fe25f0d9f49aaab55e152edfdcfbbe275a22861d74ee5e602bc79b4fe.css?body=1" for ::1 at 2017-04-18 19:59:18 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 19:59:58 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 50ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-303d61d114db84e77efc3a6cc0568c00ac19967cb67bf2579cbeecad031a00a3.css?body=1" for ::1 at 2017-04-18 19:59:58 -0400
+
+
+Started GET "/api/users/email_exists?email=Enter+Email+Here" for ::1 at 2017-04-18 20:00:09 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"Enter Email Here"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "Enter Email Here"]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:00:40 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 41ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/users/email_exists?email=Enter+Email+Here" for ::1 at 2017-04-18 20:00:42 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"Enter Email Here"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "Enter Email Here"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:00:43 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 337ms (Views: 336.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-9a2e45d5ba83e88093c89e41001d263c9d50f06633e6438abbaf099914567801.js?body=1" for ::1 at 2017-04-18 20:00:43 -0400
+
+
+Started GET "/api/users/email_exists?email=Enter+Email+Here" for ::1 at 2017-04-18 20:00:46 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"Enter Email Here"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "Enter Email Here"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:01:29 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 550ms (Views: 549.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-b177c4529157f20e64540bfd24c20293b6c5d9bb1fe92f7fd8f164c296422b12.js?body=1" for ::1 at 2017-04-18 20:01:29 -0400
+
+
+Started GET "/api/users/email_exists?email=Enter+Email+Here" for ::1 at 2017-04-18 20:01:31 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"Enter Email Here"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "Enter Email Here"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:02:11 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 358ms (Views: 357.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-e78960414b58a8253c124483b55063594a1c09a11c6bb3bed4df8653fc54ffcc.js?body=1" for ::1 at 2017-04-18 20:02:11 -0400
+
+
+Started GET "/api/users/email_exists?email=Enter+Email+Here" for ::1 at 2017-04-18 20:02:13 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"Enter Email Here"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "Enter Email Here"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:02:19 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 322ms (Views: 321.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-40af6c27c48b63e3a7142ac95f51afcf70440faf02c0ea60ba2128b80553fec9.js?body=1" for ::1 at 2017-04-18 20:02:19 -0400
+
+
+Started GET "/api/users/email_exists?email=Enter+Email+Here" for ::1 at 2017-04-18 20:02:20 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"Enter Email Here"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "Enter Email Here"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:03:02 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 111ms (Views: 110.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-232d437ccc80836cf9c066ed1b8940d78a960337cda5e8a4333065bbb89acbf6.css?body=1" for ::1 at 2017-04-18 20:03:02 -0400
+
+
+Started GET "/api/users/email_exists?email=Enter+Email+Here" for ::1 at 2017-04-18 20:03:04 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"Enter Email Here"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "Enter Email Here"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:03:17 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 93ms (Views: 92.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2b5b3f19b0b6e88d00d992153e33a55588331fe4ea4e271ff6349c8b93052d92.css?body=1" for ::1 at 2017-04-18 20:03:17 -0400
+
+
+Started GET "/api/users/email_exists?email=Enter+Email+Here" for ::1 at 2017-04-18 20:03:18 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"Enter Email Here"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "Enter Email Here"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:03:20 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/users/email_exists?email=Enter+Email+Here" for ::1 at 2017-04-18 20:03:21 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"Enter Email Here"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "Enter Email Here"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:03:36 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/users/email_exists?email=Enter+Email+Here" for ::1 at 2017-04-18 20:03:38 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"Enter Email Here"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "Enter Email Here"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:03:39 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 387ms (Views: 386.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-861fdf0a99605f849550be7a2ce3b2333e4283be05ed7e3f83c60cd412bc939f.js?body=1" for ::1 at 2017-04-18 20:03:39 -0400
+
+
+Started GET "/api/users/email_exists?email=Enter+Email+Here" for ::1 at 2017-04-18 20:03:40 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"Enter Email Here"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "Enter Email Here"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:03:59 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 64ms (Views: 64.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6144137e3b0d7b2e3ce11e3df4cf4fcd6ccd2e3336ab6490afed80c8fc5162a2.css?body=1" for ::1 at 2017-04-18 20:03:59 -0400
+
+
+Started GET "/api/users/email_exists?email=Enter+Email+Here" for ::1 at 2017-04-18 20:04:01 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"Enter Email Here"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "Enter Email Here"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:04:02 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 25ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:04:04 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 34ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/users/email_exists?email=Enter+Email+Here" for ::1 at 2017-04-18 20:04:07 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"Enter Email Here"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "Enter Email Here"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:04:12 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 28ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/users/email_exists?email=Enter+Email+Here" for ::1 at 2017-04-18 20:04:13 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"Enter Email Here"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "Enter Email Here"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:04:38 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 23ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/users/email_exists?email=Enter+Email+Here" for ::1 at 2017-04-18 20:04:40 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"Enter Email Here"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "Enter Email Here"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:05:12 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 54ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-60e27c7c0235ce5b2693dcc346831054356ca2287875f05216dfa632739fce37.css?body=1" for ::1 at 2017-04-18 20:05:12 -0400
+
+
+Started GET "/api/users/email_exists?email=Enter+Email+Here" for ::1 at 2017-04-18 20:05:14 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"Enter Email Here"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "Enter Email Here"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:05:16 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 27ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/users/email_exists?email=Enter+Email+Here" for ::1 at 2017-04-18 20:05:17 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"Enter Email Here"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "Enter Email Here"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:05:19 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 27ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:05:56 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 28ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/users/email_exists?email=Enter+Email+Here" for ::1 at 2017-04-18 20:05:58 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"Enter Email Here"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "Enter Email Here"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:07:06 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 197ms (Views: 196.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-38d535d2ccecf41f565af791d48932a53aa39d4160cf419da69c100817dd7187.css?body=1" for ::1 at 2017-04-18 20:07:07 -0400
+
+
+Started GET "/api/users/email_exists?email=Enter+Email+Here" for ::1 at 2017-04-18 20:07:08 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"Enter Email Here"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "Enter Email Here"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:07:09 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 24ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:07:24 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 54ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8b0f17d118047b3014df1b313adde745ba10e29492e89327c281f85eeec86c7d.css?body=1" for ::1 at 2017-04-18 20:07:24 -0400
+
+
+Started GET "/api/users/email_exists?email=Enter+Email+Here" for ::1 at 2017-04-18 20:07:26 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"Enter Email Here"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "Enter Email Here"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:07:38 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 28ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-18bea94dcd8c879e922d2de7e6d9bfc6f24a48e722036c807f28f03dd5643221.css?body=1" for ::1 at 2017-04-18 20:07:38 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:07:43 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 52ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d72e6f1a7885b573d51ebd1e23dec40e2fd67047270214f2eaf4193367e6687f.css?body=1" for ::1 at 2017-04-18 20:07:43 -0400
+
+
+Started GET "/api/users/email_exists?email=Enter+Email+Here" for ::1 at 2017-04-18 20:07:44 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"Enter Email Here"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "Enter Email Here"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:07:47 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 20ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:07:53 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 57ms (Views: 57.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-67a084957127e9c7b8cf18536a42768bfc537db6699d8bf1b4b538221ca325cf.css?body=1" for ::1 at 2017-04-18 20:07:54 -0400
+
+
+Started GET "/api/users/email_exists?email=Enter+Email+Here" for ::1 at 2017-04-18 20:07:56 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"Enter Email Here"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "Enter Email Here"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:07:57 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 24ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:08:05 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:08:08 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 22ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:08:10 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 25ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:08:13 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 52ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-27439bcf39767ffa60ba146ca3d82393e699bc4b2f5ca98bdc74afd12f38cc79.css?body=1" for ::1 at 2017-04-18 20:08:13 -0400
+
+
+Started GET "/api/users/email_exists?email=Enter+Email+Here" for ::1 at 2017-04-18 20:08:14 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"Enter Email Here"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "Enter Email Here"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:08:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 52ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-78f21668d582b38c870de2fbc3822d88c408b404c6a847e1a5473962eb65cf90.css?body=1" for ::1 at 2017-04-18 20:08:26 -0400
+
+
+Started GET "/api/users/email_exists?email=Enter+Email+Here" for ::1 at 2017-04-18 20:08:27 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"Enter Email Here"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "Enter Email Here"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:08:32 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 47ms (Views: 46.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-45ed7ac1a54d3fb7dd9f372b9ee1ae48108c3c67f3fb52c51f244d2ca717f1e7.css?body=1" for ::1 at 2017-04-18 20:08:32 -0400
+
+
+Started GET "/api/users/email_exists?email=Enter+Email+Here" for ::1 at 2017-04-18 20:08:34 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"Enter Email Here"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "Enter Email Here"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:10:06 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 82ms (Views: 81.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-04a54499940fe1a72dea475afa171fa95fb1abc028fef5b8f27071fae5f30de8.css?body=1" for ::1 at 2017-04-18 20:10:06 -0400
+
+
+Started GET "/api/users/email_exists?email=Enter+Email+Here" for ::1 at 2017-04-18 20:10:08 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"Enter Email Here"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "Enter Email Here"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:10:09 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 26ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 20:10:14 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:10:16 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 28ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:10:20 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 23ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:10:59 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 475ms (Views: 475.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-cad6eaefc168404f703d4adbe52982151a848d3e8b030f6f2d8202375b445633.js?body=1" for ::1 at 2017-04-18 20:11:00 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:11:31 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:11:58 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 26ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 20:12:02 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:12:07 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 387ms (Views: 387.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-e99659f60d546ff1ed7adb35018c0059ac6c7a7fceb127e1891400ce0514090b.js?body=1" for ::1 at 2017-04-18 20:12:08 -0400
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 20:12:12 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:12:19 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 20:12:22 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:12:24 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 365ms (Views: 364.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-b72686f6b234c222d9d06b7bd82f2da401b47bfb9cec6d6dfacc04a39f7c395e.js?body=1" for ::1 at 2017-04-18 20:12:24 -0400
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 20:12:28 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:12:30 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/users/email_exists?email=" for ::1 at 2017-04-18 20:12:32 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>""}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", ""]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:12:33 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 22ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/users/email_exists?email=" for ::1 at 2017-04-18 20:13:01 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>""}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", ""]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:13:23 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 67ms (Views: 66.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a65bd0927d43b5c0f5e2f28c798633ff69e0c3d7043b546b0793fb134710429b.css?body=1" for ::1 at 2017-04-18 20:13:23 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:13:32 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 20ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 20:13:37 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:13:42 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 57ms (Views: 57.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-f6705471c0b3985eaf8ea8cee0a03cd9d92cc49bcd9228bfae53fe6dc28c0a7f.css?body=1" for ::1 at 2017-04-18 20:13:42 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:13:46 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/users/email_exists?email=" for ::1 at 2017-04-18 20:13:48 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>""}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", ""]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:13:51 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 19ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:14:04 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 50ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-931ce1d0db727945542d0a3e8042ae2535d36a39f97aad368d4afade3e38fd0b.css?body=1" for ::1 at 2017-04-18 20:14:04 -0400
+
+
+Started GET "/api/users/email_exists?email=" for ::1 at 2017-04-18 20:14:05 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>""}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", ""]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:14:09 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 19ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 20:14:13 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:16:54 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (475.4ms)
+Completed 200 OK in 695ms (Views: 694.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:17:32 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (26.6ms)
+Completed 200 OK in 102ms (Views: 102.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:17:34 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 394ms (Views: 393.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-037622e857fd914ef56448a01c5a52cfe56de3b473e112a953a9357fd059779d.js?body=1" for ::1 at 2017-04-18 20:17:35 -0400
+
+
+Started GET "/assets/bears_temp-17911762542858aad4e8378ff0e298e902f196a960b14a00c72553f40df2cc95.png" for ::1 at 2017-04-18 20:17:35 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:17:44 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 28ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:18:04 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 51ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b5e9025120c68ff9ca57c659979dfe73c86d022a230ab1d8686573f0095358c1.css?body=1" for ::1 at 2017-04-18 20:18:04 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:18:27 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 47ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-82041794026c654a325b49bb23ffe703a357df554003261dc4d7da32c04198ba.css?body=1" for ::1 at 2017-04-18 20:18:27 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:18:57 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 161ms (Views: 160.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a2c1dd162e9910f9fbd113b57169f721cec105cf17eca57bf2829d40451052a4.css?body=1" for ::1 at 2017-04-18 20:18:57 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:19:08 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 81ms (Views: 80.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-26823468706ac491757da56997bd47b53a51ed2924cab011aac98f8a7e77cdb7.css?body=1" for ::1 at 2017-04-18 20:19:08 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:19:18 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 55ms (Views: 54.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e85aa8ebe1e76c926e0781c8618fba2acd4e94d0c5d46adf77e37ec62878f3a3.css?body=1" for ::1 at 2017-04-18 20:19:18 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:19:30 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 56ms (Views: 56.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-aca61495462ffb19b277fd9afded9efd5724b29c4711a46147cb4556e7107b1e.css?body=1" for ::1 at 2017-04-18 20:19:30 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:19:33 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 26ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:19:42 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 72ms (Views: 72.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c668642e019b95f181cfa3c6b0a145b15efe25ec4552c1bdc63a02b53ad9d754.css?body=1" for ::1 at 2017-04-18 20:19:42 -0400
+
+
+Started GET "/api/users/email_exists?email=" for ::1 at 2017-04-18 20:19:44 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>""}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", ""]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:19:45 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 22ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/users/email_exists?email=" for ::1 at 2017-04-18 20:19:46 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>""}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", ""]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:19:49 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 22ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:20:03 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 26ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:22:35 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 135ms (Views: 135.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 20:22:38 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/session/" for ::1 at 2017-04-18 20:22:40 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Enter Username Here", "password"=>"[FILTERED]", "email"=>"bthaler@bellsouth.net"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "kWWNMiMJBhaCIzAjuhhdWw"], ["updated_at", "2017-04-19 00:22:40.901149"], ["id", 1]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered api/users/show.json.jbuilder (14.7ms)
+Completed 200 OK in 144ms (Views: 65.1ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:24:22 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "kWWNMiMJBhaCIzAjuhhdWw"]]
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 554ms (Views: 553.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-7cfe9fd9f3e8e22e9d5f2268f305219e1d01b963f5c34a462fda427bbfbc139d.css?body=1" for ::1 at 2017-04-18 20:24:23 -0400
+
+
+Started GET "/assets/bundle.self-93a5ad180f24a1cc6b830911d68f3d29672b4bf2d683c9c65707f9a7c84a1b9f.js?body=1" for ::1 at 2017-04-18 20:24:23 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:24:25 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "kWWNMiMJBhaCIzAjuhhdWw"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:24:28 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "kWWNMiMJBhaCIzAjuhhdWw"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 63ms (Views: 62.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:24:39 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "kWWNMiMJBhaCIzAjuhhdWw"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 55ms (Views: 54.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-1eb3fae880b43e3123531475cbbe36075102b90b9c31e3cf81e51dd5655843cc.css?body=1" for ::1 at 2017-04-18 20:24:39 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:24:41 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "kWWNMiMJBhaCIzAjuhhdWw"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 403ms (Views: 402.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bundle.self-bedc17da376e650dfcdeff75a680a35c88a1bfe6cbee2c9d168c5aa68ade0a8b.js?body=1" for ::1 at 2017-04-18 20:24:41 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:24:51 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "kWWNMiMJBhaCIzAjuhhdWw"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 150ms (Views: 149.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-1bccc38ac258945ea4fbc983434ba658b1f075e919e13dd5cee043ebb12b6bd7.css?body=1" for ::1 at 2017-04-18 20:24:52 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:24:54 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "kWWNMiMJBhaCIzAjuhhdWw"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 22ms (Views: 22.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:25:04 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "kWWNMiMJBhaCIzAjuhhdWw"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 101ms (Views: 100.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-9a08b953df6444b24f4da5e4b0040987b8bb157eceae7121f8cf85cb8b86079d.css?body=1" for ::1 at 2017-04-18 20:25:04 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:25:06 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "kWWNMiMJBhaCIzAjuhhdWw"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:25:08 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "kWWNMiMJBhaCIzAjuhhdWw"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:25:11 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "kWWNMiMJBhaCIzAjuhhdWw"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 42ms (Views: 41.3ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-18 20:25:20 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "kWWNMiMJBhaCIzAjuhhdWw"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "YjsnhKmMQujTVUrL6s4DoA"], ["updated_at", "2017-04-19 00:25:20.377379"], ["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (1.0ms)
+Completed 200 OK in 28ms (Views: 20.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 20:25:24 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/session/" for ::1 at 2017-04-18 20:25:26 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Enter Username Here", "password"=>"[FILTERED]", "email"=>"bthaler@bellsouth.net"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.8ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"], ["updated_at", "2017-04-19 00:25:26.528511"], ["id", 1]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  Rendered api/users/_user.json.jbuilder (0.0ms)
+  Rendered api/users/show.json.jbuilder (0.9ms)
+Completed 200 OK in 84ms (Views: 5.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:25:47 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 108ms (Views: 107.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-e10a1b7c5109dfe9333d743bd58ff0d54cda51277684a0287fe3dc2640343c57.css?body=1" for ::1 at 2017-04-18 20:25:47 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:26:10 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 56ms (Views: 55.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-443240ed65aa0f9793a0f21953ee29e6e013a529fa3814d4d6d17ce126e6c858.css?body=1" for ::1 at 2017-04-18 20:26:10 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:26:11 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered static_pages/root.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 28ms (Views: 27.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:27:31 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (34.1ms)
+Completed 200 OK in 621ms (Views: 620.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bundle.self-4bab1f4b7637c7bc46e5d0c5197c7dc355689506895ced75129ac55ae1cdd6f1.js?body=1" for ::1 at 2017-04-18 20:27:32 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:27:34 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 257ms (Views: 256.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:27:41 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 88ms (Views: 87.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-2852948d6716185e8d96a2ae6842164f5ad90cf3e1d6b398db8197c17cd9893c.css?body=1" for ::1 at 2017-04-18 20:27:41 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:27:50 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 123ms (Views: 122.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-c694025e789574792dd372a1c450a9048637f3fd7e6e4b530f1628953339691c.css?body=1" for ::1 at 2017-04-18 20:27:50 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:28:03 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 32ms (Views: 31.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:28:07 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 350ms (Views: 349.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bundle.self-1bce35c65278ee45e6d410c49346b3a4bbcda9db893b09c3e714553ea1c694fe.js?body=1" for ::1 at 2017-04-18 20:28:07 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:28:10 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 25ms (Views: 24.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:28:20 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 28ms (Views: 27.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:28:21 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 32ms (Views: 31.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:28:23 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 24ms (Views: 23.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:28:41 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:28:42 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 384ms (Views: 384.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bundle.self-3911c8da19001eb432ea5939d05ac2c8c0831d11e536f67f0b302fc959c07319.js?body=1" for ::1 at 2017-04-18 20:28:43 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:30:19 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 419ms (Views: 418.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bundle.self-265807c4ab191fe984988854546e9da690b99ab8a51fe665422138b3b2c83934.js?body=1" for ::1 at 2017-04-18 20:30:20 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:30:21 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:30:28 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 33ms (Views: 32.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:30:30 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 376ms (Views: 375.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bundle.self-bd27ddaec66964b15e657d14db36e903599b351c98ae87dd77ed14aebca25c15.js?body=1" for ::1 at 2017-04-18 20:30:30 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:30:50 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:31:31 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (34.3ms)
+Completed 200 OK in 502ms (Views: 501.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bundle.self-dc057ced0df908a072160a6337b576100cd1b8365240ea0c4e05d9ba1f54b648.js?body=1" for ::1 at 2017-04-18 20:31:31 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:31:31 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:31:37 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 126ms (Views: 124.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:31:37 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:31:52 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 47ms (Views: 46.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:31:53 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:32:03 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:32:03 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:32:11 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 47ms (Views: 45.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:32:11 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:32:16 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 540ms (Views: 539.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bundle.self-d18a9b9409c14af350b3d4ffcd4798de435638ba04d733182933f49dad9a8c25.js?body=1" for ::1 at 2017-04-18 20:32:16 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:32:16 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:32:43 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 356ms (Views: 355.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bundle.self-30e948f4eacca83e9d54dfc7794c9aa9280d078e7fc9518dec3e3cca5a2b6be5.js?body=1" for ::1 at 2017-04-18 20:32:44 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:32:44 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:33:12 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 144ms (Views: 143.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-8ad5fbc84a0a4a07d8c17a0204960fe8f1971cee0c11e699fae07952c335356d.css?body=1" for ::1 at 2017-04-18 20:33:12 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:33:12 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:33:26 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 327ms (Views: 326.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bundle.self-1ad6ca7fa3c0f1e74a9ea83b9469841b7b8b5eca6b6e3736531f533c50c7fadc.js?body=1" for ::1 at 2017-04-18 20:33:26 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:33:27 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:33:31 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:33:31 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:34:14 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (56.3ms)
+Completed 200 OK in 349ms (Views: 348.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-3efcbf826fd49c138de7347eca3fe4c2e5d9cf5ea6dd31bdd8d9df724d566662.css?body=1" for ::1 at 2017-04-18 20:34:15 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:34:15 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:34:31 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 62ms (Views: 61.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-72ecf0eabc6528ee877c6897bc6f243a78660659a026cbc145fb446fb0949e6c.css?body=1" for ::1 at 2017-04-18 20:34:31 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:34:31 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:34:34 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 95ms (Views: 94.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-d0f7954eab453f92e93d09c332e51c7dc18e8f39e3da6a665f9c2dec5677f226.css?body=1" for ::1 at 2017-04-18 20:34:35 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:34:35 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:35:10 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 61ms (Views: 60.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-3eace2acaf1da023c2decd096e02b6acb2b4fe7bdaa42ed09113e0baf1f82fd6.css?body=1" for ::1 at 2017-04-18 20:35:11 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:35:11 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:35:16 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 77ms (Views: 76.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-c99d2a8bd32788f9adff2132ee810a2c87acf98e160b15909e53f58544a9b16f.css?body=1" for ::1 at 2017-04-18 20:35:16 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:35:17 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:35:23 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 95ms (Views: 94.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:35:24 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:35:52 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 64ms (Views: 63.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-feb34bbd0d62e9658d7d1778dedbee1d81231094d0a906e4caafb9db8176f711.css?body=1" for ::1 at 2017-04-18 20:35:52 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:35:52 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:36:03 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 58ms (Views: 56.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-8db2ab46972da01eed683512d07f34296ab24a1951d80618d2f01db5a3cb10a8.css?body=1" for ::1 at 2017-04-18 20:36:03 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:36:03 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:36:07 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 44ms (Views: 43.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-361e755567a155c6f732a291406e9404bee70960936a8cd0a430d12c4476dc5c.css?body=1" for ::1 at 2017-04-18 20:36:07 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:36:07 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:36:34 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 79ms (Views: 78.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-ea574e1fa3447d03c1657666011d9efe0af6c4b45c5761b3ee47a4f21f346759.css?body=1" for ::1 at 2017-04-18 20:36:35 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:36:35 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:36:42 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 66ms (Views: 65.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-039e584b322dd83443f8628befa6e3fd24d859090610f059262254b83289eaa7.css?body=1" for ::1 at 2017-04-18 20:36:42 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:36:42 -0400
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-18 20:37:05 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "qBwvqfQWpcRP8ost5eTP0A"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.9ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "6wMsjtsSQhwoMVtojePJFA"], ["updated_at", "2017-04-19 00:37:05.448425"], ["id", 1]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (2.8ms)
+Completed 200 OK in 29ms (Views: 21.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 20:37:09 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/session/" for ::1 at 2017-04-18 20:37:11 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Enter Username Here", "password"=>"[FILTERED]", "email"=>"bthaler@bellsouth.net"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "dGQvgtxthkilLMMIwSLx0g"], ["updated_at", "2017-04-19 00:37:11.199659"], ["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered api/users/_user.json.jbuilder (0.0ms)
+  Rendered api/users/show.json.jbuilder (0.7ms)
+Completed 200 OK in 85ms (Views: 4.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:40:18 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "dGQvgtxthkilLMMIwSLx0g"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (45.1ms)
+Completed 200 OK in 183ms (Views: 182.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-37657bb1b04f10fd914d12a75a8eae525fc2f50a09f07461b7e939d2442b4589.css?body=1" for ::1 at 2017-04-18 20:40:18 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:40:18 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:41:26 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "dGQvgtxthkilLMMIwSLx0g"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 139ms (Views: 138.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-7edc30741526450a76f5d89d57f6ed271c180a5a5701bb3c765054c906147e62.css?body=1" for ::1 at 2017-04-18 20:41:26 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:41:26 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:44:07 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "dGQvgtxthkilLMMIwSLx0g"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 134ms (Views: 132.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:44:07 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:44:09 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "dGQvgtxthkilLMMIwSLx0g"]]
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 28ms (Views: 27.6ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-18 20:44:10 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "dGQvgtxthkilLMMIwSLx0g"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.7ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "QGJ2ckJWTkCpk1hVk0kqwA"], ["updated_at", "2017-04-19 00:44:10.346878"], ["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (1.1ms)
+Completed 200 OK in 69ms (Views: 60.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 20:44:13 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[35mUser Load (39.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 41ms (Views: 0.2ms | ActiveRecord: 39.6ms)
+
+
+Started POST "/api/session/" for ::1 at 2017-04-18 20:44:15 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Enter Username Here", "password"=>"[FILTERED]", "email"=>"bthaler@bellsouth.net"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"], ["updated_at", "2017-04-19 00:44:15.471590"], ["id", 1]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (0.8ms)
+Completed 200 OK in 87ms (Views: 5.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 20:45:21 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (34.8ms)
+Completed 200 OK in 695ms (Views: 694.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bundle.self-5681cfde8e0dd05e9db4bbd32128858713e397cc2fb96a2372c2ea6adbe733dc.js?body=1" for ::1 at 2017-04-18 20:45:22 -0400
+
+
+Started GET "/assets/application.self-088a88f09ed75145c735b0c3c39b20322ffa3e79b2e7af1c3959c33a124abd45.css?body=1" for ::1 at 2017-04-18 20:45:22 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:45:22 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:45:24 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 33ms (Views: 32.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:45:24 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:45:30 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 61ms (Views: 60.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-d4e6eb8370f06a2f480fbbd465dd1533ceac997c23947e09dc61f62a35ec395f.css?body=1" for ::1 at 2017-04-18 20:45:31 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:45:31 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:46:13 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 90ms (Views: 89.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-fe434b3f17fb7a83063195c9066e514bf66e27bb46c277fad795d7f7f92ad219.css?body=1" for ::1 at 2017-04-18 20:46:13 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:46:13 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:46:25 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 93ms (Views: 92.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-04eef93b46934969facc515983f2f041e4ff9886f78628d4bb66d10632ccaa9b.css?body=1" for ::1 at 2017-04-18 20:46:25 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:46:25 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:46:31 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 66ms (Views: 65.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-3c5897fd8c6e5d5a5388595482d8cd12d95ab031832cd3adf58d775c5b9cad6e.css?body=1" for ::1 at 2017-04-18 20:46:31 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:46:31 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:46:35 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 112ms (Views: 111.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-928ecdea5c301aacf4314e2be5a27375b157cd6bf67d70a891f97900e2cf8f2d.css?body=1" for ::1 at 2017-04-18 20:46:35 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:46:36 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:46:40 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 163ms (Views: 162.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-61d7592793fc696059a6898c18ff9169c5a63e1f2caa350dfd3fb235c755b9bf.css?body=1" for ::1 at 2017-04-18 20:46:40 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:46:40 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:46:46 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 75ms (Views: 74.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-fa38cb28463f645014beb82b3ae1ffece126376e3937b91ff3b773b61c679c86.css?body=1" for ::1 at 2017-04-18 20:46:46 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:46:47 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:46:54 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 68ms (Views: 67.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-b68ce4b5cf330e4179a3ea64983be92ca908fbbec7e170330677c75822d3e951.css?body=1" for ::1 at 2017-04-18 20:46:54 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:46:54 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:46:56 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:46:56 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:46:58 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 38ms (Views: 36.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:46:59 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:47:04 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 71ms (Views: 70.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-d4615a4b333b673c4e043f758294070404c7e2cec89217821acbb41557a3e860.css?body=1" for ::1 at 2017-04-18 20:47:04 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:47:04 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:47:09 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 48ms (Views: 47.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-fe129f7a7b08bea76748d27c6f8c347d79de0f67076055f240d3340ee41699e9.css?body=1" for ::1 at 2017-04-18 20:47:09 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:47:09 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:47:14 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 79ms (Views: 78.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-56faffb9f4aeb7bb5329e2a7c02c83cef42e2b9b74fa3befaeb3d28f4fdc6009.css?body=1" for ::1 at 2017-04-18 20:47:14 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:47:14 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:47:18 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 51ms (Views: 50.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-58d6e43416fb19f171abb41d1c2659d74e4b3b943c011f057beac6f04f9dc8b3.css?body=1" for ::1 at 2017-04-18 20:47:18 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:47:18 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:47:20 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 34ms (Views: 33.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:47:20 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:47:25 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 71ms (Views: 69.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-65105d864ff0bbde4d281c89221c9aa915810cc96dbb3876f3e1f658f11e66c1.css?body=1" for ::1 at 2017-04-18 20:47:25 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:47:25 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:47:30 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 113ms (Views: 112.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-8f4d36f9fe5f2489818405473c7b0499b1acb570025ab2f25b4e48cbf7189d05.css?body=1" for ::1 at 2017-04-18 20:47:30 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:47:30 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:47:35 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 73ms (Views: 72.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-83dbf55feb2ae83c5175229a4bdb20f36bca338dd1ae5c1b0227fb02e2243489.css?body=1" for ::1 at 2017-04-18 20:47:35 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:47:36 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:47:39 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:47:39 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:48:00 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (2.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (48.0ms)
+Completed 200 OK in 247ms (Views: 243.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-0367190c1ac82b02d3cc87d3e08d0cd6e0a2619016763a16291a9f07091f5fd5.css?body=1" for ::1 at 2017-04-18 20:48:00 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:48:00 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:48:09 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 88ms (Views: 87.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:48:10 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:48:12 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:48:12 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:48:14 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 55ms (Views: 54.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:48:14 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:48:19 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 53ms (Views: 52.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-65d19b0427b9b044dad31bdb4fed6adf9e5a660856316942bd63f5bf747ad704.css?body=1" for ::1 at 2017-04-18 20:48:19 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:48:19 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:48:26 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 71ms (Views: 70.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-1fe2a285bbadae098b26cdda31ae177f0e3a500e07790118cb602a272f8211c7.css?body=1" for ::1 at 2017-04-18 20:48:26 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:48:26 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:49:18 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 56ms (Views: 55.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-7696ec8ff84ddc8f8085f38f39172249b870274ae146031d1e1ad55ab0a54552.css?body=1" for ::1 at 2017-04-18 20:49:18 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:49:19 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:50:02 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 560ms (Views: 559.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-3c9608a87ca2711b537c1dd27950a17bc047b8779dd9ce98d01735a3f73c7a94.css?body=1" for ::1 at 2017-04-18 20:50:03 -0400
+
+
+Started GET "/assets/bundle.self-c7fa4035e05ac384df5dcb399c37c40a53df91b176349bd8213aaa78786ca821.js?body=1" for ::1 at 2017-04-18 20:50:03 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:50:03 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:50:04 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:50:05 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:50:44 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (34.6ms)
+Completed 200 OK in 775ms (Views: 774.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bundle.self-9c4a1ff0333940ad8eb3f745ccbe71a8ec2198acaac5c86032a436055f169ad3.js?body=1" for ::1 at 2017-04-18 20:50:45 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:50:45 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:51:07 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 541ms (Views: 540.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bundle.self-d30211c555c7fb02fb6b8992e0875c949ba07a8b19fdd0a4e01eebc802643348.js?body=1" for ::1 at 2017-04-18 20:51:07 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:51:08 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:51:28 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 135ms (Views: 134.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-20a709a037d2ad874a0c6740c847827974398af6867a7ea7bd35e8bae0da476d.css?body=1" for ::1 at 2017-04-18 20:51:28 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:51:28 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:51:42 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (3.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (48.6ms)
+Completed 200 OK in 224ms (Views: 221.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-7757cfc5ee7565cd276044c29fbb935c163ad4f1c82e84a7dd07049e1ec4caee.css?body=1" for ::1 at 2017-04-18 20:51:43 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:51:43 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:52:27 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (34.5ms)
+Completed 200 OK in 248ms (Views: 246.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-9d00f0310f6322a6c416c0950e7a0bbaa8610e555627ca9e4bc6579673028ecc.css?body=1" for ::1 at 2017-04-18 20:52:27 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:52:27 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:52:41 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 151ms (Views: 150.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-9656620f8ead99424494764e7cce666f34795b4dd38e37d6c1ee0b7ed6acafa9.css?body=1" for ::1 at 2017-04-18 20:52:41 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:52:42 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:52:53 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (4.1ms)
+  Rendered static_pages/root.html.erb within layouts/application (49.4ms)
+Completed 200 OK in 380ms (Views: 377.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-c5bb4e44dfb83e6ad8dbbdeda25901fe827bfeb238cb7474df4120c8e24d4248.css?body=1" for ::1 at 2017-04-18 20:52:53 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:52:53 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:53:09 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 66ms (Views: 65.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-0b52810c4c5e84ce4e6648105f15902bbc8d3be6c6436a898f12bf66bb627e9d.css?body=1" for ::1 at 2017-04-18 20:53:09 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:53:09 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:53:40 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 150ms (Views: 148.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-d7d9a8812291f958ab013b7f1088b7507266e7d1e03558aa27a10af8e989e449.css?body=1" for ::1 at 2017-04-18 20:53:40 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:53:40 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:54:05 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (2.0ms)
+  Rendered static_pages/root.html.erb within layouts/application (36.5ms)
+Completed 200 OK in 258ms (Views: 255.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.self-2667c0e9500ffacff62e3bce4f95d017843ffeafa574ef32a870a0a61035388d.css?body=1" for ::1 at 2017-04-18 20:54:06 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:54:06 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:54:29 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 192ms (Views: 191.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-8431fba5c8acafc3426958ac9b6c10debaf48732fa077ce09687716a3d4233bb.css?body=1" for ::1 at 2017-04-18 20:54:30 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:54:30 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:54:41 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 138ms (Views: 136.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-8bc2ae363721df0227d14d8cb185a448c0629ab23a25707eb6735612874aad44.css?body=1" for ::1 at 2017-04-18 20:54:41 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:54:42 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:55:09 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 172ms (Views: 171.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-31ad2bdfedd0d43ea24cbb4708fde6d6e58d0fe006f6d17f41d93d62713fbbd4.css?body=1" for ::1 at 2017-04-18 20:55:09 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:55:09 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:55:15 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:55:15 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:56:22 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (56.5ms)
+Completed 200 OK in 263ms (Views: 262.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-4d7c92821876029ce4bb4b7648a133cdb2963d74575890d5158d8e90d0afece0.css?body=1" for ::1 at 2017-04-18 20:56:22 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:56:22 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:56:31 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 89ms (Views: 88.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:56:31 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:56:37 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 150ms (Views: 149.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-b136bd445f0f4c7478aca7f15c5e0d82e2c906cab06ea0f8ec6d9e668a438fb7.css?body=1" for ::1 at 2017-04-18 20:56:37 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:56:37 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:56:43 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 101ms (Views: 100.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-03075532b0197be0cfa5e777222628656b6d05073d12c2f0346ada30c789f10c.css?body=1" for ::1 at 2017-04-18 20:56:43 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:56:43 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:56:46 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 55ms (Views: 54.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:56:46 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:56:53 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (1.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 89ms (Views: 87.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-b8578e29bb19b26ca1bcf2ee0722938887abeb957e1586815e9b6f1be3cf6c73.css?body=1" for ::1 at 2017-04-18 20:56:53 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:56:53 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:56:55 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 38ms (Views: 37.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:56:56 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:56:57 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 45ms (Views: 44.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:56:57 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:57:01 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 112ms (Views: 111.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-fb32012fa214a753a1e27520f9cdd630fa2123f7dc313aeaeb62ec19c0d38e2b.css?body=1" for ::1 at 2017-04-18 20:57:01 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:57:01 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:57:54 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (2.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (47.9ms)
+Completed 200 OK in 643ms (Views: 641.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bundle.self-720004544fa8ac8d1ff7f19280fd595df00e535d3fd7e0bfe4c45eb0d711a998.js?body=1" for ::1 at 2017-04-18 20:57:55 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:57:55 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:58:04 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (1.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 142ms (Views: 140.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-afeaaf44cf47e24f5c91621e7174a63e8512b4da74f32819f162f749f8cb5abb.css?body=1" for ::1 at 2017-04-18 20:58:04 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:58:04 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:58:24 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:58:24 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:58:26 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (1.0ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 400ms (Views: 399.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bundle.self-fb03e2386efeb3cdc846807e55c076b9128b36dd9735249d73c82365ef03e0f0.js?body=1" for ::1 at 2017-04-18 20:58:26 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:58:27 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:59:16 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (45.7ms)
+Completed 200 OK in 394ms (Views: 392.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-fdab57592674344868638ec959bb5656dc5622e950adce682db21c90f9365ef1.css?body=1" for ::1 at 2017-04-18 20:59:16 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:59:16 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:59:28 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 572ms (Views: 571.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-74c18ff787270b656165776a3c5e241807a5e8106f097eafd8b91a479cb31bad.css?body=1" for ::1 at 2017-04-18 20:59:28 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:59:29 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:59:45 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 109ms (Views: 108.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-41d5cfe77d6e2526ffc6f30d7bc4df9160fc775476b109146e0a663de094c8c2.css?body=1" for ::1 at 2017-04-18 20:59:45 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:59:45 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:59:47 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:59:47 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 20:59:50 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 78ms (Views: 77.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-2dca51df42b96dcbde3f9d5f32c710d281c5f6321b3c46e3c0af8d73142a9cee.css?body=1" for ::1 at 2017-04-18 20:59:50 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 20:59:51 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:00:00 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 85ms (Views: 84.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-d8323207aa9482216ca852e59b0960c494de79b7004dc7a2a7ecb75788dba163.css?body=1" for ::1 at 2017-04-18 21:00:00 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:00:01 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:00:03 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 43ms (Views: 42.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:00:03 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:00:15 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 55ms (Views: 54.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-2090663cdad7056514289e1494cb7a2448fc6789969008a4e5ff1311b926289c.css?body=1" for ::1 at 2017-04-18 21:00:15 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:00:16 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:00:26 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 55ms (Views: 54.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-156b7d6581feb6b1212796872446d5aa1224e4978db0fa617bbd0524b78d486f.css?body=1" for ::1 at 2017-04-18 21:00:26 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:00:26 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:00:39 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 48ms (Views: 47.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-dd133342c1903c7d4aee11ceeaa2d66a2a6548bbc14d2a4999bcb3a0c3d4900a.css?body=1" for ::1 at 2017-04-18 21:00:39 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:00:39 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:00:46 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 77ms (Views: 76.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-f0d65d30e047008c0abe54f63d24ed64b9d1a7b541984d7772d7e8289561e544.css?body=1" for ::1 at 2017-04-18 21:00:46 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:00:46 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:00:49 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 49ms (Views: 48.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:00:49 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:00:54 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 116ms (Views: 115.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-7492d823b651cc607df1b2fce3fdb5ae7dd989aa5c84b7f58180852107344f18.css?body=1" for ::1 at 2017-04-18 21:00:54 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:00:55 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:01:07 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 124ms (Views: 123.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-36f32cf3794a494103db89b58d86841cbb4d912145e0acae70004e1cd6efbc2c.css?body=1" for ::1 at 2017-04-18 21:01:07 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:01:07 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:01:14 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 62ms (Views: 61.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-d979d21c6a659ac218cada8b40c069a9d4d1fde7531f4a55b42fac4d0346b737.css?body=1" for ::1 at 2017-04-18 21:01:14 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:01:14 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:01:17 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 225ms (Views: 224.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-c532b05377e4c41e2c40637d13fac138361b792469ae5f725b26a13e230f247d.css?body=1" for ::1 at 2017-04-18 21:01:18 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:01:18 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:02:00 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (7.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (53.0ms)
+Completed 200 OK in 910ms (Views: 907.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bundle.self-9ad748fa6e507e8a4f572d68ffd8891f8ddb1d2810eafe1b8ee1b43e2507716e.js?body=1" for ::1 at 2017-04-18 21:02:01 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:02:01 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:02:12 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (35.1ms)
+Completed 200 OK in 103ms (Views: 101.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:02:12 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:02:30 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 787ms (Views: 786.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bundle.self-bfd62476caeb0855075f4ef6393217e698671b1b2816089d2dede787e6eb9518.js?body=1" for ::1 at 2017-04-18 21:02:31 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:02:32 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:03:24 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (3.0ms)
+  Rendered static_pages/root.html.erb within layouts/application (37.2ms)
+Completed 200 OK in 618ms (Views: 616.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bundle.self-a9d4abc7fdcb080c6079813945ec7009264374a3610b46549d392cdcda9667e3.js?body=1" for ::1 at 2017-04-18 21:03:25 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:03:25 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:03:33 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 48ms (Views: 47.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:03:33 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:03:57 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 46ms (Views: 45.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:03:57 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:04:08 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 510ms (Views: 508.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bundle.self-e7a4dd840f6fd8b7ed94d22c969c447741f4ae0c81720931e9866312fd4c4e9a.js?body=1" for ::1 at 2017-04-18 21:04:09 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:04:09 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:04:32 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (3.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (49.1ms)
+Completed 200 OK in 765ms (Views: 762.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bundle.self-e83923e8863ae33da463452a1fa20b9c0ab51b7629c091dcff489cccd562ce40.js?body=1" for ::1 at 2017-04-18 21:04:33 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:04:34 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:04:48 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 36ms (Views: 35.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:04:48 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:04:50 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 499ms (Views: 497.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bundle.self-3db8513583a917bae996ddeb8af458216291dc6b3ed686d887f8d04e7fd450dc.js?body=1" for ::1 at 2017-04-18 21:04:51 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:04:51 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:05:46 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 197ms (Views: 196.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:05:46 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:06:18 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (34.5ms)
+Completed 200 OK in 575ms (Views: 574.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bundle.self-1ce09cb5aefbc940fef675c05908807f878a4aa9e1ddb8900a4aeec814ecf03a.js?body=1" for ::1 at 2017-04-18 21:06:19 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:06:19 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:06:35 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 169ms (Views: 168.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:06:35 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:07:22 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:07:25 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:07:28 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 501ms (Views: 500.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bundle.self-c73db2e43ba79c6ca7e4e211b2a183d3410f733e572130c5a1f8c95aa9528be1.js?body=1" for ::1 at 2017-04-18 21:07:29 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:07:29 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:07:33 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 38ms (Views: 37.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:07:34 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:07:38 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 420ms (Views: 419.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bundle.self-36ba1e2dd1e2d657f270647c724852b32d243a3928818b35d8255a1a976522fa.js?body=1" for ::1 at 2017-04-18 21:07:38 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:07:38 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:07:57 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 62ms (Views: 61.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:07:57 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:07:59 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 407ms (Views: 406.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bundle.self-a3cade9629b3e74ae25c11cc9de7c42d32b6571d69feb1031860e084c4823574.js?body=1" for ::1 at 2017-04-18 21:08:00 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:08:00 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:08:08 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 40ms (Views: 38.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:08:08 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:08:15 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:08:15 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:08:19 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 373ms (Views: 372.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bundle.self-22dcdd49a77ccfc6049677950d40d37e7026de47c94b74c2d42ae96d04e6516b.js?body=1" for ::1 at 2017-04-18 21:08:19 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:08:20 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:08:49 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 370ms (Views: 369.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bundle.self-6c74ace1da29b7f06fccf35236717cfe54dfdcb3a58916805d1deed421ad5b6f.js?body=1" for ::1 at 2017-04-18 21:08:49 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:08:49 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:09:26 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (3.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 376ms (Views: 372.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/bundle.self-e561426427dcaeee08f1f2c0001ae9e34b08db9adb66543f2b0eb033e7d8b189.js?body=1" for ::1 at 2017-04-18 21:09:26 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:09:27 -0400
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-18 21:09:48 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "0ebvbyPk9zKZgSwHwwGIqg"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (19.5ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "GusXSvTqyYY7FNEOnm5Qhg"], ["updated_at", "2017-04-19 01:09:49.004576"], ["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (1.3ms)
+Completed 200 OK in 59ms (Views: 28.0ms | ActiveRecord: 22.1ms)
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-18 21:09:49 -0400
+Processing by Api::SessionsController#destroy as JSON
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 21:09:55 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 41ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:09:56 -0400
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 21:10:00 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/session/" for ::1 at 2017-04-18 21:10:02 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Enter Username Here", "password"=>"[FILTERED]", "email"=>"bthaler@bellsouth.net"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "CovkUiAf1XPNILlqMUe8rw"], ["updated_at", "2017-04-19 01:10:02.504774"], ["id", 1]]
+  [1m[35m (1.2ms)[0m  COMMIT
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (1.1ms)
+Completed 200 OK in 89ms (Views: 5.9ms | ActiveRecord: 3.1ms)
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-18 21:10:03 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "CovkUiAf1XPNILlqMUe8rw"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "l7Ju2lawilCvg0dynVj-Gw"], ["updated_at", "2017-04-19 01:10:03.952187"], ["id", 1]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (0.8ms)
+Completed 200 OK in 11ms (Views: 5.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 21:10:19 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 29ms (Views: 28.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:10:20 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:11:22 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 438ms (Views: 437.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-bb06b344c7bf4631de9ba453bcf172c690c9073fe03925b09a24c879e8445345.js?body=1" for ::1 at 2017-04-18 21:11:22 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:11:22 -0400
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 21:11:26 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/session/" for ::1 at 2017-04-18 21:11:29 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Enter Username Here", "password"=>"[FILTERED]", "email"=>"bthaler@bellsouth.net"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "NW3hLnaQqJBpPhmO19Na1w"], ["updated_at", "2017-04-19 01:11:29.440378"], ["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (0.8ms)
+Completed 200 OK in 89ms (Views: 5.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 21:11:46 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "NW3hLnaQqJBpPhmO19Na1w"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 461ms (Views: 460.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bundle.self-141ffc501092351d3ad212bc32b9e29c738a72fee01c5b7cfe44084a964035a3.js?body=1" for ::1 at 2017-04-18 21:11:46 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:11:46 -0400
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-18 21:11:47 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "NW3hLnaQqJBpPhmO19Na1w"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "YtymwVDat8OuUqrYXc_cVQ"], ["updated_at", "2017-04-19 01:11:47.366978"], ["id", 1]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (1.0ms)
+Completed 200 OK in 13ms (Views: 5.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 21:12:32 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 408ms (Views: 408.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-a7538ff1608f984b24f68bdade113c9d20e3bd7ec63ba335e77dd1cf5f736fd2.js?body=1" for ::1 at 2017-04-18 21:12:33 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:12:33 -0400
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 21:12:37 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/session/" for ::1 at 2017-04-18 21:12:40 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Enter Username Here", "password"=>"[FILTERED]", "email"=>"bthaler@bellsouth.net"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "DGDZEj5w7_x8EC8pXanPiw"], ["updated_at", "2017-04-19 01:12:40.656842"], ["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (0.9ms)
+Completed 200 OK in 90ms (Views: 5.8ms | ActiveRecord: 2.2ms)
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-18 21:12:41 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "DGDZEj5w7_x8EC8pXanPiw"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "UMJRyG0LLs5UjT8S_-BNvA"], ["updated_at", "2017-04-19 01:12:41.950037"], ["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (1.0ms)
+Completed 200 OK in 13ms (Views: 5.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 21:13:01 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/session/" for ::1 at 2017-04-18 21:13:02 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Enter Username Here", "password"=>"[FILTERED]", "email"=>"bthaler@bellsouth.net"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "dZbffl654V5G9aRG7eRS0A"], ["updated_at", "2017-04-19 01:13:03.045948"], ["id", 1]]
+  [1m[35m (5.7ms)[0m  COMMIT
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (1.1ms)
+Completed 200 OK in 98ms (Views: 8.5ms | ActiveRecord: 7.2ms)
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-18 21:13:06 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (12.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "dZbffl654V5G9aRG7eRS0A"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "0AokLALQkn_FPfnDQc-I9g"], ["updated_at", "2017-04-19 01:13:06.410457"], ["id", 1]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (0.9ms)
+Completed 200 OK in 25ms (Views: 5.4ms | ActiveRecord: 14.8ms)
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 21:13:44 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/session/" for ::1 at 2017-04-18 21:13:46 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Enter Username Here", "password"=>"[FILTERED]", "email"=>"bthaler@bellsouth.net"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (44.2ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "grHqmTsNcS6XUcyyNTM-gw"], ["updated_at", "2017-04-19 01:13:46.513981"], ["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (0.9ms)
+Completed 200 OK in 132ms (Views: 5.8ms | ActiveRecord: 45.9ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 21:14:23 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "grHqmTsNcS6XUcyyNTM-gw"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-afa18534dcdbd59fb778c4db3babf3b5588c0ef2747cc529119d04d0cfc74112.css?body=1" for ::1 at 2017-04-18 21:14:23 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:14:29 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "grHqmTsNcS6XUcyyNTM-gw"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-18 21:15:58 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "grHqmTsNcS6XUcyyNTM-gw"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "7w3IfbMIsxup8qZWJprbAQ"], ["updated_at", "2017-04-19 01:15:58.372277"], ["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (0.8ms)
+Completed 200 OK in 11ms (Views: 5.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/users/email_exists?email=bthaler%40Bellsouth.net" for ::1 at 2017-04-18 21:16:45 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@Bellsouth.net"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@Bellsouth.net"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 21:16:47 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 25ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 21:16:51 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/session/" for ::1 at 2017-04-18 21:16:52 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Enter Username Here", "password"=>"[FILTERED]", "email"=>"bthaler@bellsouth.net"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "MkGZSFFD0ghK4bJvfK3EMw"], ["updated_at", "2017-04-19 01:16:52.807966"], ["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered api/users/_user.json.jbuilder (0.0ms)
+  Rendered api/users/show.json.jbuilder (0.8ms)
+Completed 200 OK in 86ms (Views: 5.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 21:18:20 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "MkGZSFFD0ghK4bJvfK3EMw"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 88ms (Views: 87.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-4f37708d7a298288251eca1b675da34a24633c225fea02df94a6ea53bf9757f5.css?body=1" for ::1 at 2017-04-18 21:18:20 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:19:01 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "MkGZSFFD0ghK4bJvfK3EMw"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 21:19:05 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "MkGZSFFD0ghK4bJvfK3EMw"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 361ms (Views: 360.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bundle.self-68993508f35f88cbfc4b37013c61027dc26dc8b3236c2daeccfd2fc0c36705c9.js?body=1" for ::1 at 2017-04-18 21:19:05 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:19:22 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "MkGZSFFD0ghK4bJvfK3EMw"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 64ms (Views: 63.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-2a6d2dbed59611dfab421f4bf47a7f3a1b37dc2261478bdf7d9ba2a0fc2b4134.css?body=1" for ::1 at 2017-04-18 21:19:22 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:19:30 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "MkGZSFFD0ghK4bJvfK3EMw"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 49ms (Views: 48.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-2beea7c485a4a119373b00a9bcb506d051590dc7b42d2527a77c01a2ac36c027.css?body=1" for ::1 at 2017-04-18 21:19:30 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:19:51 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "MkGZSFFD0ghK4bJvfK3EMw"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 116ms (Views: 115.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-dd51071d6570116617f4ac468941f84b6a8c3d8f00015522a6704ec3671cd508.css?body=1" for ::1 at 2017-04-18 21:19:52 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:19:59 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "MkGZSFFD0ghK4bJvfK3EMw"]]
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 60ms (Views: 58.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-08caa41e5439c808eb0e0ab3c355c5f31bb3366e0a1b26f1b6fcc5e9daf7109f.css?body=1" for ::1 at 2017-04-18 21:19:59 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:20:06 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "MkGZSFFD0ghK4bJvfK3EMw"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 41ms (Views: 40.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-1b99ea16334db43edb0e9317d857dece8f2b74914126ae34d0ec639f8322173c.css?body=1" for ::1 at 2017-04-18 21:20:06 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:20:10 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "MkGZSFFD0ghK4bJvfK3EMw"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 136ms (Views: 136.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-1d9038b76460737d7cbde016930346b040b7f4ab8ddb298866bb4ce0c1dd3d08.css?body=1" for ::1 at 2017-04-18 21:20:11 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:20:15 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "MkGZSFFD0ghK4bJvfK3EMw"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 92ms (Views: 91.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-b2b6753a7114a96b6ee5e06ad5074a38bf488752be9ca2eb2a8ebddda4a8b4a3.css?body=1" for ::1 at 2017-04-18 21:20:15 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:20:17 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "MkGZSFFD0ghK4bJvfK3EMw"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 36ms (Views: 35.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 21:20:26 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "MkGZSFFD0ghK4bJvfK3EMw"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 101ms (Views: 100.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-84dccecb1f0607f8099fda7e73ddb8b5db1b340c6af79412f94aa25daa4ea29c.css?body=1" for ::1 at 2017-04-18 21:20:27 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:20:53 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "MkGZSFFD0ghK4bJvfK3EMw"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 91ms (Views: 90.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-d9040d5f2a2c4dbad9981ce3e8ed77e63b4d0df98d9371ab32500b3cd8f65a0c.css?body=1" for ::1 at 2017-04-18 21:20:53 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:20:56 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "MkGZSFFD0ghK4bJvfK3EMw"]]
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 75ms (Views: 74.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 21:21:01 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "MkGZSFFD0ghK4bJvfK3EMw"]]
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 66ms (Views: 65.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-d9e98abba310dfc79bd463e978ceafaf44b4903e7a747095da1e0eb1733cb3f8.css?body=1" for ::1 at 2017-04-18 21:21:01 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:21:11 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "MkGZSFFD0ghK4bJvfK3EMw"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 92ms (Views: 91.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-2ab9197e2438f1b6334952bf1a5253fe27d87f2b6ce15eebb9796e9b8333517b.css?body=1" for ::1 at 2017-04-18 21:21:11 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:21:51 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "MkGZSFFD0ghK4bJvfK3EMw"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 92ms (Views: 91.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-bb58873d56fb01509dc158c38672817afc073d34bb90d7e56de459a3b9325585.css?body=1" for ::1 at 2017-04-18 21:21:51 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:22:44 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "MkGZSFFD0ghK4bJvfK3EMw"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 76ms (Views: 75.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-752f4e097d4dbafe9bee4577d946a9d5f9f70544e3758f91dda3daae54be2275.css?body=1" for ::1 at 2017-04-18 21:22:44 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:22:44 -0400
+
+
+Started GET "/" for ::1 at 2017-04-18 21:22:48 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "MkGZSFFD0ghK4bJvfK3EMw"]]
+  Rendered api/users/_user.json.jbuilder (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 65ms (Views: 64.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-debf0a82a28da5f81845d317fe78acc806f30d0c36d536a32cdfe109d4f9f43f.css?body=1" for ::1 at 2017-04-18 21:22:48 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-18 21:22:48 -0400
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-18 21:23:42 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "MkGZSFFD0ghK4bJvfK3EMw"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "-3UiJB8nvUOrAYfmd7acRA"], ["updated_at", "2017-04-19 01:23:42.223891"], ["id", 1]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  Rendered api/users/_user.json.jbuilder (0.0ms)
+  Rendered api/users/show.json.jbuilder (0.8ms)
+Completed 200 OK in 10ms (Views: 4.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-18 21:23:46 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/session/" for ::1 at 2017-04-18 21:23:48 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Enter Username Here", "password"=>"[FILTERED]", "email"=>"bthaler@bellsouth.net"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "61ZcYzA-X6mAN0iUDluSKA"], ["updated_at", "2017-04-19 01:23:48.541537"], ["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (1.1ms)
+Completed 200 OK in 89ms (Views: 5.6ms | ActiveRecord: 1.9ms)
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-18 21:24:03 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "61ZcYzA-X6mAN0iUDluSKA"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "Uer_Mir1su8xxVbRzR3nNA"], ["updated_at", "2017-04-19 01:24:03.395608"], ["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  Rendered api/users/_user.json.jbuilder (0.1ms)
+  Rendered api/users/show.json.jbuilder (0.8ms)
+Completed 200 OK in 11ms (Views: 5.3ms | ActiveRecord: 1.8ms)

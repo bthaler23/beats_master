@@ -5,7 +5,7 @@ class SessionFormWithoutRouter extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { username: "", password: ""};
+    this.state = { username: "Enter Username Here", password: "Enter Password Here"};
     this.handleUserName = this.handleUserName.bind(this);
     this.handlePassword = this.handlePassword.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -36,21 +36,23 @@ class SessionFormWithoutRouter extends React.Component {
     if (this.props.formType === "signup") {
       return (
         <form onSubmit={this.handleSubmit}>
-          <h1>{this.props.formType}</h1>
-          <label>Create Username:</label>
-          <input type="text" onChange={this.handleUserName} value={this.state.username} autoFocus/><br/>
-          <label>Choose Password:</label>
-          <input type="text" onChange={this.handlePassword} value={this.state.password}/><br/>
-          <input type="submit"/>
+          <ul className="form">
+            <h1>{this.props.formType}</h1>
+            <input type="text" onChange={this.handleUserName} value={this.state.username} placeholder="Create Username Here"autoFocus/><br/>
+            <input type="text" onChange={this.handlePassword} value={this.state.password} placeholder="Enter Password Here"/><br/>
+            <input type="submit" value="Continue"/>
+          </ul>
         </form>
       );
     } else {
       return (
         <form onSubmit={this.handleSubmit}>
-          <h1>{this.props.formType}</h1>
-          <label>Password:</label>
-          <input type="text" onChange={this.handlePassword} value={this.state.password} autoFocus/><br/>
-          <input type="submit"/>
+          <ul className="form">
+            <h1>{this.props.formType}</h1>
+            <label>Password: </label>
+            <input type="password" onChange={this.handlePassword} value={this.state.password} autoFocus/><br/>
+            <input type="submit"/>
+          </ul>
         </form>
       );
     }
