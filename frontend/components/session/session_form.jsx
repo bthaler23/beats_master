@@ -5,7 +5,7 @@ class SessionFormWithoutRouter extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { username: "Enter Username Here", password: "Enter Password Here"};
+    this.state = { username: "", password: ""};
     this.handleUserName = this.handleUserName.bind(this);
     this.handlePassword = this.handlePassword.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -39,7 +39,7 @@ class SessionFormWithoutRouter extends React.Component {
           <ul className="form">
             <h1>{this.props.formType}</h1>
             <input type="text" onChange={this.handleUserName} value={this.state.username} placeholder="Create Username Here"autoFocus/><br/>
-            <input type="text" onChange={this.handlePassword} value={this.state.password} placeholder="Enter Password Here"/><br/>
+            <input type="text" onChange={this.handlePassword} value={this.state.password} /><br/>
             <input type="submit" value="Continue"/>
           </ul>
         </form>

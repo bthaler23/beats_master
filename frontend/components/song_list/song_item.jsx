@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router';
 
 const SongItem = (props) => {
   return (
@@ -9,7 +9,7 @@ const SongItem = (props) => {
           <img src={window.playButton}/>
         <div className="song_header_info">
           <div>{props.song.artist}</div>
-          <div>{props.song.title}</div>
+          <div><Link to={`/stream/${props.song.id}`}>{props.song.title}</Link></div>
         </div>
       </div>
     </li>
