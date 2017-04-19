@@ -10223,3 +10223,418 @@ Processing by Api::SongsController#index as JSON
   Rendered api/songs/_song.json.jbuilder (1.5ms)
   Rendered api/songs/index.json.jbuilder (24.6ms)
 Completed 200 OK in 70ms (Views: 67.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 11:08:40 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 473ms (Views: 472.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-88859f9d80e800b753e969c1224c73adeecdc30c067554501f9410855d63aba2.js?body=1" for ::1 at 2017-04-19 11:08:41 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 11:08:41 -0400
+
+
+Started GET "/" for ::1 at 2017-04-19 11:08:45 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 31ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 11:08:45 -0400
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-19 11:08:49 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/session/" for ::1 at 2017-04-19 11:08:51 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Enter Username Here", "password"=>"[FILTERED]", "email"=>"bthaler@bellsouth.net"}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "1ULLCAaOG0ZP6BtYaubyHQ"], ["updated_at", "2017-04-19 15:08:51.363221"], ["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered api/users/_user.json.jbuilder (1.4ms)
+  Rendered api/users/show.json.jbuilder (20.3ms)
+Completed 200 OK in 111ms (Views: 24.1ms | ActiveRecord: 2.6ms)
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-19 11:08:52 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "1ULLCAaOG0ZP6BtYaubyHQ"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "qgZ4uOHauUBMj_-rS2JZeA"], ["updated_at", "2017-04-19 15:08:52.610079"], ["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered api/users/_user.json.jbuilder (1.0ms)
+  Rendered api/users/show.json.jbuilder (1.7ms)
+Completed 200 OK in 11ms (Views: 5.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/users/email_exists?email=conrad%40gmail.com" for ::1 at 2017-04-19 11:08:55 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"conrad@gmail.com"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "conrad@gmail.com"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/users/" for ::1 at 2017-04-19 11:09:06 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"Conrad", "password"=>"[FILTERED]", "email"=>"conrad@gmail.com"}}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'conrad@gmail.com' LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'Conrad' LIMIT 1[0m
+  [1m[35mSQL (23.0ms)[0m  INSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["username", "Conrad"], ["email", "conrad@gmail.com"], ["password_digest", "$2a$10$PvDo.bvHE1xVL4VLXIiBfefFl6/kQHYZxnIaE/xoJNKSbLiwAN3ca"], ["session_token", "Ol7-Fo7o9AAhrC_uZ0BkrQ"], ["created_at", "2017-04-19 15:09:06.904243"], ["updated_at", "2017-04-19 15:09:06.904243"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'conrad@gmail.com' AND "users"."id" != 2) LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'Conrad' AND "users"."id" != 2) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "UsIv6ONcT-LiDfjz5a2u_A"], ["updated_at", "2017-04-19 15:09:06.932604"], ["id", 2]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  Rendered api/users/_user.json.jbuilder (1.0ms)
+  Rendered api/users/show.json.jbuilder (1.8ms)
+Completed 200 OK in 119ms (Views: 7.3ms | ActiveRecord: 26.0ms)
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-19 11:09:08 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "UsIv6ONcT-LiDfjz5a2u_A"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'conrad@gmail.com' AND "users"."id" != 2) LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'Conrad' AND "users"."id" != 2) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "dcaKwxZ4WH7-RwPxOVd80Q"], ["updated_at", "2017-04-19 15:09:08.049902"], ["id", 2]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  Rendered api/users/_user.json.jbuilder (1.0ms)
+  Rendered api/users/show.json.jbuilder (1.7ms)
+Completed 200 OK in 12ms (Views: 5.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 11:19:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (35.7ms)
+Completed 200 OK in 972ms (Views: 971.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-686cee00f8a6d385c1bd89495c3f77ed708559bbf4dee36f4b8a509bd02c2afd.js?body=1" for ::1 at 2017-04-19 11:19:26 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 11:19:26 -0400
+
+
+Started GET "/" for ::1 at 2017-04-19 11:19:34 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 434ms (Views: 433.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-46d705d74610f7f0c03cd3d1bbbaa9c0d6d362c36aeb8c4c9fc4b41fe88f39fb.js?body=1" for ::1 at 2017-04-19 11:19:35 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 11:19:35 -0400
+
+
+Started GET "/" for ::1 at 2017-04-19 11:20:16 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 340ms (Views: 339.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-e2053c8a3cd2a3880a5b7644dcdec82888e98316378485318a94964a8eb9d7d0.js?body=1" for ::1 at 2017-04-19 11:20:16 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 11:20:16 -0400
+
+
+Started GET "/" for ::1 at 2017-04-19 11:20:36 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 378ms (Views: 377.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-b6daf19ac3ea73868b6022b3b2dcc607ab6393b7dfc6c66e6c02a6e1f58a33c2.js?body=1" for ::1 at 2017-04-19 11:20:36 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 11:20:36 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 11:21:58 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[36mSong Load (0.9ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (8.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (2.0ms)
+  Rendered api/songs/index.json.jbuilder (30.0ms)
+Completed 200 OK in 50ms (Views: 47.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 11:22:52 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 516ms (Views: 516.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-a22c9bda213b1000d831a3a67fb17be487be5a831cb8c01270b9a8df87c9bf53.js?body=1" for ::1 at 2017-04-19 11:22:52 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 11:22:53 -0400
+
+
+Started GET "/api/songs/1" for ::1 at 2017-04-19 11:22:54 -0400
+Processing by Api::SongsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mSong Load (0.6ms)[0m  SELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.6ms)
+
+ActiveRecord::RecordNotFound - Couldn't find Song with 'id'=1:
+  activerecord (4.2.8) lib/active_record/core.rb:155:in `find'
+  app/controllers/api/songs_controller.rb:21:in `show'
+  actionpack (4.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.5) lib/rack/etag.rb:24:in `call'
+  rack (1.6.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.5) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+Started GET "/api/songs/2" for ::1 at 2017-04-19 11:22:57 -0400
+Processing by Api::SongsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mSong Load (0.6ms)[0m  [1mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.1ms)
+  Rendered api/songs/show.json.jbuilder (14.4ms)
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 11:23:14 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[36mSong Load (0.4ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (8.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (1.6ms)
+  Rendered api/songs/index.json.jbuilder (17.7ms)
+Completed 200 OK in 29ms (Views: 28.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 11:25:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 910ms (Views: 909.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-5c8f93dcd820dc1577406e00c9b1173dc518ce41d5ae773ace92fd3c67a406da.js?body=1" for ::1 at 2017-04-19 11:25:27 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 11:25:27 -0400
+
+
+Started GET "/" for ::1 at 2017-04-19 11:25:45 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 434ms (Views: 433.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-4e70560a56be8dad1ddf367cebfc9ab84ce331253043a5572e977b28686d45ff.js?body=1" for ::1 at 2017-04-19 11:25:45 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 11:25:45 -0400
+
+
+Started GET "/api/songs/1" for ::1 at 2017-04-19 11:25:49 -0400
+Processing by Api::SongsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mSong Load (0.3ms)[0m  SELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound - Couldn't find Song with 'id'=1:
+  activerecord (4.2.8) lib/active_record/core.rb:155:in `find'
+  app/controllers/api/songs_controller.rb:21:in `show'
+  actionpack (4.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.5) lib/rack/etag.rb:24:in `call'
+  rack (1.6.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.5) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+Started GET "/api/songs/2" for ::1 at 2017-04-19 11:25:52 -0400
+Processing by Api::SongsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mSong Load (0.4ms)[0m  [1mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.7ms)
+  Rendered api/songs/show.json.jbuilder (14.8ms)
+Completed 200 OK in 64ms (Views: 62.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 11:26:42 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 384ms (Views: 383.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bundle.self-50c8820ed378b972ce63ab10f24419d4a64d09c3eacbc13a575453c1bbd5053d.js?body=1" for ::1 at 2017-04-19 11:26:43 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 11:26:43 -0400
+
+
+Started GET "/api/songs/2" for ::1 at 2017-04-19 11:26:46 -0400
+Processing by Api::SongsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mSong Load (0.4ms)[0m  [1mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (2.7ms)
+  Rendered api/songs/show.json.jbuilder (13.2ms)
+Completed 200 OK in 85ms (Views: 83.6ms | ActiveRecord: 0.7ms)
