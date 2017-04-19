@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  width: 65%;
+  width: 1250px;
   height: 100vh;
   margin: 0 auto;
   font-family: 'Antic', sans-serif;
@@ -238,4 +238,63 @@ input[type="submit"] {
 .song_header_info div:last-child {
   font-size: 20px;
   color: #333333;
+}
+
+/*SongPage*/
+
+.song_page_splash {
+  display: flex;
+  height: 300px;
+  background-color: #a7b4c4;
+}
+
+.play_button {
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.song_page_header {
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+  margin-top: 30px;
+
+}
+
+.song_page_credits {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.song_page_header span {
+  background: #232528;
+  padding: 4px;
+}
+
+.song_page_header h1 {
+  color: #ffffff;
+  font-size: 28px;
+  margin-top: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+
+.song_page_header h2 {
+  color: #cccccc;
+  font-size: 18px;
+}
+
+.song_image {
+  display:flex;
+  margin: 20px;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.song_image img {
+  width: 250px;
+  height: 250px;
 }

@@ -16,7 +16,20 @@ class SongPage extends React.Component {
 
   render() {
     return(
-      <h1> {this.props.song.title} </h1>
+      <section>
+        <div className="song_page_splash">
+          <div className="song_page_header">
+          <img className="play_button" src={window.playButton}/>
+            <div className="song_credits">
+              <h2><span>{this.props.song.artist}</span></h2>
+              <h1><span>{this.props.song.title}</span></h1>
+            </div>
+          </div>
+          <div className="song_image">
+            <img src={this.props.song.image_url} />
+          </div>
+        </div>
+      </section>
     )
   }
 
