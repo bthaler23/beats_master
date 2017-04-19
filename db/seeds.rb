@@ -5,3 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Song.destroy_all
+
+s = Song.new(title: "Ghost!", artist_id: 1, genre: "Hip-Hop");
+s.song = File.open("#{Rails.root}/app/assets/songs/ghost.mp3");
+s.save!
+
+y = Song.new(title: "Good Morning", artist_id:1, genre: "Hip-Hop");
+y.song = File.open("#{Rails.root}/app/assets/songs/good_morning.mp3")
+y.save!

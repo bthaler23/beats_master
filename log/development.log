@@ -21161,3 +21161,236 @@ Completed 200 OK in 37ms (Views: 36.9ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 18:07:09 -0400
+  [1m[36mSQL (19.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (85.4ms)[0m  CREATE TABLE "songs" ("id" serial primary key, "title" character varying NOT NULL, "artist_id" integer NOT NULL, "genre" character varying, "song_file_name" character varying NOT NULL, "song_content_type" character varying NOT NULL, "song_file_size" integer NOT NULL, "song_updated_at" timestamp NOT NULL, "image_file_name" character varying, "image_content_type" character varying, "image_file_size" integer, "image_updated_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (1.7ms)[0m  [1mCREATE  INDEX  "index_songs_on_artist_id" ON "songs" USING btree ("artist_id")[0m
+  [1m[35m (1.7ms)[0m  CREATE  INDEX  "index_songs_on_title" ON "songs" USING btree ("title")
+  [1m[36m (5.0ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying NOT NULL, "username" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "name" character varying, "image_url" character varying, "bio" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "image_file_name" character varying, "image_content_type" character varying, "image_file_size" integer, "image_updated_at" timestamp) [0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users" USING btree ("email")
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_session_token" ON "users" USING btree ("session_token")[0m
+  [1m[35m (2.1ms)[0m  CREATE UNIQUE INDEX  "index_users_on_username" ON "users" USING btree ("username")
+  [1m[36m (3.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.5ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170419142824')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170418175953')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170419125626')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170419131546')[0m
+  [1m[35mSQL (0.7ms)[0m  CREATE EXTENSION IF NOT EXISTS "plpgsql"
+  [1m[36m (29.8ms)[0m  [1mCREATE TABLE "songs" ("id" serial primary key, "title" character varying NOT NULL, "artist_id" integer NOT NULL, "genre" character varying, "song_file_name" character varying NOT NULL, "song_content_type" character varying NOT NULL, "song_file_size" integer NOT NULL, "song_updated_at" timestamp NOT NULL, "image_file_name" character varying, "image_content_type" character varying, "image_file_size" integer, "image_updated_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.6ms)[0m  CREATE  INDEX  "index_songs_on_artist_id" ON "songs" USING btree ("artist_id")
+  [1m[36m (1.6ms)[0m  [1mCREATE  INDEX  "index_songs_on_title" ON "songs" USING btree ("title")[0m
+  [1m[35m (5.6ms)[0m  CREATE TABLE "users" ("id" serial primary key, "email" character varying NOT NULL, "username" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "name" character varying, "image_url" character varying, "bio" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "image_file_name" character varying, "image_content_type" character varying, "image_file_size" integer, "image_updated_at" timestamp) 
+  [1m[36m (1.4ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_email" ON "users" USING btree ("email")[0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX  "index_users_on_session_token" ON "users" USING btree ("session_token")
+  [1m[36m (1.3ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_username" ON "users" USING btree ("username")[0m
+  [1m[35m (2.5ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.4ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.5ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170419142824')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170418175953')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170419125626')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170419131546')
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2017-04-19 18:37:25 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1977.2ms)
+Completed 200 OK in 2198ms (Views: 2197.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/css_reset.self-8c5d8f313aec16f2a1e61bb3870d27394db21654013b411e9b1ebb046fea18b2.css?body=1" for ::1 at 2017-04-19 18:37:28 -0400
+
+
+Started GET "/assets/api/songs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-04-19 18:37:28 -0400
+
+
+Started GET "/assets/songs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-04-19 18:37:28 -0400
+
+
+Started GET "/assets/bundle.self-5591db5638216a484d34850f5a5a842c9551fc9e34f870d4e06e9d9a988c0b54.js?body=1" for ::1 at 2017-04-19 18:37:28 -0400
+
+
+Started GET "/assets/application.self-a1f85ee288ac92d0b863095dde94f1d5addea2b9ba9e292584bac8947d0b2ec7.css?body=1" for ::1 at 2017-04-19 18:37:28 -0400
+
+
+Started GET "/assets/api/songs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-19 18:37:28 -0400
+
+
+Started GET "/assets/songs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-19 18:37:28 -0400
+
+
+Started GET "/assets/zelda_landing-ba82f548b0a64640dfa1e659d9bd1d2caaf5c3568ecd9c939bfcadd2c04934e4.jpg" for ::1 at 2017-04-19 18:37:28 -0400
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-19 18:37:32 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 81ms (Views: 0.2ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/api/users/" for ::1 at 2017-04-19 18:37:36 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"bthaler23", "password"=>"[FILTERED]", "email"=>"bthaler@bellsouth.net"}}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'bthaler@bellsouth.net' LIMIT 1
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'bthaler23' LIMIT 1[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["username", "bthaler23"], ["email", "bthaler@bellsouth.net"], ["password_digest", "$2a$10$aS1YShzFvcz.DKv80Q3NL.HObMLjKNlypojPRJj9XPvhkLCHL7xYm"], ["session_token", "T10bkLArEu81QRqrKZmIOg"], ["created_at", "2017-04-19 22:37:36.817203"], ["updated_at", "2017-04-19 22:37:36.817203"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (1.7ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "i6Y5ObJuzZUdPmKOgzOaMw"], ["updated_at", "2017-04-19 22:37:36.829520"], ["id", 1]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  Rendered api/users/_user.json.jbuilder (2.4ms)
+  Rendered api/users/show.json.jbuilder (57.2ms)
+Completed 200 OK in 242ms (Views: 66.0ms | ActiveRecord: 34.0ms)
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 18:37:36 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[36mSong Load (1.0ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  Rendered api/songs/index.json.jbuilder (4.6ms)
+Completed 200 OK in 27ms (Views: 11.9ms | ActiveRecord: 2.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSong Load (0.9ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSong Load (0.8ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSong Load (0.9ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSong Load (0.9ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSong Load (0.9ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSong Load (0.7ms)[0m  SELECT "songs".* FROM "songs"
+Command :: file -b --mime '/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/71144850f4fb4cc55fc0ee6935badddf20170419-62679-1kalhow.mp3'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mSong Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "songs" WHERE ("songs"."title" = 'Ghost!' AND "songs"."artist_id" = 1) LIMIT 1[0m
+Command :: file -b --mime '/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/71144850f4fb4cc55fc0ee6935badddf20170419-62679-vcctth.mp3'
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "songs" ("title", "artist_id", "genre", "song_file_name", "song_content_type", "song_file_size", "song_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["title", "Ghost!"], ["artist_id", 1], ["genre", "Hip-Hop"], ["song_file_name", "ghost.mp3"], ["song_content_type", "audio/mpeg"], ["song_file_size", 4861824], ["song_updated_at", "2017-04-19 22:45:04.872931"], ["created_at", "2017-04-19 22:45:05.104292"], ["updated_at", "2017-04-19 22:45:05.104292"]]
+  [1m[36m (17.8ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSong Load (0.9ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "songs" WHERE "songs"."id" = $1  [["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+[paperclip] deleting /Users/appacademy/Desktop/beatsMaster/public/system/songs/songs/000/000/001/original/ghost.mp3
+Command :: file -b --mime '/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/71144850f4fb4cc55fc0ee6935badddf20170419-62704-1hdsjmf.mp3'
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSong Exists (1.5ms)[0m  SELECT  1 AS one FROM "songs" WHERE ("songs"."title" = 'Ghost!' AND "songs"."artist_id" = 1) LIMIT 1
+Command :: file -b --mime '/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/71144850f4fb4cc55fc0ee6935badddf20170419-62704-1f8bh4b.mp3'
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "songs" ("title", "artist_id", "genre", "song_file_name", "song_content_type", "song_file_size", "song_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Ghost!"], ["artist_id", 1], ["genre", "Hip-Hop"], ["song_file_name", "ghost.mp3"], ["song_content_type", "audio/mpeg"], ["song_file_size", 4861824], ["song_updated_at", "2017-04-19 22:45:32.838287"], ["created_at", "2017-04-19 22:45:32.941387"], ["updated_at", "2017-04-19 22:45:32.941387"]]
+  [1m[35m (17.5ms)[0m  COMMIT
+Command :: file -b --mime '/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/ec9300aa5488adf0a7fb36605a67863720170419-62704-19iaye9.mp3'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mSong Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "songs" WHERE ("songs"."title" = 'Good Morning' AND "songs"."artist_id" = 1) LIMIT 1[0m
+Command :: file -b --mime '/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/ec9300aa5488adf0a7fb36605a67863720170419-62704-7ls69h.mp3'
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "songs" ("title", "artist_id", "genre", "song_file_name", "song_content_type", "song_file_size", "song_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["title", "Good Morning"], ["artist_id", 1], ["genre", "Hip-Hop"], ["song_file_name", "good_morning.mp3"], ["song_content_type", "audio/mpeg"], ["song_file_size", 3918437], ["song_updated_at", "2017-04-19 22:45:32.970392"], ["created_at", "2017-04-19 22:45:33.012098"], ["updated_at", "2017-04-19 22:45:33.012098"]]
+  [1m[36m (14.8ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for ::1 at 2017-04-19 18:45:54 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "i6Y5ObJuzZUdPmKOgzOaMw"]]
+  Rendered api/users/_user.json.jbuilder (38.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (615.7ms)
+Completed 200 OK in 1265ms (Views: 1258.4ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 18:45:56 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[36mSong Load (1.8ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (14.9ms)
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (2.8ms)
+  Rendered api/songs/index.json.jbuilder (63.9ms)
+Completed 200 OK in 90ms (Views: 68.4ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/assets/bears_temp-17911762542858aad4e8378ff0e298e902f196a960b14a00c72553f40df2cc95.png" for ::1 at 2017-04-19 18:45:56 -0400
+
+
+Started GET "/assets/play_button-5ce70c8438bb8b2db3d0c45621288b347e01307e91b7e371f83f6fe2275442e7.png" for ::1 at 2017-04-19 18:45:56 -0400
+
+
+Started GET "/api/songs/2" for ::1 at 2017-04-19 18:46:04 -0400
+Processing by Api::SongsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[35mSong Load (0.6ms)[0m  SELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.4ms)
+  Rendered api/songs/show.json.jbuilder (4.7ms)
+Completed 200 OK in 57ms (Views: 53.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 18:46:10 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.6ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (5.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (2.0ms)
+  Rendered api/songs/index.json.jbuilder (38.6ms)
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/users/1" for ::1 at 2017-04-19 18:46:23 -0400
+Processing by Api::UsersController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/users/_user.json.jbuilder (2.9ms)
+  Rendered api/users/show.json.jbuilder (4.5ms)
+Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 18:46:23 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.5ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (1.7ms)
+  Rendered api/songs/index.json.jbuilder (8.6ms)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/users/1" for ::1 at 2017-04-19 18:48:04 -0400
+Processing by Api::UsersController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/users/_user.json.jbuilder (2.4ms)
+  Rendered api/users/show.json.jbuilder (3.8ms)
+Completed 200 OK in 14ms (Views: 10.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 18:48:06 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.8ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (4.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (1.6ms)
+  Rendered api/songs/index.json.jbuilder (10.5ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/api/session" for ::1 at 2017-04-19 18:48:11 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "i6Y5ObJuzZUdPmKOgzOaMw"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "EQ-0G_vrF4dQKW0C8yDXnA"], ["updated_at", "2017-04-19 22:48:11.562736"], ["id", 1]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  Rendered api/users/_user.json.jbuilder (1.1ms)
+  Rendered api/users/show.json.jbuilder (2.1ms)
+Completed 200 OK in 30ms (Views: 10.6ms | ActiveRecord: 2.8ms)

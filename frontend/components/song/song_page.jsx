@@ -4,13 +4,13 @@ import React from 'react';
 class SongPage extends React.Component {
 
   constructor(props) {
-    super(props)
+    super(props);
 
   }
 
   componentDidMount() {
     //Fetches from server, but has list of song in state -- maybe fix
-    this.props.fetchSong(this.props.params.song_id)
+    this.props.fetchSong(this.props.params.song_id);
   }
 
 
@@ -31,7 +31,7 @@ class SongPage extends React.Component {
         </div>
         <audio src={this.props.song.song_url} autoPlay />
       </section>
-    )
+    );
   }
 
 }

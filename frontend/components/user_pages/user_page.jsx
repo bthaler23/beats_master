@@ -3,16 +3,16 @@ import React from 'react';
 class UserPage extends React.Component {
 
   constructor(props) {
-    super(props)
+    super(props);
   }
 
   componentDidMount() {
-    this.props.fetchUser(this.props.params.user_id)
+    this.props.fetchUser(this.props.params.user_id);
   }
 
   render() {
-    return (<h1>{this.props.user.username}</h1>)
-  };
+    return (<h1>{this.props.user.username}</h1>);
+  }
 
 
 }
