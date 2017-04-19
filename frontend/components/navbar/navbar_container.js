@@ -5,7 +5,7 @@ import Navbar from './navbar';
 const mapStateToProps = ({session}, ownProps) => {
   if (session.currentUser) {
     return ({
-      username: session.currentUser.username
+      username: session.currentUser.username,
     });
   }
 };
