@@ -11141,3 +11141,1182 @@ Processing by Api::SongsController#index as JSON
   Rendered api/songs/_song.json.jbuilder (1.7ms)
   Rendered api/songs/index.json.jbuilder (9.1ms)
 Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 11:58:42 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 553ms (Views: 552.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bundle.self-97b13664111ac6766797ed4acef2e3522cba4f1e9691443c353bd9241b00b036.js?body=1" for ::1 at 2017-04-19 11:58:43 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 11:58:43 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.5ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (1.9ms)
+  Rendered api/songs/index.json.jbuilder (24.1ms)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 11:59:29 -0400
+
+
+Started GET "/" for ::1 at 2017-04-19 11:59:30 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (1.1ms)
+  Rendered static_pages/root.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 126ms (Views: 125.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 11:59:30 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 11:59:30 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.6ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (8.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (2.7ms)
+  Rendered api/songs/index.json.jbuilder (30.5ms)
+Completed 200 OK in 49ms (Views: 46.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:00:12 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (1.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 470ms (Views: 468.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bundle.self-0e3a5735129b943b0fafbe757f32635c1b669ef7ba1ed4b3a22660339ae8dc28.js?body=1" for ::1 at 2017-04-19 12:00:12 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:00:12 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.6ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (3.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (7.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.0ms)
+  Rendered api/songs/index.json.jbuilder (32.0ms)
+Completed 200 OK in 53ms (Views: 48.4ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 12:00:13 -0400
+
+
+Started GET "/" for ::1 at 2017-04-19 12:00:27 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 515ms (Views: 514.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bundle.self-2ce50ea03f14a943d8b7f605cba847acd0404769ece01acaa87d06d6b57aff7b.js?body=1" for ::1 at 2017-04-19 12:00:28 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 12:00:28 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:00:28 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.8ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (10.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.4ms)
+  Rendered api/songs/index.json.jbuilder (42.1ms)
+Completed 200 OK in 65ms (Views: 62.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:05:08 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (5.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (57.8ms)
+Completed 200 OK in 611ms (Views: 607.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-be645290af8de1094a22a331acd119b35b45f3ae181f234e1769bbb3022b1b21.css?body=1" for ::1 at 2017-04-19 12:05:08 -0400
+
+
+Started GET "/assets/bundle.self-bd0a120ebcd03dc76bf4c6c276255e4a7e774085f7a76865f0db338a42a8c286.js?body=1" for ::1 at 2017-04-19 12:05:08 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 12:05:09 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:05:09 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.9ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (7.7ms)
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.5ms)
+  Rendered api/songs/index.json.jbuilder (38.6ms)
+Completed 200 OK in 57ms (Views: 54.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:06:28 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (1.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 144ms (Views: 143.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-b4bdf0e9330f8c26696547448fc7fa29deac02530ce52f0e11a4d04aecb1bc54.css?body=1" for ::1 at 2017-04-19 12:06:29 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 12:06:29 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:06:29 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.7ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (5.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.4ms)
+  Rendered api/songs/index.json.jbuilder (24.9ms)
+Completed 200 OK in 46ms (Views: 43.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:06:38 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 77ms (Views: 76.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-d1531edb724ad909b9dc3aa2edb5c47d55b6175a53a026952c6782f137fb0490.css?body=1" for ::1 at 2017-04-19 12:06:39 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 12:06:39 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:06:39 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.6ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (4.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (2.0ms)
+  Rendered api/songs/index.json.jbuilder (10.1ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:09:05 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.9ms)
+  Rendered static_pages/root.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 576ms (Views: 575.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bundle.self-f11592cfb4599c343f252e000e4b6df6c196c997ccf8ac7aced1502217d33df0.js?body=1" for ::1 at 2017-04-19 12:09:05 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 12:09:06 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:09:06 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (1.0ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (9.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.6ms)
+  Rendered api/songs/index.json.jbuilder (29.6ms)
+Completed 200 OK in 55ms (Views: 52.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/bears_temp-17911762542858aad4e8378ff0e298e902f196a960b14a00c72553f40df2cc95.png" for ::1 at 2017-04-19 12:09:06 -0400
+
+
+Started GET "/" for ::1 at 2017-04-19 12:09:27 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (1.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (68.1ms)
+Completed 200 OK in 251ms (Views: 250.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6f26d6e5a35d3a6dbf8084e38da8133593474e29af98eb20c00ab0089c295f4.css?body=1" for ::1 at 2017-04-19 12:09:28 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 12:09:28 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:09:28 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.8ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (7.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (29.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.2ms)
+  Rendered api/songs/index.json.jbuilder (49.3ms)
+Completed 200 OK in 68ms (Views: 59.3ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:09:58 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (1.9ms)
+  Rendered static_pages/root.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 163ms (Views: 162.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-075947b9ede7a151562c394de02a24f65fa621a1ba55d2b035196cfcf1454e9a.css?body=1" for ::1 at 2017-04-19 12:09:58 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 12:09:58 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:09:58 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.5ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (3.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (177.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (5.5ms)
+  Rendered api/songs/index.json.jbuilder (201.9ms)
+Completed 200 OK in 220ms (Views: 215.1ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:10:05 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 121ms (Views: 120.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-7fc25c91e5207d06f1a2af2dde0a40e5ec1f7d9a0208c1e1b844cbbc60ba9a75.css?body=1" for ::1 at 2017-04-19 12:10:05 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 12:10:05 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:10:06 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.5ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (4.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (4.8ms)
+  Rendered api/songs/index.json.jbuilder (13.9ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:10:18 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 57ms (Views: 56.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-054e111a10d15671eaab8fb1336aa6e65187be2cfdc0fd53f01315bb68b55eb8.css?body=1" for ::1 at 2017-04-19 12:10:18 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 12:10:18 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:10:18 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.6ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (4.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (2.2ms)
+  Rendered api/songs/index.json.jbuilder (11.2ms)
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:10:54 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 76ms (Views: 75.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-a11945cc878e43bb475fd245b6b6e79a18d95f14baa9620f6e4d54c7649739e3.css?body=1" for ::1 at 2017-04-19 12:10:54 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 12:10:55 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:10:55 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.7ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (5.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (2.9ms)
+  Rendered api/songs/index.json.jbuilder (12.5ms)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:10:57 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 68ms (Views: 66.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 12:10:57 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:10:57 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.5ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (4.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (2.7ms)
+  Rendered api/songs/index.json.jbuilder (11.9ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:11:03 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (1.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 85ms (Views: 84.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-707fe96777439cafeee1d0f4b5eda8261f65fb19e424e47289281edde99ae4d7.css?body=1" for ::1 at 2017-04-19 12:11:03 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 12:11:03 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:11:04 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (4.1ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (5.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (2.9ms)
+  Rendered api/songs/index.json.jbuilder (15.6ms)
+Completed 200 OK in 23ms (Views: 17.9ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:11:05 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 50ms (Views: 49.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 12:11:05 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:11:05 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.6ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (4.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (1.9ms)
+  Rendered api/songs/index.json.jbuilder (10.0ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:12:02 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (1.0ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 54ms (Views: 53.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:12:02 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (2.1ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (6.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (1.7ms)
+  Rendered api/songs/index.json.jbuilder (13.5ms)
+Completed 200 OK in 25ms (Views: 20.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:12:28 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.9ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 425ms (Views: 424.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bundle.self-2c6c736152d92cfe5675f8a14288ed99499c924e2c409adde8fbd96a3b7d70f3.js?body=1" for ::1 at 2017-04-19 12:12:29 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:12:29 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.4ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (1.6ms)
+  Rendered api/songs/index.json.jbuilder (7.6ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:15:32 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.9ms)
+  Rendered static_pages/root.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 468ms (Views: 467.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bundle.self-9c70a38f33b9865f9ae887aa62277ed9e74837363976f6b9ebdfcbf17f4271c7.js?body=1" for ::1 at 2017-04-19 12:15:32 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:15:33 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.9ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (5.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (6.2ms)
+  Rendered api/songs/index.json.jbuilder (29.1ms)
+Completed 200 OK in 53ms (Views: 51.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:16:00 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 457ms (Views: 456.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bundle.self-704c3e30e169dbafa8334acbef5e396a821bd7e02077cde17638585a870658a5.js?body=1" for ::1 at 2017-04-19 12:16:00 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:16:00 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.8ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (5.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (2.0ms)
+  Rendered api/songs/index.json.jbuilder (26.4ms)
+Completed 200 OK in 46ms (Views: 44.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:17:16 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 583ms (Views: 582.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-38d4b68579ddc84ddf5454536ca80737c8b7b7fe39b1f209dea02d172339821d.css?body=1" for ::1 at 2017-04-19 12:17:16 -0400
+
+
+Started GET "/assets/bundle.self-52f33ba9c24b8a77e8f6042b0749be205f15453a76fe7bfc7dfe5a1d31f3719d.js?body=1" for ::1 at 2017-04-19 12:17:16 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:17:17 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.7ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (7.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (2.5ms)
+  Rendered api/songs/index.json.jbuilder (27.7ms)
+Completed 200 OK in 47ms (Views: 44.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 12:17:19 -0400
+
+
+Started GET "/" for ::1 at 2017-04-19 12:17:44 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (1.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (41.9ms)
+Completed 200 OK in 148ms (Views: 147.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-62018157fa7c8c680f6b042818a025d923576917ecbaab6e3a9ee72de432ded4.css?body=1" for ::1 at 2017-04-19 12:17:44 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 12:17:44 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:17:44 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.7ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (6.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.3ms)
+  Rendered api/songs/index.json.jbuilder (14.9ms)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:18:23 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 556ms (Views: 555.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-6701d3038388d6ed53e855a287dc1ae2cdf4c4dd5a3ebfbc60955136f635e431.css?body=1" for ::1 at 2017-04-19 12:18:23 -0400
+
+
+Started GET "/assets/bundle.self-b08c6eecfd13872cc52c68b82e3edfd711d313fe6dca57301ead4243bf743e3d.js?body=1" for ::1 at 2017-04-19 12:18:23 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 12:18:23 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:18:24 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.7ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (4.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (2.7ms)
+  Rendered api/songs/index.json.jbuilder (24.1ms)
+Completed 200 OK in 45ms (Views: 43.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:18:36 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 63ms (Views: 62.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-af2f0726d50b002e9239357f6a92432650325e81c6b65fa2808bbbf3eed435fa.css?body=1" for ::1 at 2017-04-19 12:18:36 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 12:18:36 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:18:36 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.4ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (4.1ms)
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (2.2ms)
+  Rendered api/songs/index.json.jbuilder (9.8ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:20:00 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (1.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 643ms (Views: 642.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-5d00fef04d2bcd8a9c0c926aded5c026950a28b0f9e00e568e6d657415f7ce85.css?body=1" for ::1 at 2017-04-19 12:20:01 -0400
+
+
+Started GET "/assets/bundle.self-663d2adabd01112647ca16820c0ea24f02fc6522b2b294f34db3343192e081e7.js?body=1" for ::1 at 2017-04-19 12:20:01 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 12:20:01 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:20:01 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.7ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (5.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.6ms)
+  Rendered api/songs/index.json.jbuilder (37.5ms)
+Completed 200 OK in 66ms (Views: 64.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:22:19 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (1.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (567.9ms)
+Completed 200 OK in 822ms (Views: 821.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bundle.self-0bc4f079f895f70a3eb523d8e80dd1d6b422312fd3cf61b89e8bb242b87f2a80.js?body=1" for ::1 at 2017-04-19 12:22:20 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 12:22:20 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:22:21 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.8ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (4.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (2.5ms)
+  Rendered api/songs/index.json.jbuilder (24.1ms)
+Completed 200 OK in 50ms (Views: 48.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/play_button-5ce70c8438bb8b2db3d0c45621288b347e01307e91b7e371f83f6fe2275442e7.png" for ::1 at 2017-04-19 12:22:21 -0400
+
+
+Started GET "/" for ::1 at 2017-04-19 12:22:39 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (1.1ms)
+  Rendered static_pages/root.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-17b1302f05681f06d35c6cbb53f91f0bfa94d3d0e8a188936cd192097cc85fb5.css?body=1" for ::1 at 2017-04-19 12:22:39 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 12:22:39 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:22:39 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.6ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (2.7ms)
+  Rendered api/songs/index.json.jbuilder (10.3ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:22:49 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 30ms (Views: 29.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-19 12:22:49 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:22:49 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.7ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (4.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (2.4ms)
+  Rendered api/songs/index.json.jbuilder (12.0ms)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:23:24 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 63ms (Views: 62.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-61c8a6da5c91fb660c31015d0eaadf42ad2fc218eb129799010ce506e54dceef.css?body=1" for ::1 at 2017-04-19 12:23:24 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:23:24 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.5ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (2.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (1.6ms)
+  Rendered api/songs/index.json.jbuilder (7.1ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:23:32 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 60ms (Views: 59.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-5ae56b93db458d6d485c033d077b7d72471e3a4c15e132d0d8bac02af379125c.css?body=1" for ::1 at 2017-04-19 12:23:32 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:23:32 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.4ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (2.5ms)
+  Rendered api/songs/index.json.jbuilder (9.2ms)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:23:55 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 68ms (Views: 67.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-212f33ee994dfe890cf483233a32b99da99bc539b27dd9684f010deecf9e4aa7.css?body=1" for ::1 at 2017-04-19 12:23:55 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:23:56 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.5ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (1.8ms)
+  Rendered api/songs/index.json.jbuilder (8.1ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:23:57 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 51ms (Views: 50.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:23:57 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.8ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (5.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.1ms)
+  Rendered api/songs/index.json.jbuilder (13.0ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:24:21 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (1.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 59ms (Views: 58.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-121a2742c295e649a70b2d305cbd52dad5338882c80caeb80cb51554299a494e.css?body=1" for ::1 at 2017-04-19 12:24:21 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:24:22 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.5ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (2.0ms)
+  Rendered api/songs/index.json.jbuilder (8.3ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:24:25 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (1.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 32ms (Views: 31.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:24:25 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.5ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (4.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (2.8ms)
+  Rendered api/songs/index.json.jbuilder (12.4ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:24:29 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:24:29 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.5ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (5.0ms)
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.4ms)
+  Rendered api/songs/index.json.jbuilder (13.0ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:24:35 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 91ms (Views: 90.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-ce5c9698164e3485cdf875211c1543b844f4bed24f734afa00b3f9548f2d997a.css?body=1" for ::1 at 2017-04-19 12:24:35 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:24:35 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.5ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (1.9ms)
+  Rendered api/songs/index.json.jbuilder (8.9ms)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:24:38 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 42ms (Views: 41.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:24:38 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.6ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (4.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.2ms)
+  Rendered api/songs/index.json.jbuilder (11.8ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:24:56 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (1.1ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:24:56 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.4ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (2.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (2.2ms)
+  Rendered api/songs/index.json.jbuilder (8.0ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:25:01 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (1.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 56ms (Views: 55.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-b92c16e7580f797df917e4de39d3e42afd55e27dcc57ca66294d5b68dff28e33.css?body=1" for ::1 at 2017-04-19 12:25:01 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:25:01 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.7ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (4.0ms)
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.3ms)
+  Rendered api/songs/index.json.jbuilder (12.9ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:25:04 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 80ms (Views: 79.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:25:04 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.5ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (5.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (2.6ms)
+  Rendered api/songs/index.json.jbuilder (11.8ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:25:13 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 79ms (Views: 78.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-350be498e6f2aa6ee5897e2d9b2afca1413542b0d67f9780ca31f47b18c070ae.css?body=1" for ::1 at 2017-04-19 12:25:13 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:25:13 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.4ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (2.2ms)
+  Rendered api/songs/index.json.jbuilder (9.6ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:25:22 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-5a33d4fb250e24775f0a5733d36bdc0318399a5407c6e07f471b44c0e3585a57.css?body=1" for ::1 at 2017-04-19 12:25:22 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:25:22 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.4ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.2ms)
+  Rendered api/songs/index.json.jbuilder (10.2ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:26:10 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 60ms (Views: 59.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-54944234e6ef97049017cf7beb0f893f5867ce0fb2357e6f7884b7085d4722c1.css?body=1" for ::1 at 2017-04-19 12:26:10 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:26:10 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.4ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (1.8ms)
+  Rendered api/songs/index.json.jbuilder (9.0ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:26:26 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 235ms (Views: 234.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-65eba18bfc9b12a08edc62bb30f091ce529662790b980f17858d401b02f4abdf.css?body=1" for ::1 at 2017-04-19 12:26:27 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:26:27 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.4ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (1.9ms)
+  Rendered api/songs/index.json.jbuilder (8.5ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:27:14 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (33.6ms)
+Completed 200 OK in 163ms (Views: 162.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-bb2b5247742898093784b0e20b5909534c46245bcf58c653b3ba060c5b1a4c8f.css?body=1" for ::1 at 2017-04-19 12:27:14 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:27:15 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.5ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (4.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (2.9ms)
+  Rendered api/songs/index.json.jbuilder (16.1ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:27:26 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 96ms (Views: 95.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-7bfeefc222bd3696e892a28f88139ec2fab2db62249adcdd2622f927a35e81b6.css?body=1" for ::1 at 2017-04-19 12:27:26 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:27:26 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.4ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.9ms)
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.7ms)
+  Rendered api/songs/index.json.jbuilder (11.7ms)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:27:33 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 116ms (Views: 115.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-89250bbd82475ccf0651b7bd97a6c111e4f0c2f198cdec33332def06d41a7c2a.css?body=1" for ::1 at 2017-04-19 12:27:33 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:27:33 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.7ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.0ms)
+  Rendered api/songs/index.json.jbuilder (11.8ms)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:27:44 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-46cd1e2c704ce73fd526a4bf29ff22fe78a9a8b4a92d0d4f0d3f2db9508a84f3.css?body=1" for ::1 at 2017-04-19 12:27:44 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:27:44 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.5ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (2.8ms)
+  Rendered api/songs/index.json.jbuilder (9.9ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:27:53 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.9ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 54ms (Views: 53.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-6664eb66936fcdeef726447caf20901f553fb6a8ae1ab3408f86da199e2d17fe.css?body=1" for ::1 at 2017-04-19 12:27:53 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:27:53 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.5ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (4.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.0ms)
+  Rendered api/songs/index.json.jbuilder (12.0ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:28:05 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-a89bf220fe9e26b289ef96f75a25cc0df3192e4233a71d0b328de330ab5a3d07.css?body=1" for ::1 at 2017-04-19 12:28:05 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:28:05 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.5ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (4.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (3.2ms)
+  Rendered api/songs/index.json.jbuilder (11.6ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-04-19 12:28:23 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "cYWHkYoPo2imUA8XhRLtNA"]]
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 40ms (Views: 39.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-c7b3fa929490ce53ec3d841485b8afdb221838a291bb938e913441a92ccc85e5.css?body=1" for ::1 at 2017-04-19 12:28:23 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-19 12:28:23 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.4ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (2.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/songs/_song.json.jbuilder (1.7ms)
+  Rendered api/songs/index.json.jbuilder (7.7ms)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.7ms)

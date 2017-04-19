@@ -150,21 +150,6 @@ input[type="submit"] {
   display: none;
 }
 
-/*Stream*/
-
-.stream {
-  position: relative;
-}
-
-.stream h1 {
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
-  font-size: 30px;
-  border-bottom: 1px solid #e6e6e6;
-
-}
-
 /*Navbar*/
 
 .navbar {
@@ -198,4 +183,59 @@ input[type="submit"] {
   width: 300px;
   height: 20px;
   background-color: grey;
+}
+
+
+/*Stream*/
+
+.stream {
+  position: relative;
+  height: 100vh;
+}
+
+.stream h1 {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 30px;
+  border-bottom: 1px solid #e6e6e6;
+
+}
+
+
+/*SongItem*/
+
+.song_item {
+  display: flex;
+  width: 100%;
+  height: 200px;
+}
+
+.song_item img {
+  width: 170px;
+  height: 160px;
+}
+
+.song_header {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.song_header img {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+
+.song_header_info {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  color: #aaaaaa;
+}
+
+.song_header_info div:last-child {
+  font-size: 20px;
+  color: #333333;
 }
