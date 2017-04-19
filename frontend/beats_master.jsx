@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/root';
+import * as APIUtil from './util/song_api_util';
+
+window.getSongs = APIUtil.getSongs;
 
 document.addEventListener('DOMContentLoaded', () => {
     let store;
