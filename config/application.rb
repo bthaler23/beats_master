@@ -8,6 +8,10 @@ Bundler.require(*Rails.groups)
 
 module BeatsMaster
   class Application < Rails::Application
+
+    Paperclip.options[:content_type_mappings] = {
+      :mp3 => "application/octet-stream"
+    }
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
