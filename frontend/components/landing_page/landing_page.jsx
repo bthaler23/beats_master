@@ -1,6 +1,6 @@
 import React from 'react';
 import AuthForm from '../session/auth_form';
-
+import SongTileIndexContainer from '../song_tiles/song_tile_index_container'
 
 class LandingPage extends React.Component {
 
@@ -46,6 +46,11 @@ class LandingPage extends React.Component {
               <button onClick={this.handleAuth}>Log in</button>
               <button onClick={this.handleAuth}>Sign Up</button>
             </ul>
+        </div>
+        <div className="landing_search">
+        </div>
+        <div>
+          <SongTileIndexContainer />
         </div>
 
       </section>

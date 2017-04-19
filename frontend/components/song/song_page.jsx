@@ -29,6 +29,7 @@ class SongPage extends React.Component {
             <img src={this.props.song.image_url} />
           </div>
         </div>
+        <audio src={this.props.song.song_url} autoPlay />
       </section>
     )
   }

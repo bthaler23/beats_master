@@ -80,6 +80,12 @@ h1 {
 
 }
 
+.landing_search {
+  width: 100%;
+  height: 150px;
+}
+
+
 
 
 input[type="text"] {
