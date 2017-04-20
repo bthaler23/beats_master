@@ -19,7 +19,14 @@ class SongTileIndex extends React.Component {
     ));
 
     return (
-      <div className="song_tile_index">{all_songs}</div>
+      <section>
+        <div className="song_tile_index_header">
+          <h1>Now that's what I call music!</h1>
+        </div>
+        <div className="song_tile_index">
+          {all_songs}
+        </div>
+      </section>
     );
   }
 

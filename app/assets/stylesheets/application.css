@@ -14,17 +14,18 @@
  *= require_self
  */
 
-/*Full Backgrdound*/
+/*Full Background*/
 
 html {
   background: #eeeeee;
+  height: 100%;
 }
 
 body {
   width: 1250px;
-  height: 100vh;
+  height: inherit;
   margin: 0 auto;
-  font-family: 'Antic', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background: #ffffff;
 }
 
@@ -75,9 +76,11 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 13px;
   margin: 20px 10px;
-  width: 95px;
-  height: 30px;
+  width: 43px;
+  padding: 0 15px;
+  height: 28px;
   color: white;
   border:  white 1px solid;
   border-radius: 5px;
@@ -86,6 +89,8 @@ h1 {
 
 
 .landing_nav button:last-child {
+  width: 95px;
+  padding: 0 16px;
   background: #FF5500;
   border: #FF5500 1px solid;
   color: white;
@@ -100,15 +105,33 @@ h1 {
 
 /*Song Title*/
 
+.song_tile_index_header {
+  display: flex;
+  justify-content: center;
+}
+
+.song_tile_index_header h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
 .song_tile_index {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .song_tile {
   width: 200px;
+  border: #cccccc solid 1px;
   height: 200px;
-  border: groove black 1px;
+  margin-left: 40px;
+  margin-bottom: 50px;
+}
+
+.song_tile img {
+  width: 100%;
+  height: 100%;
 }
 
 .song_tile:hover {
@@ -120,17 +143,18 @@ h1 {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin-left: 10px;
+  margin-top:3px;
 }
 
 .song_tile_info h4 {
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
   color: #333;
 }
 
 .song_tile_info h5 {
   margin: 0;
+  font-size: 13px;
   color: #999;
 }
 
@@ -248,15 +272,13 @@ input[type="submit"] {
 .stream {
   position: relative;
   height: 100vh;
+  overflow: auto;
 }
 
 .stream h1 {
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 50px;
   font-size: 30px;
   border-bottom: 1px solid #e6e6e6;
-
 }
 
 
@@ -264,6 +286,7 @@ input[type="submit"] {
 
 .song_item {
   display: flex;
+  margin-left: 60px;
   width: 100%;
   height: 200px;
 }

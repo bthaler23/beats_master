@@ -45,8 +45,8 @@ class LandingPage extends React.Component {
             <div className="landing_nav">
               <h1>BeatsMaster</h1>
               <div className="landing_nav_buttons">
-                <button onClick={this.handleAuth}>Log in</button>
-                <button onClick={this.handleAuth}>Sign Up</button>
+                <button onClick={this.handleAuth}>Sign in</button>
+                <button onClick={this.handleAuth}>Create Account</button>
               </div>
             </div>
         </div>
