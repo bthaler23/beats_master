@@ -5,10 +5,24 @@ class AudioPlayer extends React.Component {
 
   constructor(props) {
     super(props);
+  }
 
+  componentDidUpdate() {
+    const audio = $('audio')[0];
+    if (this.props.playlist.playing) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
   }
 
   handleMusic(e) {
+    e.preventDefault();
+    const audio = $('audio')[0];
+    audio.play();
+  }
+
+  handleStop(e) {
     e.preventDefault();
     const audio = $('audio')[0];
     audio.pause();
@@ -19,7 +33,8 @@ class AudioPlayer extends React.Component {
     return (
       <section>
         <button onClick={this.handleMusic}>Stopplz</button>
-        <audio src={this.props.current_song.song_url} autoPlay />
+        <button onClick={this.handleStop}>Startplz</button>
+        <audio src={this.props.playlist.current_song.song_url}/>
       </section>
     );
 

@@ -5,28 +5,37 @@ class SongItem extends React.Component {
 
   constructor(props) {
     super(props);
-    this.handleSong = this.handleSong.bind(this);
+
+    this.playSong = this.playSong.bind(this);
+    this.stopSong = this.stopSong.bind(this);
   }
 
-  handleSong(e) {
-    e.preventDefault();
-    this.props.playSong(this.props.song);
-  }
+  // handleSong(e) {
+  //   e.preventDefault();
+  //   this.props.playSong(this.props.song);
+  // }
 
   currentSongCheck() {
-    if (this.props.current_song.id === this.props.song.id) {
-      return (<img src={window.pause_button} onClick={this.handleSong}/>);
+    if (this.props.playlist.current_song.id === this.props.song.id && this.props.playlist.playing) {
+      return (<img src={window.pause_button} onClick={this.stopSong}/>);
     } else {
-      return (<img src={window.playButton} onClick={this.handleSong}/>);
+      return (<img src={window.playButton} onClick={this.playSong}/>);
     }
   }
 
+  playSong(e) {
+    this.props.playSong(this.props.song);
+  }
+
+  stopSong() {
+    this.props.stopSong();
+  }
 
 
   render() {
     return (
       <li className="song_item">
-        <img src={this.props.song.image_url} onClick={this.handleSong}/>
+        <img src={this.props.song.image_url}/>
         <div className="song_header">
             {this.currentSongCheck()}
           <div className="song_header_info">
