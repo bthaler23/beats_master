@@ -1,6 +1,6 @@
 import React from 'react';
 import AuthForm from '../session/auth_form';
-import SongTileIndexContainer from '../song_tiles/song_tile_index_container'
+import SongTileIndexContainer from '../song_tiles/song_tile_index_container';
 
 class LandingPage extends React.Component {
 
@@ -42,10 +42,13 @@ class LandingPage extends React.Component {
           {auth_render}
         <div className="splash_image">
           <img src={window.zeldaIcon}/>
-            <ul className="landing_nav">
-              <button onClick={this.handleAuth}>Log in</button>
-              <button onClick={this.handleAuth}>Sign Up</button>
-            </ul>
+            <div className="landing_nav">
+              <h1>BeatsMaster</h1>
+              <div className="landing_nav_buttons">
+                <button onClick={this.handleAuth}>Log in</button>
+                <button onClick={this.handleAuth}>Sign Up</button>
+              </div>
+            </div>
         </div>
         <div className="landing_search">
         </div>

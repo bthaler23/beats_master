@@ -25,7 +25,7 @@ class NavbarWithoutRouter extends React.Component {
 
   handleUserPage(e) {
     e.preventDefault();
-    this.props.router.push(`/${this.props.userId}`)
+    this.props.router.push(`/${this.props.userId}`);
   }
 
   render() {

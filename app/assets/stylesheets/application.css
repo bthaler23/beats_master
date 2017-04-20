@@ -40,22 +40,35 @@ h1 {
 }
 
 .landing_nav {
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   flex-direction: row;
   position: absolute;
 }
 
+.landing_nav h1 {
+  margin: 25px 40px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
 
 .splash_image {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
+  height: 450px;
 }
 
 .splash_image img {
   width: 100%;
-  height: 80%;
+  height: 100%;
+  border-top: 3px #FF5500 solid;
+}
 
+.landing_nav_buttons {
+  display: flex;
+  flex-direction: row;
 }
 
 .landing_nav button {
@@ -75,7 +88,7 @@ h1 {
 .landing_nav button:last-child {
   background: #FF5500;
   border: #FF5500 1px solid;
-  font: white;
+  color: white;
   margin-right: 20px;
 
 }
@@ -85,7 +98,37 @@ h1 {
   height: 150px;
 }
 
+/*Song Title*/
 
+.song_tile_index {
+  display: flex;
+  flex-direction: row;
+}
+
+.song_tile {
+  width: 200px;
+  height: 200px;
+  border: groove black 1px;
+}
+
+.song_tile_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.song_tile_info h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.song_tile_info h5 {
+  margin: 0;
+  color: #999;
+}
 
 
 input[type="text"] {
@@ -294,7 +337,7 @@ input[type="submit"] {
 }
 
 .song_image {
-  display:flex;
+  display: flex;
   margin: 20px;
   width: 100%;
   justify-content: flex-end;

@@ -13,7 +13,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     fetchSongs: () => dispatch(fetchSongs())
   };
-}
+};
 
 export default connect(
   mapStateToProps,

@@ -4,11 +4,11 @@ import SongItem from './song_item';
 class SongList extends React.Component {
 
     constructor(props) {
-      super(props)
+      super(props);
     }
 
     componentDidMount() {
-      this.props.fetchSongs()
+      this.props.fetchSongs();
     }
 
     render() {
