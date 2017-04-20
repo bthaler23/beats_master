@@ -9,6 +9,7 @@ class SongPage extends React.Component {
   }
 
   componentDidMount() {
+    debugger
     //Fetches from server, but has list of song in state -- maybe fix
     this.props.fetchSong(this.props.params.song_id);
   }

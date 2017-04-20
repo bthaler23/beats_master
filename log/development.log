@@ -27217,3 +27217,406 @@ Processing by Api::SongsController#index as JSON
   Rendered api/songs/_song.json.jbuilder (3.8ms)
   Rendered api/songs/index.json.jbuilder (36.5ms)
 Completed 200 OK in 44ms (Views: 42.7ms | ActiveRecord: 1.4ms)
+  [1m[36mSQL (0.7ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (37.9ms)[0m  CREATE TABLE "songs" ("id" serial primary key, "title" character varying NOT NULL, "artist_id" integer NOT NULL, "genre" character varying, "song_file_name" character varying NOT NULL, "song_content_type" character varying NOT NULL, "song_file_size" integer NOT NULL, "song_updated_at" timestamp NOT NULL, "image_file_name" character varying, "image_content_type" character varying, "image_file_size" integer, "image_updated_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (2.0ms)[0m  [1mCREATE  INDEX  "index_songs_on_artist_id" ON "songs" USING btree ("artist_id")[0m
+  [1m[35m (2.3ms)[0m  CREATE  INDEX  "index_songs_on_title" ON "songs" USING btree ("title")
+  [1m[36m (8.1ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying NOT NULL, "username" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "name" character varying, "image_url" character varying, "bio" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "image_file_name" character varying, "image_content_type" character varying, "image_file_size" integer, "image_updated_at" timestamp) [0m
+  [1m[35m (2.1ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users" USING btree ("email")
+  [1m[36m (2.2ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_session_token" ON "users" USING btree ("session_token")[0m
+  [1m[35m (1.7ms)[0m  CREATE UNIQUE INDEX  "index_users_on_username" ON "users" USING btree ("username")
+  [1m[36m (2.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.4ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170419142824')
+  [1m[36m (2.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170418175953')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170419125626')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170419131546')[0m
+  [1m[35mSQL (0.5ms)[0m  CREATE EXTENSION IF NOT EXISTS "plpgsql"
+  [1m[36m (7.7ms)[0m  [1mCREATE TABLE "songs" ("id" serial primary key, "title" character varying NOT NULL, "artist_id" integer NOT NULL, "genre" character varying, "song_file_name" character varying NOT NULL, "song_content_type" character varying NOT NULL, "song_file_size" integer NOT NULL, "song_updated_at" timestamp NOT NULL, "image_file_name" character varying, "image_content_type" character varying, "image_file_size" integer, "image_updated_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.7ms)[0m  CREATE  INDEX  "index_songs_on_artist_id" ON "songs" USING btree ("artist_id")
+  [1m[36m (1.5ms)[0m  [1mCREATE  INDEX  "index_songs_on_title" ON "songs" USING btree ("title")[0m
+  [1m[35m (4.9ms)[0m  CREATE TABLE "users" ("id" serial primary key, "email" character varying NOT NULL, "username" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "name" character varying, "image_url" character varying, "bio" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "image_file_name" character varying, "image_content_type" character varying, "image_file_size" integer, "image_updated_at" timestamp) 
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_email" ON "users" USING btree ("email")[0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX  "index_users_on_session_token" ON "users" USING btree ("session_token")
+  [1m[36m (1.4ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_username" ON "users" USING btree ("username")[0m
+  [1m[35m (3.2ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.3ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170419142824')[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170418175953')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170419125626')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170419131546')
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSong Load (0.8ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSong Load (0.8ms)[0m  SELECT "songs".* FROM "songs"
+Command :: file -b --mime '/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/71144850f4fb4cc55fc0ee6935badddf20170420-1859-15gcijh.mp3'
+  [1m[36m (17.8ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (48.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mSong Exists (12.0ms)[0m  [1mSELECT  1 AS one FROM "songs" WHERE ("songs"."title" = 'Ghost!' AND "songs"."artist_id" = 1) LIMIT 1[0m
+Command :: file -b --mime '/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/71144850f4fb4cc55fc0ee6935badddf20170420-1859-ybxtcv.mp3'
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users"
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (1.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'guest@guest.com' LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'guest' LIMIT 1[0m
+  [1m[35mSQL (17.3ms)[0m  INSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["username", "guest"], ["email", "guest@guest.com"], ["password_digest", "$2a$10$bagzHYZXGD3sgnkI4bV9WOWbI.JaPOSvPvucIpWuUlU3cZe3C0Yn6"], ["session_token", "cWMokpdoiumKxsjrLQ-IRQ"], ["created_at", "2017-04-20 18:01:30.462169"], ["updated_at", "2017-04-20 18:01:30.462169"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mSong Load (0.8ms)[0m  SELECT "songs".* FROM "songs"
+Command :: file -b --mime '/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/71144850f4fb4cc55fc0ee6935badddf20170420-1883-1isjr6s.mp3'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mSong Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "songs" WHERE ("songs"."title" = 'Ghost!' AND "songs"."artist_id" = 1) LIMIT 1[0m
+Command :: file -b --mime '/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/71144850f4fb4cc55fc0ee6935badddf20170420-1883-zmhbio.mp3'
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "songs" ("title", "artist_id", "genre", "song_file_name", "song_content_type", "song_file_size", "song_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["title", "Ghost!"], ["artist_id", 1], ["genre", "Hip-Hop"], ["song_file_name", "ghost.mp3"], ["song_content_type", "audio/mpeg"], ["song_file_size", 4861824], ["song_updated_at", "2017-04-20 18:01:30.518633"], ["created_at", "2017-04-20 18:01:30.662156"], ["updated_at", "2017-04-20 18:01:30.662156"]]
+[paperclip] saving /songs/songs/000/000/001/original/ghost.mp3
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (9.0ms)[0m  DELETE FROM "users" WHERE "users"."id" = $1  [["id", 1]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (13.6ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'guest@guest.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.7ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'guest' LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "guest"], ["email", "guest@guest.com"], ["password_digest", "$2a$10$..8VcErEy7CCeqXJKuSvdegXAO9HIlMCO3LAaK0qkhlmvXKPvl11q"], ["session_token", "kfM9dpuhuQooFiCScT-Xnw"], ["created_at", "2017-04-20 18:04:56.104320"], ["updated_at", "2017-04-20 18:04:56.104320"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36mSong Load (0.9ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+Command :: file -b --mime '/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/71144850f4fb4cc55fc0ee6935badddf20170420-1930-12ht26l.mp3'
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mSong Exists (0.4ms)[0m  SELECT  1 AS one FROM "songs" WHERE ("songs"."title" = 'Ghost!' AND "songs"."artist_id" = 2) LIMIT 1
+Command :: file -b --mime '/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/71144850f4fb4cc55fc0ee6935badddf20170420-1930-10p4vli.mp3'
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "songs" ("title", "artist_id", "genre", "song_file_name", "song_content_type", "song_file_size", "song_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Ghost!"], ["artist_id", 2], ["genre", "Hip-Hop"], ["song_file_name", "ghost.mp3"], ["song_content_type", "audio/mpeg"], ["song_file_size", 4861824], ["song_updated_at", "2017-04-20 18:04:56.161214"], ["created_at", "2017-04-20 18:04:56.264701"], ["updated_at", "2017-04-20 18:04:56.264701"]]
+[paperclip] saving /songs/songs/000/000/002/original/ghost.mp3
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "users" WHERE "users"."id" = $1  [["id", 2]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (1.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'guest@guest.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'guest' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "guest"], ["email", "guest@guest.com"], ["password_digest", "$2a$10$z5ocdnIKatsS0/DrV5MCgOJjh5zWr24Po0DpPzzWFoTEi825kdZzS"], ["session_token", "COVPsc8tdPcvS-7MFojC5Q"], ["created_at", "2017-04-20 18:17:08.269413"], ["updated_at", "2017-04-20 18:17:08.269413"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mSong Load (0.7ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+Command :: file -b --mime '/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/71144850f4fb4cc55fc0ee6935badddf20170420-2039-1a6h64a.mp3'
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mSong Exists (0.5ms)[0m  SELECT  1 AS one FROM "songs" WHERE ("songs"."title" = 'Ghost!' AND "songs"."artist_id" = 3) LIMIT 1
+Command :: file -b --mime '/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/71144850f4fb4cc55fc0ee6935badddf20170420-2039-mmzm19.mp3'
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "songs" ("title", "artist_id", "genre", "song_file_name", "song_content_type", "song_file_size", "song_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Ghost!"], ["artist_id", 3], ["genre", "Hip-Hop"], ["song_file_name", "ghost.mp3"], ["song_content_type", "audio/mpeg"], ["song_file_size", 4861824], ["song_updated_at", "2017-04-20 18:17:08.304896"], ["created_at", "2017-04-20 18:17:08.425631"], ["updated_at", "2017-04-20 18:17:08.425631"]]
+[paperclip] saving /songs/songs/000/000/003/original/ghost.mp3
+  [1m[35m (0.6ms)[0m  COMMIT
+Command :: file -b --mime '/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/71144850f4fb4cc55fc0ee6935badddf20170420-2039-fasrl3.mp3'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mSong Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "songs" WHERE ("songs"."title" = 'Good Morning' AND "songs"."artist_id" = 3) LIMIT 1[0m
+Command :: file -b --mime '/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/71144850f4fb4cc55fc0ee6935badddf20170420-2039-7pwuv4.mp3'
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "songs" ("title", "artist_id", "genre", "song_file_name", "song_content_type", "song_file_size", "song_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["title", "Good Morning"], ["artist_id", 3], ["genre", "Hip-Hop"], ["song_file_name", "ghost.mp3"], ["song_content_type", "audio/mpeg"], ["song_file_size", 4861824], ["song_updated_at", "2017-04-20 18:17:13.883663"], ["created_at", "2017-04-20 18:17:14.015249"], ["updated_at", "2017-04-20 18:17:14.015249"]]
+[paperclip] saving /songs/songs/000/000/004/original/ghost.mp3
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/users/new" for ::1 at 2017-04-20 14:23:09 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/users/new"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.9ms)
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (32.5ms)
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (173.1ms)
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (167.8ms)
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (294.8ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 14:23:12 -0400
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1646.1ms)
+Completed 200 OK in 1872ms (Views: 1871.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api/songs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-04-20 14:23:14 -0400
+
+
+Started GET "/assets/css_reset.self-8c5d8f313aec16f2a1e61bb3870d27394db21654013b411e9b1ebb046fea18b2.css?body=1" for ::1 at 2017-04-20 14:23:14 -0400
+
+
+Started GET "/assets/api/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-04-20 14:23:14 -0400
+
+
+Started GET "/assets/api/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-04-20 14:23:14 -0400
+
+
+Started GET "/assets/songs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-04-20 14:23:14 -0400
+
+
+Started GET "/assets/application.self-367bf49bf93073b44a030f53a4bb18140680ce71e0eaedaf981bcb401c972c4f.css?body=1" for ::1 at 2017-04-20 14:23:14 -0400
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-04-20 14:23:14 -0400
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-04-20 14:23:14 -0400
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-04-20 14:23:14 -0400
+
+
+Started GET "/assets/api/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-20 14:23:14 -0400
+
+
+Started GET "/assets/api/songs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-20 14:23:14 -0400
+
+
+Started GET "/assets/api/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-20 14:23:14 -0400
+
+
+Started GET "/assets/bundle.self-621f377545567f01dc9acdaa45dda9b1347b588906a64cce1488531409f5e096.js?body=1" for ::1 at 2017-04-20 14:23:14 -0400
+
+
+Started GET "/assets/songs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-20 14:23:14 -0400
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-20 14:23:14 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2017-04-20 14:23:14 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-20 14:23:15 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (1.6ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (73.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (3.0ms)
+  Rendered api/songs/index.json.jbuilder (144.8ms)
+Completed 200 OK in 190ms (Views: 147.2ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/assets/zelda_landing-0c1869f0ead60ba49dd2e42e89a2e1b1728d70f251dfdb34b0617ba858f274c4.jpg" for ::1 at 2017-04-20 14:23:15 -0400
+
+
+Started GET "/assets/bears_temp-17911762542858aad4e8378ff0e298e902f196a960b14a00c72553f40df2cc95.png" for ::1 at 2017-04-20 14:23:15 -0400
+
+
+Started GET "/api/songs/4" for ::1 at 2017-04-20 14:23:19 -0400
+Processing by Api::SongsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mSong Load (0.5ms)[0m  [1mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (4.1ms)
+  Rendered api/songs/show.json.jbuilder (5.7ms)
+Completed 200 OK in 68ms (Views: 32.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/play_button-5ce70c8438bb8b2db3d0c45621288b347e01307e91b7e371f83f6fe2275442e7.png" for ::1 at 2017-04-20 14:23:19 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-20 14:23:21 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[36mSong Load (0.6ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (3.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (1.9ms)
+  Rendered api/songs/index.json.jbuilder (9.3ms)
+Completed 200 OK in 23ms (Views: 20.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/users/email_exists?email=bthaler%40bellsouth.net" for ::1 at 2017-04-20 14:23:26 -0400
+Processing by Api::UsersController#email_exists as JSON
+  Parameters: {"email"=>"bthaler@bellsouth.net"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bthaler@bellsouth.net"]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/users/" for ::1 at 2017-04-20 14:23:34 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"bthaler23", "password"=>"[FILTERED]", "email"=>"bthaler@bellsouth.net"}}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'bthaler@bellsouth.net' LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'bthaler23' LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["username", "bthaler23"], ["email", "bthaler@bellsouth.net"], ["password_digest", "$2a$10$TFPkMuPIyz/6p5JPrfKp0.cl.5DYgsdAaXC/l/HvlHCTy4ngeqYDq"], ["session_token", "YUSoJ0V6VouszUdRSob1Wg"], ["created_at", "2017-04-20 18:23:34.676925"], ["updated_at", "2017-04-20 18:23:34.676925"]]
+  [1m[36m (12.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bthaler@bellsouth.net' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."username" = 'bthaler23' AND "users"."id" != 4) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "_KEnAzW5x5KDH9eqG6JOTg"], ["updated_at", "2017-04-20 18:23:34.697793"], ["id", 4]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  Rendered api/users/_user.json.jbuilder (2.2ms)
+  Rendered api/users/show.json.jbuilder (4.2ms)
+Completed 200 OK in 194ms (Views: 13.8ms | ActiveRecord: 16.4ms)
+
+
+Started GET "/api/songs" for ::1 at 2017-04-20 14:23:34 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[36mSong Load (0.6ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (6.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (2.2ms)
+  Rendered api/songs/index.json.jbuilder (14.0ms)
+Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/api/songs" for ::1 at 2017-04-20 14:24:05 -0400
+Processing by Api::SongsController#create as JSON
+  Parameters: {"song"=>{"title"=>"Taipei", "genre"=>"Something", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f968533b698 @tempfile=#<Tempfile:/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/RackMultipart20170420-2268-wp08q5.png>, @original_filename="Screen Shot 2017-04-20 at 2.22.54 PM.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"song[image]\"; filename=\"Screen Shot 2017-04-20 at 2.22.54 PM.png\"\r\nContent-Type: image/png\r\n">, "song"=>#<ActionDispatch::Http::UploadedFile:0x007f968533b3a0 @tempfile=#<Tempfile:/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/RackMultipart20170420-2268-nwlpc3.mp3>, @original_filename="tofuku.mp3", @content_type="audio/mp3", @headers="Content-Disposition: form-data; name=\"song[song]\"; filename=\"tofuku.mp3\"\r\nContent-Type: audio/mp3\r\n">}}
+Command :: file -b --mime '/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/9e4751e9ad96e242f764845f3376c11120170420-2268-nvw68k.mp3'
+Command :: file -b --mime '/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/fa9b65ce54c0e8e217dfea8c3dfaff1520170420-2268-ghvu2c.png'
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "_KEnAzW5x5KDH9eqG6JOTg"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mSong Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "songs" WHERE ("songs"."title" = 'Taipei' AND "songs"."artist_id" = 4) LIMIT 1[0m
+Command :: file -b --mime '/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/9e4751e9ad96e242f764845f3376c11120170420-2268-iue1c1.mp3'
+Command :: file -b --mime '/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/fa9b65ce54c0e8e217dfea8c3dfaff1520170420-2268-9ldipo.png'
+  [1m[35mSQL (14.0ms)[0m  INSERT INTO "songs" ("title", "genre", "song_file_name", "song_content_type", "song_file_size", "song_updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"  [["title", "Taipei"], ["genre", "Something"], ["song_file_name", "tofuku.mp3"], ["song_content_type", "audio/mpeg"], ["song_file_size", 8816309], ["song_updated_at", "2017-04-20 18:24:05.103663"], ["image_file_name", "Screen_Shot_2017-04-20_at_2.22.54_PM.png"], ["image_content_type", "image/png"], ["image_file_size", 400148], ["image_updated_at", "2017-04-20 18:24:05.352261"], ["artist_id", 4], ["created_at", "2017-04-20 18:24:05.400154"], ["updated_at", "2017-04-20 18:24:05.400154"]]
+[paperclip] saving /songs/songs/000/000/005/original/tofuku.mp3
+[paperclip] saving /songs/images/000/000/005/original/Screen_Shot_2017-04-20_at_2.22.54_PM.png
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  Rendered api/songs/_song.json.jbuilder (1.2ms)
+  Rendered api/songs/show.json.jbuilder (4.8ms)
+Completed 200 OK in 7334ms (Views: 32.1ms | ActiveRecord: 16.1ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-20 14:24:12 -0400
+
+
+Started GET "/api/songs/undefined" for ::1 at 2017-04-20 14:24:12 -0400
+Processing by Api::SongsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[35mSong Load (0.7ms)[0m  SELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 6ms (ActiveRecord: 0.7ms)
+
+ActiveRecord::RecordNotFound - Couldn't find Song with 'id'=undefined:
+  activerecord (4.2.8) lib/active_record/core.rb:155:in `find'
+  app/controllers/api/songs_controller.rb:21:in `show'
+  actionpack (4.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.5) lib/rack/etag.rb:24:in `call'
+  rack (1.6.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.5) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+Started GET "/api/songs" for ::1 at 2017-04-20 14:24:38 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[36mSong Load (0.8ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (42.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (1.8ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered api/songs/_song.json.jbuilder (1.9ms)
+  Rendered api/songs/index.json.jbuilder (51.6ms)
+Completed 200 OK in 61ms (Views: 58.6ms | ActiveRecord: 1.6ms)
