@@ -9,9 +9,9 @@
 Song.destroy_all
 
 s = Song.new(title: "Ghost!", artist_id: 1, genre: "Hip-Hop");
-s.song = File.open("#{Rails.root}/app/assets/songs/ghost.mp3");
+s.song = File.open(asset_url("ghost.mp3"));
 s.save!
 
 y = Song.new(title: "Good Morning", artist_id:1, genre: "Hip-Hop");
-y.song = File.open("#{Rails.root}/app/assets/songs/good_morning.mp3")
+y.song = File.open(asset_url("good_morning.mp3"));
 y.save!
