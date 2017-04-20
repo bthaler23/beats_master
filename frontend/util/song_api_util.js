@@ -10,10 +10,11 @@ export const createSong = (song) => {
 
 };
 
-export const getSongs = () => {
+export const getSongs = (artist_id) => {
   return $.ajax({
     method: 'GET',
-    url: 'api/songs'
+    url: 'api/songs',
+    data: {artist_id}
   });
 };
 

@@ -14,7 +14,7 @@ class SongTileWithoutRouter extends React.Component{
 
   handleClick(e) {
     e.preventDefault();
-    this.props.router.push(`/stream/${this.props.song.id}`);
+    this.props.router.push(`/songs/${this.props.song.id}`);
   }
 
   render() {

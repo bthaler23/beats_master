@@ -24,7 +24,6 @@ class SessionFormWithoutRouter extends React.Component {
 
   handleSubmit(e){
     e.preventDefault();
-    // debugger
     const temp_user = Object.assign({}, this.state);
     temp_user.email = this.props.email;
     const user = {user: temp_user};

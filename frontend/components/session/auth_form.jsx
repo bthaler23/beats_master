@@ -8,7 +8,6 @@ class AuthForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {email: "", errors: ""};
-    // debugger
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
@@ -17,7 +16,6 @@ class AuthForm extends React.Component {
     e.preventDefault();
       if (this.state.email.length > 3) {
         (email_exists(this.state.email)).then ((answer) => {
-      // debugger
         if (answer) {
           this.setState({form: 'login'});
         } else {

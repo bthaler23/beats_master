@@ -12,8 +12,8 @@ export const receiveSong = song => ({
   song
 });
 
-export const fetchSongs = () => dispatch => (
-  APIUtil.getSongs()
+export const fetchSongs = (artist_id) => dispatch => (
+  APIUtil.getSongs(artist_id)
     .then(songs => dispatch(receiveSongs(songs)))
 );
 

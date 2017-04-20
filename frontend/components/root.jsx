@@ -31,9 +31,9 @@ const Root = ({ store }) => {
         <Route path="/" component={ App } >
           <IndexRoute component={LandingPageContainer} onEnter={ checkLoggedIn } />
           <Route path="stream" component={ Stream } onEnter={ authenticateUser }/>
-          <Route path="stream/:song_id" component={SongPageContainer} />
-          <Router path="/upload" component={UploadContainer} />
-          <Router path="/:user_id" component={UserPageContainer} />
+          <Route path="upload" component={UploadContainer} />
+          <Route path="users/:user_id" component={UserPageContainer} />
+          <Route path="songs/:song_id" component={SongPageContainer} />
         </Route>
       </Router>
     </Provider>

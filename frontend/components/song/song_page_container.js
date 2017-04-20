@@ -2,8 +2,9 @@ import { connect } from 'react-redux';
 import SongPage from './song_page';
 import { fetchSong } from '../../actions/song_actions';
 
-const mapStateToProps = ({songs}, ownProps) => {
+const mapStateToProps = ({session, songs}, ownProps) => {
   return {
+    currentUser: session.currentUser,
     song: songs.songDetail
   };
 

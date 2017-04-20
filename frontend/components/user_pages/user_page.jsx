@@ -1,4 +1,5 @@
 import React from 'react';
+import SongListContainer from '../song_list/song_list_container';
 
 class UserPage extends React.Component {
 
@@ -11,7 +12,12 @@ class UserPage extends React.Component {
   }
 
   render() {
-    return (<h1>{this.props.user.username}</h1>);
+    return (
+      <section>
+        <h1>{this.props.user.username}</h1>
+        <SongListContainer />
+      </section>
+    );
   }
 
 

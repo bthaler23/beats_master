@@ -3,7 +3,6 @@ import { login, logout, signup } from '../../actions/session_actions';
 import SessionForm from './session_form';
 
 const mapStateToProps = ({session}, {email, formType, router}) => {
-  // debugger
   return {
     router,
     errors: session.errors,

@@ -1,5 +1,4 @@
 export const signup = (user) => {
-  // debugger
   return $.ajax({
     method: 'POST',
     url: 'api/users/',
@@ -23,7 +22,6 @@ export const logout = () => (
 );
 
 export const email_exists = (email) => (
-  // debugger
   $.ajax({
     method: 'GET',
     url: 'api/users/email_exists',

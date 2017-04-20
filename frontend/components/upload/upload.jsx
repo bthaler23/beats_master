@@ -60,7 +60,7 @@ class Upload extends React.Component {
     formData.append("song[image]", this.state.imageFile);
     formData.append("song[song]", this.state.songFile);
 
-    this.props.createSong(formData).then((song) => (this.props.router.push(`/stream/${song.id}`)));
+    this.props.createSong(formData).then((song) => (this.props.router.push(`/songs/${song.id}`)));
   }
 
   render() {

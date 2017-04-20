@@ -9,13 +9,14 @@ class SongPage extends React.Component {
   }
 
   componentDidMount() {
-    debugger
     //Fetches from server, but has list of song in state -- maybe fix
     this.props.fetchSong(this.props.params.song_id);
   }
 
 
   render() {
+
+
     return(
       <section>
         <div className="song_page_splash">
@@ -30,6 +31,7 @@ class SongPage extends React.Component {
             <img src={this.props.song.image_url} />
           </div>
         </div>
+          { (this.props.currentUser) && ((this.props.currentUser.id === this.props.song.artist_id) && <h1>Edit</h1> )}
         <audio src={this.props.song.song_url} autoPlay />
       </section>
     );

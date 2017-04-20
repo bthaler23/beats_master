@@ -8,7 +8,7 @@
 
 User.destroy_all
 
-u = User.create(username: 'guest', email: 'guest@guest.com', password: 'password' );
+u = User.create(username: 'DJmixmixer', email: 'guest@guest.com', password: 'password' );
 
 
 Song.destroy_all
@@ -18,5 +18,5 @@ s.song = File.open("#{Rails.root}/app/assets/songs/ghost.mp3");
 s.save!
 
 y = Song.new(title: "Good Morning", artist_id: u.id, genre: "Hip-Hop");
-y.song = File.open("#{Rails.root}/app/assets/songs/ghost.mp3");
+y.song = File.open("#{Rails.root}/app/assets/songs/good_morning.mp3");
 y.save!
