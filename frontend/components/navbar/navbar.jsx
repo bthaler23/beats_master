@@ -10,6 +10,8 @@ class NavbarWithoutRouter extends React.Component {
     this.handleLogout = this.handleLogout.bind(this);
     this.handleUserPage = this.handleUserPage.bind(this);
     this.handleHome = this.handleHome.bind(this);
+    this.handleUpload = this.handleUpload.bind(this);
+
   }
 
 
@@ -28,6 +30,11 @@ class NavbarWithoutRouter extends React.Component {
     this.props.router.push(`/${this.props.userId}`);
   }
 
+  handleUpload(e) {
+    e.preventDefault();
+    this.props.router.push('/upload');
+  }
+
   render() {
     //Replace search with search component
     return (
@@ -35,7 +42,7 @@ class NavbarWithoutRouter extends React.Component {
         <button className="left_search" onClick={this.handleHome}>Logo</button>
         <button className="left_search" onClick={this.handleHome}>Home</button>
         <div className="search">Search</div>
-        <button>Upload</button>
+        <button onClick={this.handleUpload}>Upload</button>
         <button onClick={this.handleUserPage}>{this.props.username}</button>
         <button onClick={this.handleLogout}>Logout</button>
       </ul>

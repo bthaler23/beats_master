@@ -111,6 +111,10 @@ h1 {
   border: groove black 1px;
 }
 
+.song_tile:hover {
+  cursor: pointer;
+}
+
 .song_tile_info {
   display: flex;
   flex-direction: column;
@@ -132,6 +136,10 @@ h1 {
 
 
 input[type="text"] {
+  border: grey 1px solid;
+}
+
+input[type="password"] {
   border: grey 1px solid;
 }
 

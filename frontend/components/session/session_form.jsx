@@ -29,14 +29,14 @@ class SessionFormWithoutRouter extends React.Component {
     temp_user.email = this.props.email;
     const user = {user: temp_user};
     this.props.processForm(user).then(() => {
-       this.props.router.push("/stream")
+       this.props.router.push("/stream");
      });
   }
 
   renderErrors() {
     return (
       this.props.errors.map((error, i) => (<div key={`error-${i}`}>{error}</div>)));
-  };
+  }
 
 
   render() {

@@ -15,9 +15,14 @@ export const receiveSong = song => ({
 export const fetchSongs = () => dispatch => (
   APIUtil.getSongs()
     .then(songs => dispatch(receiveSongs(songs)))
-)
+);
 
 export const fetchSong = songId => dispatch => (
   APIUtil.getSong(songId)
+    .then(song => dispatch(receiveSong(song)))
+);
+
+export const createSong = (song) => dispatch => (
+  APIUtil.createSong(song)
     .then(song => dispatch(receiveSong(song)))
 );

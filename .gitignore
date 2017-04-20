@@ -4,3 +4,6 @@ bundle.js.map
 node_modules/
 tmp/
 .DS_Store
+
+# Ignore application configuration
+/config/application.yml

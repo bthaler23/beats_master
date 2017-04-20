@@ -13,8 +13,8 @@ const SongItem = (props) => {
         </div>
       </div>
     </li>
-  )
+  );
 
-}
+};
 
 export default SongItem;
