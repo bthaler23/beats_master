@@ -32,7 +32,7 @@ class SongPage extends React.Component {
           </div>
         </div>
           { (this.props.currentUser) && ((this.props.currentUser.id === this.props.song.artist_id) && <h1>Edit</h1> )}
-        <audio src={this.props.song.song_url} autoPlay />
+        <audio src={this.props.song.song_url}/>
       </section>
     );
   }

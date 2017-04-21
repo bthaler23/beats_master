@@ -60,12 +60,12 @@ class Upload extends React.Component {
     formData.append("song[image]", this.state.imageFile);
     formData.append("song[song]", this.state.songFile);
 
-    this.props.createSong(formData).then((song) => (this.props.router.push(`/songs/${song.id}`)));
+    this.props.createSong(formData).then( ({song}) => (this.props.router.push(`/songs/${song.id}`)));
   }
 
   render() {
     return (
-      <section>
+      <section className="upload_page">
         <form onSubmit={this.handleSubmit}>
           <input type="text" onChange={this.handleTitle} value={this.state.title} placeholder="Title" />
           <input type="text" onChange={this.handleGenre} value={this.state.genre} placeholder="Genre" />

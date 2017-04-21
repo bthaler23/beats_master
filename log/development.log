@@ -40892,3 +40892,505 @@ Processing by Api::SongsController#index as JSON
   Rendered api/songs/_song.json.jbuilder (3.2ms)
   Rendered api/songs/index.json.jbuilder (14.1ms)
 Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/songs?artist_id=4" for ::1 at 2017-04-20 20:20:57 -0400
+Processing by Api::SongsController#index as JSON
+  Parameters: {"artist_id"=>"4"}
+  [1m[35mSong Load (0.3ms)[0m  SELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1  [["artist_id", 4]]
+  Rendered api/songs/index.json.jbuilder (1.5ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/users/4" for ::1 at 2017-04-20 20:20:57 -0400
+Processing by Api::UsersController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered api/users/_user.json.jbuilder (1.8ms)
+  Rendered api/users/show.json.jbuilder (2.8ms)
+Completed 200 OK in 56ms (Views: 54.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/songs" for ::1 at 2017-04-20 20:20:58 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.5ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (4.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (2.1ms)
+  Rendered api/songs/index.json.jbuilder (10.6ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/songs?artist_id=3" for ::1 at 2017-04-20 20:21:00 -0400
+Processing by Api::SongsController#index as JSON
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mSong Load (0.3ms)[0m  [1mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (3.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (2.3ms)
+  Rendered api/songs/index.json.jbuilder (9.1ms)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/3" for ::1 at 2017-04-20 20:21:00 -0400
+Processing by Api::UsersController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered api/users/_user.json.jbuilder (1.7ms)
+  Rendered api/users/show.json.jbuilder (2.9ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/songs" for ::1 at 2017-04-20 20:21:06 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[36mSong Load (0.8ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (4.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (2.5ms)
+  Rendered api/songs/index.json.jbuilder (13.3ms)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 20:25:12 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "3P-MhR3fnYJ-PgAalg8XPA"]]
+  Rendered api/users/_user.json.jbuilder (2.0ms)
+  Rendered static_pages/root.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 219ms (Views: 217.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-20 20:25:13 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-20 20:25:13 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[36mSong Load (0.7ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (6.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (3.6ms)
+  Rendered api/songs/index.json.jbuilder (37.3ms)
+Completed 200 OK in 53ms (Views: 51.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 20:25:16 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "3P-MhR3fnYJ-PgAalg8XPA"]]
+  Rendered api/users/_user.json.jbuilder (1.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 62ms (Views: 61.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/songs" for ::1 at 2017-04-20 20:25:16 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[36mSong Load (0.7ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (6.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (3.6ms)
+  Rendered api/songs/index.json.jbuilder (17.0ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-20 20:25:17 -0400
+
+
+Started GET "/" for ::1 at 2017-04-20 20:38:36 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "3P-MhR3fnYJ-PgAalg8XPA"]]
+  Rendered api/users/_user.json.jbuilder (2.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 194ms (Views: 192.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-20 20:38:37 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-20 20:38:37 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[36mSong Load (0.5ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (5.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (4.2ms)
+  Rendered api/songs/index.json.jbuilder (15.3ms)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 20:45:01 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "3P-MhR3fnYJ-PgAalg8XPA"]]
+  Rendered api/users/_user.json.jbuilder (1.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 664ms (Views: 663.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bundle.self-71ae0038c19bf3b3835195861075b9b96092339eb70c48cfcc4560496f42e2f3.js?body=1" for ::1 at 2017-04-20 20:45:02 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-20 20:45:02 -0400
+
+
+Started GET "/api/songs" for ::1 at 2017-04-20 20:45:02 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[36mSong Load (0.6ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (6.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (6.3ms)
+  Rendered api/songs/index.json.jbuilder (29.8ms)
+Completed 200 OK in 59ms (Views: 57.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-20 20:47:16 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "3P-MhR3fnYJ-PgAalg8XPA"]]
+  Rendered api/users/_user.json.jbuilder (0.9ms)
+  Rendered static_pages/root.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 595ms (Views: 594.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-b7b33109d661677d1a18c5c4b7148d239c86fe5038bd91f0ac4ead9b7109b3ba.css?body=1" for ::1 at 2017-04-20 20:47:16 -0400
+
+
+Started GET "/assets/bundle.self-4022a5ca03c6a9cf73a8f319d672403e97327dc59406dad7c1ebcca6282d0993.js?body=1" for ::1 at 2017-04-20 20:47:16 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-20 20:47:17 -0400
+
+
+Started GET "/" for ::1 at 2017-04-20 20:47:27 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "3P-MhR3fnYJ-PgAalg8XPA"]]
+  Rendered api/users/_user.json.jbuilder (1.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 106ms (Views: 105.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-8626c0d5ab6904ffdcedf1a78d925ecca170a350c93b490baf21432b9a1ce0f8.css?body=1" for ::1 at 2017-04-20 20:47:27 -0400
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-20 20:47:27 -0400
+
+
+Started POST "/api/songs" for ::1 at 2017-04-20 20:47:49 -0400
+Processing by Api::SongsController#create as JSON
+  Parameters: {"song"=>{"title"=>"Sugar Baby", "genre"=>"Song", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fc13421ae10 @tempfile=#<Tempfile:/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/RackMultipart20170420-15582-1rfcrlp.jpg>, @original_filename="REEEE.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"song[image]\"; filename=\"REEEE.jpg\"\r\nContent-Type: image/jpeg\r\n">, "song"=>#<ActionDispatch::Http::UploadedFile:0x007fc13421ab18 @tempfile=#<Tempfile:/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/RackMultipart20170420-15582-14rqdab.mp3>, @original_filename="Reekado-Banks-Sugar-Baby.mp3", @content_type="audio/mp3", @headers="Content-Disposition: form-data; name=\"song[song]\"; filename=\"Reekado-Banks-Sugar-Baby.mp3\"\r\nContent-Type: audio/mp3\r\n">}}
+Command :: file -b --mime '/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/2fd006a68f6703cdd790ae5e99de3ba020170420-15582-1bz3imf.mp3'
+Command :: file -b --mime '/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/995e10e8a4b443ff765ccf7053d8315820170420-15582-ve1p16.jpg'
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "3P-MhR3fnYJ-PgAalg8XPA"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mSong Exists (0.8ms)[0m  [1mSELECT  1 AS one FROM "songs" WHERE ("songs"."title" = 'Sugar Baby' AND "songs"."artist_id" = 4) LIMIT 1[0m
+Command :: file -b --mime '/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/2fd006a68f6703cdd790ae5e99de3ba020170420-15582-132a3bx.mp3'
+Command :: file -b --mime '/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/995e10e8a4b443ff765ccf7053d8315820170420-15582-nzfzxo.jpg'
+  [1m[35mSQL (10.7ms)[0m  INSERT INTO "songs" ("title", "genre", "song_file_name", "song_content_type", "song_file_size", "song_updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"  [["title", "Sugar Baby"], ["genre", "Song"], ["song_file_name", "Reekado-Banks-Sugar-Baby.mp3"], ["song_content_type", "audio/mpeg"], ["song_file_size", 4482897], ["song_updated_at", "2017-04-21 00:47:49.993118"], ["image_file_name", "REEEE.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 34348], ["image_updated_at", "2017-04-21 00:47:50.842833"], ["artist_id", 4], ["created_at", "2017-04-21 00:47:50.892283"], ["updated_at", "2017-04-21 00:47:50.892283"]]
+[paperclip] saving /songs/songs/000/000/005/original/Reekado-Banks-Sugar-Baby.mp3
+[paperclip] saving /songs/images/000/000/005/original/REEEE.jpg
+  [1m[36m (24.4ms)[0m  [1mCOMMIT[0m
+  Rendered api/songs/_song.json.jbuilder (0.6ms)
+  Rendered api/songs/show.json.jbuilder (2.4ms)
+Completed 200 OK in 4425ms (Views: 58.6ms | ActiveRecord: 36.9ms)
+
+
+Started GET "/api/songs/undefined" for ::1 at 2017-04-20 20:48:36 -0400
+Processing by Api::SongsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[35mSong Load (0.8ms)[0m  SELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 6ms (ActiveRecord: 0.8ms)
+
+ActiveRecord::RecordNotFound - Couldn't find Song with 'id'=undefined:
+  activerecord (4.2.8) lib/active_record/core.rb:155:in `find'
+  app/controllers/api/songs_controller.rb:25:in `show'
+  actionpack (4.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.5) lib/rack/etag.rb:24:in `call'
+  rack (1.6.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.5) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+Started GET "/api/songs" for ::1 at 2017-04-20 20:48:43 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[36mSong Load (0.7ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (13.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (2.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered api/songs/_song.json.jbuilder (2.7ms)
+  Rendered api/songs/index.json.jbuilder (24.1ms)
+Completed 200 OK in 76ms (Views: 74.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/api/songs" for ::1 at 2017-04-20 20:53:26 -0400
+Processing by Api::SongsController#create as JSON
+  Parameters: {"song"=>{"title"=>"Suga Suga", "genre"=>"R&B", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fc134be4950 @tempfile=#<Tempfile:/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/RackMultipart20170420-15582-iuztkb.jpg>, @original_filename="baby_bush.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"song[image]\"; filename=\"baby_bush.jpg\"\r\nContent-Type: image/jpeg\r\n">, "song"=>#<ActionDispatch::Http::UploadedFile:0x007fc134be4838 @tempfile=#<Tempfile:/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/RackMultipart20170420-15582-1twxiac.mp3>, @original_filename="baby_bush.mp3", @content_type="audio/mp3", @headers="Content-Disposition: form-data; name=\"song[song]\"; filename=\"baby_bush.mp3\"\r\nContent-Type: audio/mp3\r\n">}}
+Command :: file -b --mime '/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/c6c99c6ff899705a3a81d87c3295d2b120170420-15582-zbyjzb.mp3'
+Command :: file -b --mime '/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/c6c99c6ff899705a3a81d87c3295d2b120170420-15582-44u4cb.jpg'
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "3P-MhR3fnYJ-PgAalg8XPA"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mSong Exists (0.5ms)[0m  SELECT  1 AS one FROM "songs" WHERE ("songs"."title" = 'Suga Suga' AND "songs"."artist_id" = 4) LIMIT 1
+Command :: file -b --mime '/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/c6c99c6ff899705a3a81d87c3295d2b120170420-15582-g1tmv0.mp3'
+Command :: file -b --mime '/var/folders/5f/r3jlcm815sb7tw7lp72ybp8r0000gn/T/c6c99c6ff899705a3a81d87c3295d2b120170420-15582-1jkchkv.jpg'
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "songs" ("title", "genre", "song_file_name", "song_content_type", "song_file_size", "song_updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["title", "Suga Suga"], ["genre", "R&B"], ["song_file_name", "baby_bush.mp3"], ["song_content_type", "audio/mpeg"], ["song_file_size", 9788741], ["song_updated_at", "2017-04-21 00:53:26.427361"], ["image_file_name", "baby_bush.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 36482], ["image_updated_at", "2017-04-21 00:53:26.577573"], ["artist_id", 4], ["created_at", "2017-04-21 00:53:26.633703"], ["updated_at", "2017-04-21 00:53:26.633703"]]
+[paperclip] saving /songs/songs/000/000/006/original/baby_bush.mp3
+[paperclip] saving /songs/images/000/000/006/original/baby_bush.jpg
+  [1m[35m (0.5ms)[0m  COMMIT
+  Rendered api/songs/_song.json.jbuilder (0.9ms)
+  Rendered api/songs/show.json.jbuilder (10.6ms)
+Completed 200 OK in 7423ms (Views: 37.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/bundle.js.map" for ::1 at 2017-04-20 20:53:33 -0400
+
+
+Started GET "/api/songs/undefined" for ::1 at 2017-04-20 20:53:39 -0400
+Processing by Api::SongsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mSong Load (1.7ms)[0m  [1mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 7ms (ActiveRecord: 1.7ms)
+
+ActiveRecord::RecordNotFound - Couldn't find Song with 'id'=undefined:
+  activerecord (4.2.8) lib/active_record/core.rb:155:in `find'
+  app/controllers/api/songs_controller.rb:25:in `show'
+  actionpack (4.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.8) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.8) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.8) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.8) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.8) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.5) lib/rack/etag.rb:24:in `call'
+  rack (1.6.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.5) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/var/rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+Started GET "/api/songs" for ::1 at 2017-04-20 20:53:58 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (0.6ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (14.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (2.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered api/songs/_song.json.jbuilder (2.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered api/songs/_song.json.jbuilder (1.7ms)
+  Rendered api/songs/index.json.jbuilder (28.3ms)
+Completed 200 OK in 79ms (Views: 77.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/songs/5" for ::1 at 2017-04-20 20:54:02 -0400
+Processing by Api::SongsController#show as JSON
+  Parameters: {"id"=>"5"}
+  [1m[36mSong Load (1.5ms)[0m  [1mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered api/songs/_song.json.jbuilder (4.0ms)
+  Rendered api/songs/show.json.jbuilder (5.6ms)
+Completed 200 OK in 17ms (Views: 13.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/songs" for ::1 at 2017-04-20 20:54:04 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[36mSong Load (0.8ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (6.0ms)
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (3.5ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered api/songs/_song.json.jbuilder (3.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered api/songs/_song.json.jbuilder (3.0ms)
+  Rendered api/songs/index.json.jbuilder (24.4ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/songs/4" for ::1 at 2017-04-20 20:54:06 -0400
+Processing by Api::SongsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[35mSong Load (1.5ms)[0m  SELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (6.4ms)
+  Rendered api/songs/show.json.jbuilder (8.7ms)
+Completed 200 OK in 20ms (Views: 16.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/songs" for ::1 at 2017-04-20 20:54:08 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[35mSong Load (2.4ms)[0m  SELECT "songs".* FROM "songs"
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (5.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (3.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered api/songs/_song.json.jbuilder (2.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered api/songs/_song.json.jbuilder (1.5ms)
+  Rendered api/songs/index.json.jbuilder (22.4ms)
+Completed 200 OK in 31ms (Views: 27.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/api/songs/6" for ::1 at 2017-04-20 20:54:37 -0400
+Processing by Api::SongsController#show as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mSong Load (1.4ms)[0m  [1mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (1.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered api/songs/_song.json.jbuilder (6.3ms)
+  Rendered api/songs/show.json.jbuilder (8.5ms)
+Completed 200 OK in 22ms (Views: 15.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/api/songs" for ::1 at 2017-04-20 20:54:39 -0400
+Processing by Api::SongsController#index as JSON
+  [1m[36mSong Load (0.6ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (5.1ms)
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered api/songs/_song.json.jbuilder (4.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered api/songs/_song.json.jbuilder (2.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered api/songs/_song.json.jbuilder (2.0ms)
+  Rendered api/songs/index.json.jbuilder (21.4ms)
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 1.4ms)
