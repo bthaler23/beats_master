@@ -329,18 +329,22 @@ input[type="submit"] {
   background-color: #a7b4c4;
 }
 
-.play_button {
-  margin: 20px;
-  width: 100px;
-  height: 100px;
-}
 
 .song_page_header {
   display: flex;
   flex-direction: row;
   margin: 15px;
   margin-top: 30px;
+}
 
+.song_page_header img {
+  width: 150px;
+  height: 150px;
+  margin: 30px;
+}
+
+.song_page_header img:hover {
+  cursor: pointer;
 }
 
 .song_page_credits {

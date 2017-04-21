@@ -1,4 +1,5 @@
 import React from 'react';
+import PlayButton from '../buttons/play_button';
 
 
 class SongPage extends React.Component {
@@ -9,19 +10,24 @@ class SongPage extends React.Component {
   }
 
   componentDidMount() {
-    //Fetches from server, but has list of song in state -- maybe fix
-    this.props.fetchSong(this.props.params.song_id);
+    debugger
+    //Fetches from server if no songs were preloaded - Fetches songs from state if songs were preloaded
+    //Going to have to do a check later to see if song was in the state
+    if (this.props.preloaded) {
+      this.props.receiveSong(this.props.params.song_id);
+    } else {
+      this.props.fetchSong(this.props.params.song_id);
+    }
   }
 
 
   render() {
 
-
     return(
       <section>
         <div className="song_page_splash">
           <div className="song_page_header">
-          <img className="play_button" src={window.playButton}/>
+          <PlayButton song={this.props.song}/>
             <div className="song_credits">
               <h2><span>{this.props.song.artist}</span></h2>
               <h1><span>{this.props.song.title}</span></h1>
