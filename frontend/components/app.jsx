@@ -9,15 +9,15 @@ const App = ({location, children}) => {
     return (
       <section>
         <NavbarContainer />
-        <AudioPlayerContainer />
         {children}
+        <AudioPlayerContainer />
       </section>
     );
   } else {
     return (
       <section>
-      <AudioPlayerContainer />
         {children}
+        <AudioPlayerContainer />
       </section>
     );
   }
