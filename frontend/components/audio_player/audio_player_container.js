@@ -13,8 +13,7 @@ const mapStateToProps = ({playlist}, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
 
   return {
-    playSong: (song) => dispatch(playSong(song)),
-    stopSong: () => dispatch(stopSong())
+
   };
 
 };

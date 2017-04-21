@@ -1,14 +1,10 @@
 import React from 'react';
-
+import PlayButton from '../buttons/play_button';
 
 class AudioPlayer extends React.Component {
 
   constructor(props) {
     super(props);
-
-    this.handleStart = this.handleStart.bind(this);
-    this.handleStop = this.handleStop.bind(this);
-
   }
 
   componentDidUpdate() {
@@ -20,26 +16,11 @@ class AudioPlayer extends React.Component {
     }
   }
 
-  renderPlay() {
-    if (this.props.playlist.playing) {
-      return (<img src={window.pause_button} onClick={this.handleStop} />);
-    } else {
-      return (<img src={window.playButton} onClick={this.handleStart} />);
-    }
-  }
-
-  handleStart(e) {
-    this.props.playSong(this.props.playlist.current_song);
-  }
-
-  handleStop(e) {
-    this.props.stopSong();
-  }
 
   render() {
     return (
       <section className="audio_player">
-        {this.renderPlay()}
+        <PlayButton song={this.props.playlist.current_song} />
         <audio src={this.props.playlist.current_song.song_url}/>
         <img src={this.props.playlist.current_song.image_url} />
         <div className="audio_player_info">
