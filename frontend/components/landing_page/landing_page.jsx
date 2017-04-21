@@ -51,6 +51,7 @@ class LandingPage extends React.Component {
             </div>
         </div>
         <div className="landing_search">
+          <input type="text" placeholder="Search for songs, artists, bands, podcasts" />
         </div>
         <div>
           <SongTileIndexContainer />

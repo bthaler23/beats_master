@@ -30,6 +30,11 @@ class AudioPlayer extends React.Component {
     );
 
   }
+
+  componentWillUnmount() {
+    debugger
+  }
+
 }
 
 export default AudioPlayer;

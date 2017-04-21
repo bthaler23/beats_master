@@ -23,7 +23,7 @@ class SongList extends React.Component {
     render() {
 
       const all_songs = this.props.songs.map((song) => (
-        <SongItem key={song.id} song={song} playSong={this.props.playSong} stopSong={this.props.stopSong} playlist={this.props.playlist}/>
+        <SongItem key={song.id} song={song} playlist={this.props.playlist}/>
       ));
 
       return (

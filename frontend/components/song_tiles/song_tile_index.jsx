@@ -14,10 +14,11 @@ class SongTileIndex extends React.Component {
 
   render() {
 
+
     const all_songs = this.props.songs.map((song) => (
       <SongTile key={song.id} song={song}/>
     ));
-    
+
 
     return (
       <section>
@@ -32,5 +33,14 @@ class SongTileIndex extends React.Component {
   }
 
 }
+// const all_songs = [];
+// debugger
+// if (!(this.props.songs === [])) {
+//   let song;
+//   for (let i = 0; i < 8; i++) {
+//     song = this.props.songs[i];
+//     all_songs.push(<SongTile key={song.id} song={song}/>);
+//   }
+// }
 
 export default SongTileIndex;

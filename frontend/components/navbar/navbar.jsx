@@ -17,7 +17,7 @@ class NavbarWithoutRouter extends React.Component {
 
   handleHome(e) {
     e.preventDefault();
-    if (this.username) {
+    if (this.props.username) {
       this.props.router.push('/stream');
     } else {
       this.props.router.push('/');
