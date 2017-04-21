@@ -10,7 +10,6 @@ class SongPage extends React.Component {
   }
 
   componentDidMount() {
-    debugger
     //Fetches from server if no songs were preloaded - Fetches songs from state if songs were preloaded
     //Going to have to do a check later to see if song was in the state
     if (this.props.preloaded) {

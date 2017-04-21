@@ -192,6 +192,7 @@ input[type="submit"] {
 .form {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 
@@ -209,6 +210,12 @@ input[type="submit"] {
 .form input:last-child {
   display: flex;
   justify-content: center;
+  text-align: center;
+}
+
+.form button {
+  border: 1px orange solid;
+  border-radius: 2px;
 }
 
 /*For Modals

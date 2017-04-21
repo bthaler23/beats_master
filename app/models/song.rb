@@ -29,10 +29,10 @@ class Song < ActiveRecord::Base
     class_name: 'User'
 
   # Update this to validate to true, and no default value
-  has_attached_file :song, default_url: 'ghost.mp3'
+  has_attached_file :song, presence: true
   validates_attachment_content_type :song, content_type: /\Aaudio\/.*\z/
 
-  has_attached_file :image, default_url: "bears_temp.png"
+  has_attached_file :image, default_url: "tassos.jpeg"
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
 
 end

@@ -1,15 +1,19 @@
 import React from 'react';
-// import { withRouter } from 'react-router';
+import { withRouter } from 'react-router';
 import { email_exists } from '../../util/session_api_util';
 import SessionFormContainer from './session_form_container';
+import { connect } from 'react-redux';
+import { login } from '../../actions/session_actions';
 
-class AuthForm extends React.Component {
+
+class AuthFormWithoutRouter extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {email: "", errors: ""};
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.handleGuest = this.handleGuest.bind(this);
   }
 
   handleSubmit(e) {
@@ -32,6 +36,14 @@ class AuthForm extends React.Component {
     this.setState({email});
   }
 
+  handleGuest(e) {
+    e.preventDefault();
+    const guest = {user: {email: 'guest@guest.com', password: 'password'}};
+    this.props.login(guest).then(() => {
+      this.props.router.push("/stream");
+    });
+  }
+
 
   render() {
     const form = this.state.form;
@@ -45,6 +57,7 @@ class AuthForm extends React.Component {
             <h4>{this.state.errors}</h4>
             <input type="text" onChange={this.handleChange} value={this.state.email} placeholder="Enter Email Here" autoFocus/>
             <input type="submit" value="Continue"/>
+            <button onClick={this.handleGuest}>Guest Log In</button>
           </ul>
         </form>
       );
@@ -52,6 +65,18 @@ class AuthForm extends React.Component {
   }
 }
 
-// const AuthForm = withRouter(AuthFormWithoutRouter);
+const mapStateToProps = (state, ownProps) => ({
 
-export default AuthForm;
+});
+
+const mapDispatchToProps = (dispatch, ownProps) => ({
+  login: (user) => dispatch(login(user))
+});
+
+//had to add router and connect for guest log in 
+const AuthForm = withRouter(AuthFormWithoutRouter);
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(AuthForm);

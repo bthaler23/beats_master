@@ -17,6 +17,7 @@ class SongTileIndex extends React.Component {
     const all_songs = this.props.songs.map((song) => (
       <SongTile key={song.id} song={song}/>
     ));
+    
 
     return (
       <section>
