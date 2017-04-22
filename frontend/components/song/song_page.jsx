@@ -19,6 +19,16 @@ class SongPage extends React.Component {
     }
   }
 
+  //Check this if this is good
+  componentWillUpdate() {
+    if (this.props.params.song_id != this.props.song.id) {
+      if (this.props.preloaded) {
+        this.props.receiveSong(this.props.params.song_id);
+      } else {
+        this.props.fetchSong(this.props.params.song_id);
+      }
+    }
+  }
 
   render() {
 

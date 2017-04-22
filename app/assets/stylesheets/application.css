@@ -148,6 +148,7 @@ h1 {
 }
 
 .search_results li:hover {
+  cursor: pointer;
   background-color:#262626;
 }
 

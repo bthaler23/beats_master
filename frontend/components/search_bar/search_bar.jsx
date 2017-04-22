@@ -1,6 +1,6 @@
 import React from 'react';
 import { searchSongs } from '../../util/song_api_util';
-import { Link } from 'react-router';
+import { withRouter } from 'react-router';
 import { connect } from 'react-redux';
 
 class SearchBar extends React.Component {
@@ -10,6 +10,7 @@ class SearchBar extends React.Component {
     this.state = {inputValue: "", resultSongs: []};
 
     this.handleInput = this.handleInput.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleInput(e) {
@@ -25,10 +26,19 @@ class SearchBar extends React.Component {
   }
 
 
-  render() {
+  handleClick(song_id) {
+    return (e) => {
+      e.preventDefault();
+      this.setState({inputValue: "", resultSongs: []});
+      //Why doesn't this push to a new song
+      this.props.router.push(`/songs/${song_id}`);
+    };
+  }
 
+
+  render() {
     const foundSongs = this.state.resultSongs.map((song) => (
-      <li key={`${song.id}`}><Link to={`songs/${song.id}`}>{song.title}</Link></li>
+      <li key={`${song.id}`} onClick={this.handleClick(song.id)}>{song.title}</li>
     ));
 
 
@@ -44,4 +54,4 @@ class SearchBar extends React.Component {
 
 }
 
-export default SearchBar;
+export default withRouter(SearchBar);
