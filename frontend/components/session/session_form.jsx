@@ -46,7 +46,7 @@ class SessionFormWithoutRouter extends React.Component {
           <ul className="form">
             <h1>Create Account</h1>
             <input type="text" onChange={this.handleUserName} value={this.state.username} placeholder="Create Username Here" autoFocus/><br/>
-            <input type="text" onChange={this.handlePassword} value={this.state.password} placeholder="Enter Your Password" /><br/>
+            <input type="password" onChange={this.handlePassword} value={this.state.password} placeholder="Enter Your Password" /><br/>
             <input type="submit" value="Continue"/>
           </ul>
         </form>

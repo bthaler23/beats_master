@@ -1,0 +1,34 @@
+
+/*Navbar*/
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 45px;
+  width: 100%;
+  background: #333333;
+}
+
+.navbar button {
+  display: flex;
+  color: #CCCCC2;
+  justify-content: center;
+  width:20%;
+}
+
+.navbar button:hover {
+  color: white;
+}
+
+.navbar .left_search {
+  border-right: black 1px solid;
+}
+
+.navbar_search_container {
+  width: 100%;
+}
+
+.navbar_search {
+  height: 20px;
+}
