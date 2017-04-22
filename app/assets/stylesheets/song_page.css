@@ -3,8 +3,8 @@
 
 .song_page_splash {
   display: flex;
-  height: 300px;
-  background-color: #a7b4c4;
+  height: 380px;
+  background: linear-gradient(135deg, #8d8284, #866774 );
   justify-content: space-between;
 }
 
@@ -18,9 +18,9 @@
 }
 
 .song_page_header img {
-  width: 150px;
-  height: 150px;
-  margin: 30px;
+  width: 80px;
+  height: 80px;
+  margin-left: 30px;
 }
 
 .song_page_header img:hover {
@@ -30,11 +30,13 @@
 .song_page_info {
   display: flex;
   flex-direction: row;
+  margin-left: 30px;
   width: 100%;
   justify-content: space-between;
 }
 
 .song_page_credits {
+  margin-top: 5px;
   display: flex;
   flex-direction: column;
 }
@@ -71,8 +73,8 @@
 }
 
 .song_image img {
-  width: 250px;
-  height: 250px;
+  width: 340px;
+  height: 340px;
 }
 
 .comments_section {
