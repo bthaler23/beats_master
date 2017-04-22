@@ -28,7 +28,8 @@ class SessionFormWithoutRouter extends React.Component {
     temp_user.email = this.props.email;
     const user = {user: temp_user};
     this.props.processForm(user).then(() => {
-       this.props.router.push("/stream");
+      this.props.hideModal();
+      this.props.router.push("/stream");
      });
   }
 

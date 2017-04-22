@@ -2,6 +2,7 @@ import React from 'react';
 import { withRouter } from 'react-router';
 import { email_exists } from '../../util/session_api_util';
 import SessionFormContainer from './session_form_container';
+import { hideModal } from '../../actions/modal_actions';
 import { connect } from 'react-redux';
 import { login } from '../../actions/session_actions';
 
@@ -40,6 +41,7 @@ class AuthFormWithoutRouter extends React.Component {
     e.preventDefault();
     const guest = {user: {email: 'guest@guest.com', password: 'password'}};
     this.props.login(guest).then(() => {
+      this.props.hideModal();
       this.props.router.push("/stream");
     });
   }
@@ -70,10 +72,11 @@ const mapStateToProps = (state, ownProps) => ({
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
-  login: (user) => dispatch(login(user))
+  login: (user) => dispatch(login(user)),
+  hideModal: () => dispatch(hideModal())
 });
 
-//had to add router and connect for guest log in 
+//had to add router and connect for guest log in
 const AuthForm = withRouter(AuthFormWithoutRouter);
 
 export default connect(

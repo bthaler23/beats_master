@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+import { showModal } from '../../actions/modal_actions';
 import LandingPage from './landing_page';
 
 const mapStateToProps = (state, ownProps) => {
@@ -11,6 +12,7 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
 
   return ({
+    showModal: () => dispatch(showModal())
   });
 
 };

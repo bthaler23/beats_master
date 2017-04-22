@@ -2,46 +2,30 @@ import React from 'react';
 import AuthForm from '../session/auth_form';
 import SongTileIndexContainer from '../song_tiles/song_tile_index_container';
 import SearchBar from '../search_bar/search_bar';
-
+import Modal from '../modal/modal';
 
 class LandingPage extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {clicked: false};
+    this.state = {show_form: false};
 
     this.handleAuth = this.handleAuth.bind(this);
-    this.handleClick = this.handleClick.bind(this);
   }
 
   //Handles initial click for auth form
   handleAuth(e) {
     e.preventDefault();
-    this.setState({clicked: true});
-  }
-
-  //Handles outside area so user can click outside and get rid of auth form
-  handleClick(e) {
-    e.preventDefault();
-    if (this.state.clicked) {
-      this.setState({clicked: false});
-    }
+    this.props.showModal();
   }
 
 
 
   render() {
 
-    let auth_render;
-    if (this.state.clicked) {
-      auth_render = <div className="show auth_form"><AuthForm /></div>;
-    } else {
-      auth_render = <div className="none"></div>;
-    }
-
     return (
       <section className="landing_page">
-          {auth_render}
+        <Modal form={ AuthForm }/>
         <div className="splash_image">
           <img src={window.zeldaIcon}/>
             <div className="landing_nav">
@@ -60,7 +44,6 @@ class LandingPage extends React.Component {
         <div>
           <SongTileIndexContainer />
         </div>
-
       </section>
 
     );
