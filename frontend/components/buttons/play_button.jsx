@@ -33,7 +33,7 @@ class PlayButton extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="play_button">
         {this.currentSongCheck()}
       </div>
     );

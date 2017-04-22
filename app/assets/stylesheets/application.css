@@ -358,7 +358,7 @@ input[type="submit"] {
 
 .song_item img {
   width: 170px;
-  height: 160px;
+  height: 170px;
 }
 
 .song_item img:hover {
@@ -369,6 +369,7 @@ input[type="submit"] {
   display: flex;
   width: 100%;
   margin-top: 20px;
+  margin-left: 20px;
 }
 
 .song_header img {
@@ -401,6 +402,7 @@ input[type="submit"] {
 .song_page_header {
   display: flex;
   flex-direction: row;
+  width: 50%;
   margin: 15px;
   margin-top: 30px;
 }
@@ -461,13 +463,23 @@ input[type="submit"] {
   border-top: rgba(0, 0, 0, 0.14902) 1px solid;
   width: 100%;
   background: #f2f2f2;
-  height: 47px;
+  align-items: center;
+  height: 0px;
   bottom: 0;
   left: 0;
+  transition: height .3s;
+}
+
+.shown {
+  height: 47px;
+}
+
+.audio_player .play_button {
+  height: 90%;
 }
 
 .audio_player img {
-  height: 40px;
+  height: 90%;
   width: 40px;
   margin-left: 80px;
 }

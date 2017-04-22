@@ -11,6 +11,9 @@ class AudioPlayer extends React.Component {
     const audio = $('audio')[0];
     if (this.props.playlist.playing) {
       audio.play();
+      if (!($('.audio_player').hasClass('shown'))) {
+        $('.audio_player').addClass("shown");
+      }
     } else {
       audio.pause();
     }
@@ -29,10 +32,6 @@ class AudioPlayer extends React.Component {
       </section>
     );
 
-  }
-
-  componentWillUnmount() {
-    debugger
   }
 
 }

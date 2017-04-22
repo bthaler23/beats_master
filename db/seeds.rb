@@ -14,6 +14,7 @@ c = User.create(username: 'Chance The Rapper', email: 'chance@rapping.com', pass
 Song.destroy_all
 
 image = open("https://s3.amazonaws.com/beatsmaster-dev/songs/songs/chance_the_rapper-acidrap.jpg")
+image2 = open("https://s3.amazonaws.com/beatsmaster-dev/songs/images/tassos.jpeg");
 
 songs = [
   "https://s3.amazonaws.com/beatsmaster-dev/songs/songs/000/000/003/original/ghost.mp3",
@@ -35,12 +36,13 @@ songs = [
 
 opened_songs = []
 songs.each_with_index do |song, i|
+  puts "opening #{song}, #{songs.length - i } songs left to go"
   opened_songs[i] = open(song)
 end
 
 
-Song.create(title: "Ghost!", artist_id: u.id, genre: "Hip-Hop", song: opened_songs[0] )
-Song.create(title: "Good Morning", artist_id: u.id, genre: "Rap", song: opened_songs[1] )
+Song.create(title: "Ghost!", artist_id: u.id, genre: "Hip-Hop", song: opened_songs[0], image: image2 )
+Song.create(title: "Good Morning", artist_id: u.id, genre: "Rap", song: opened_songs[1], image: image2 )
 Song.create(title: "Good Ass Intro", artist_id: c.id, genre: "Hip-Hop", song: opened_songs[2] , image: image )
 Song.create(title: "Pusha Man", artist_id: c.id, genre: "Hip-Hop", song: opened_songs[3], image: image)
 Song.create(title: "Cocoa Butter Kisses", artist_id: c.id, genre: "Hip-Hop", song: opened_songs[4], image: image)
