@@ -7,19 +7,6 @@ class SongList extends React.Component {
       super(props);
     }
 
-    componentDidMount() {
-      if (this.props.artist_id) {
-        this.props.fetchSongs(this.props.artist_id);
-      } else {
-        this.props.fetchSongs();
-      }
-    }
-
-    // componentWillUnmount() {
-    //   this.props.fetchSongs(0);
-    // }
-
-
     render() {
 
       const all_songs = this.props.songs.map((song) => (

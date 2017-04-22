@@ -1,12 +1,10 @@
 import { connect } from 'react-redux';
-import { fetchSongs } from '../../actions/song_actions';
 import SongList from './song_list';
-import { withRouter } from 'react-router';
 
-const mapStateToProps = ({songs, playlist}, ownProps) => {
+
+const mapStateToProps = ({playlist}, {songs}) => {
   return {
-    songs: Object.values(songs.songs),
-    artist_id: ownProps.router.params.user_id,
+    songs: songs,
     playlist
   };
 };
@@ -14,13 +12,13 @@ const mapStateToProps = ({songs, playlist}, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
 
   return {
-    fetchSongs: (artist_id) => dispatch(fetchSongs(artist_id)),
+
   };
 
 };
 
 
-export default withRouter(connect(
+export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(SongList));
+)(SongList);
