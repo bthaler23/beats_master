@@ -25,3 +25,11 @@ export const getSong = (songId) => {
     url: `api/songs/${songId}`
   });
 };
+
+export const searchSongs = (search_term) => {
+  return $.ajax({
+    method: 'GET',
+    url: 'api/songs/search',
+    data: {search_term}
+  });
+};

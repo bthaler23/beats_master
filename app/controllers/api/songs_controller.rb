@@ -9,6 +9,11 @@ class Api::SongsController < ApplicationController
     render :index
   end
 
+  def search
+    @songs = Song.where("title LIKE ?", "#{params[:search_term]}%")
+    render :search
+  end
+
   def create
     @song = Song.new(song_params)
     @song.artist_id = current_user.id

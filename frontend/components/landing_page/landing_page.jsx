@@ -1,6 +1,8 @@
 import React from 'react';
 import AuthForm from '../session/auth_form';
 import SongTileIndexContainer from '../song_tiles/song_tile_index_container';
+import SearchBar from '../search_bar/search_bar';
+
 
 class LandingPage extends React.Component {
 
@@ -50,9 +52,7 @@ class LandingPage extends React.Component {
               </div>
             </div>
         </div>
-        <div className="landing_search">
-          <input type="text" placeholder="Search for songs, artists, bands, podcasts" />
-        </div>
+        <SearchBar />
         <div>
           <SongTileIndexContainer />
         </div>

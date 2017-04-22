@@ -4,15 +4,17 @@ Rails.application.routes.draw do
 
   namespace :api, defaults: {format: :json} do
 
-  resources :users, only: [:create, :show] do
-    get :email_exists, on: :collection
+    resources :users, only: [:create, :show] do
+      get :email_exists, on: :collection
+    end
+
+    resource :session, only: [:create, :destroy]
+
+    resources :songs, only: [:index, :create, :show, :destroy] do
+      get :search, on: :collection
+    end
+
   end
-
-  resource :session, only: [:create, :destroy]
-
-  resources :songs, only: [:index, :create, :show, :destroy]
-
-end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
