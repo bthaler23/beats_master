@@ -2,9 +2,9 @@ class Api::SongsController < ApplicationController
 
   def index
     if params[:artist_id]
-      @songs = Song.where(artist_id: params[:artist_id])
+      @songs = Song.includes(:artist).where(artist_id: params[:artist_id])
     else
-      @songs = Song.all
+      @songs = Song.includes(:artist).all
     end
     render :index
   end
