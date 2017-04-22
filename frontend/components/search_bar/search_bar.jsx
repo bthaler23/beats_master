@@ -28,19 +28,17 @@ class SearchBar extends React.Component {
   render() {
 
     const foundSongs = this.state.resultSongs.map((song) => (
-      <li><Link to={`songs/${song.id}`}>{song.title}</Link></li>
+      <li key={`${song.id}`}><Link to={`songs/${song.id}`}>{song.title}</Link></li>
     ));
 
 
     return (
-      <div className="landing_search_container">
-        <div className="landing_search">
+        <div className="search_bar">
           <input type="text" placeholder="Search for songs, artists, bands, podcasts" value={this.state.inputValue} onChange={this.handleInput}/>
           <ul className="search_results">
             {foundSongs}
           </ul>
         </div>
-      </div>
     );
   }
 

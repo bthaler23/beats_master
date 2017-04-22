@@ -52,7 +52,11 @@ class LandingPage extends React.Component {
               </div>
             </div>
         </div>
-        <SearchBar />
+        <div className="landing_search_container">
+          <div className="landing_search">
+            <SearchBar />
+          </div>
+        </div>
         <div>
           <SongTileIndexContainer />
         </div>

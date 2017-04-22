@@ -1,6 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router';
-
+import SearchBar from '../search_bar/search_bar';
 
 class NavbarWithoutRouter extends React.Component {
 
@@ -45,7 +45,11 @@ class NavbarWithoutRouter extends React.Component {
       <ul className="navbar">
         <button className="left_search" onClick={this.handleHome}>Logo</button>
         <button className="left_search" onClick={this.handleHome}>Home</button>
-        <div className="search">Search</div>
+        <div className="navbar_search_container">
+          <div className="navbar_search">
+            <SearchBar />
+          </div>
+        </div>
         <button onClick={this.handleUpload}>Upload</button>
         <button onClick={this.handleUserPage}>{this.props.username}</button>
         <button onClick={this.handleLogout}>Logout</button>
