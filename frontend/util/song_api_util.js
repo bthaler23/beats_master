@@ -33,3 +33,11 @@ export const searchSongs = (search_term) => {
     data: {search_term}
   });
 };
+
+export const updateSong = (songId, song) => {
+  return $.ajax({
+    method: 'PATCH',
+    url: `api/songs/${songId}`,
+    data: song
+  });
+};

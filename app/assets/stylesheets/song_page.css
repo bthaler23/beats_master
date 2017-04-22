@@ -5,13 +5,14 @@
   display: flex;
   height: 300px;
   background-color: #a7b4c4;
+  justify-content: space-between;
 }
 
 
 .song_page_header {
   display: flex;
   flex-direction: row;
-  width: 50%;
+  width: 100%;
   margin: 15px;
   margin-top: 30px;
 }
@@ -26,39 +27,72 @@
   cursor: pointer;
 }
 
+.song_page_info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
 .song_page_credits {
   display: flex;
   flex-direction: column;
-
 }
 
-.song_page_header span {
+.song_page_credits span {
   background: #232528;
-  padding: 4px;
+  padding: 5px;
 }
 
-.song_page_header h1 {
+.song_page_credits h1 {
   color: #ffffff;
-  font-size: 28px;
-  margin-top: 15px;
+  font-size: 30px;
+  margin-top: 10px;
   overflow: hidden;
   white-space: nowrap;
-
 }
 
-.song_page_header h2 {
+.song_page_credits h2 {
   color: #cccccc;
-  font-size: 18px;
+  font-size: 16px;
+}
+
+.song_page_additional_info h2 {
+  background: #999;
+  color: #fff;
+  padding: 1px 7px;
+  font-size: 17px;
+  border-radius: 20px;
 }
 
 .song_image {
   display: flex;
   margin: 20px;
-  width: 100%;
-  justify-content: flex-end;
 }
 
 .song_image img {
   width: 250px;
   height: 250px;
+}
+
+.comments_section {
+  height: 400px;
+}
+
+.comments_header {
+  width: 100%;
+}
+
+.edit_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px rgb(229, 229, 229) solid;
+  width: 51px;
+  height: 20px;
+  padding: 2px 11px;
+  background-color: white;
+  color: #333;
+  margin: 20px;
+
 }

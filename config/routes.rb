@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
     resource :session, only: [:create, :destroy]
 
-    resources :songs, only: [:index, :create, :show, :destroy] do
+    resources :songs, only: [:index, :create, :show, :destroy, :update] do
       get :search, on: :collection
     end
 

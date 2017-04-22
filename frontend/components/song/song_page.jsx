@@ -1,11 +1,14 @@
 import React from 'react';
 import PlayButton from '../buttons/play_button';
-
+import Modal from '../modal/modal';
+import Edit from '../forms/edit';
 
 class SongPage extends React.Component {
 
   constructor(props) {
     super(props);
+
+    this.renderModal = this.renderModal.bind(this);
 
   }
 
@@ -21,6 +24,7 @@ class SongPage extends React.Component {
 
   //Check this if this is good
   componentWillUpdate() {
+
     if (this.props.params.song_id != this.props.song.id) {
       if (this.props.preloaded) {
         this.props.receiveSong(this.props.params.song_id);
@@ -30,23 +34,38 @@ class SongPage extends React.Component {
     }
   }
 
+  renderModal() {
+    this.props.showModal();
+  }
+
   render() {
 
     return(
       <section>
         <div className="song_page_splash">
+        <Modal form={Edit}/>
           <div className="song_page_header">
           <PlayButton song={this.props.song}/>
-            <div className="song_credits">
-              <h2><span>{this.props.song.artist}</span></h2>
-              <h1><span>{this.props.song.title}</span></h1>
+            <div className="song_page_info">
+              <div className="song_page_credits">
+                <h2><span>{this.props.song.artist}</span></h2>
+                <h1><span>{this.props.song.title}</span></h1>
+              </div>
+              <div className="song_page_additional_info">
+                <h2># {this.props.song.genre}</h2>
+              </div>
             </div>
           </div>
           <div className="song_image">
             <img src={this.props.song.image_url} />
           </div>
         </div>
-          { (this.props.currentUser) && ((this.props.currentUser.id === this.props.song.artist_id) && <h1>Edit</h1> )}
+        <section className="comments_section">
+          <div className="comments_header">
+            { (this.props.currentUser) && ((this.props.currentUser.id === this.props.song.artist_id) &&
+              <button className="edit_button" onClick={this.renderModal}>Edit</button> )}
+          </div>
+        </section>
       </section>
     );
   }

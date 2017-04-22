@@ -31,6 +31,17 @@ class Api::SongsController < ApplicationController
     render :show
   end
 
+  def update
+    @song = Song.find(params[:id])
+    
+    if @song.update(song_params)
+      render :show
+    else
+      render json: @song.errors.full_messages
+    end
+
+  end
+
   def destroy
 
   end
