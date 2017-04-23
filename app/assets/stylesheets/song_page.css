@@ -85,6 +85,11 @@
   width: 100%;
 }
 
+.user_song_buttons {
+  display: flex;
+  flex-direction: row;
+}
+
 .edit_button {
   display: flex;
   justify-content: center;
@@ -96,5 +101,17 @@
   background-color: white;
   color: #333;
   margin: 20px;
+}
 
+.delete_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px rgb(229, 229, 229) solid;
+  width: 51px;
+  height: 20px;
+  padding: 2px 11px;
+  background-color: white;
+  color: #333;
+  margin: 20px;
 }

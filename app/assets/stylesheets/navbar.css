@@ -1,13 +1,32 @@
 
 /*Navbar*/
 
+.navbar_container {
+  width: 100%;
+}
+
+.navbar_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  background: #333333;
+  z-index: -1;
+
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 45px;
+  height: 50px;
   width: 100%;
   background: #333333;
+}
+
+.navbar button:first-child {
+  background-color: #ff4000;
 }
 
 .navbar button {

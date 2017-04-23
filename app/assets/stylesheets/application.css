@@ -82,17 +82,34 @@ input[type="password"] {
 /*Stream*/
 
 .stream {
-  position: relative;
+  display: flex;
   height: 100%;
+  width: 100%;
 }
 
-.stream h1 {
-  margin: 50px;
-  font-size: 30px;
+.stream_container {
+  width: 69%;
+}
+
+.stream_container h1 {
   border-bottom: 1px solid #e6e6e6;
+  margin-left: 30px;
+  margin-top: 50px;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+
+.stream_container h2 {
+  font-size: 20px;
+  margin: 30px;
+  color: #999;
 }
 
 
+.artists_to_follow {
+  border-left: 1px solid #e6e6e6;
+  margin-left: 30px;
+}
 
 
 /* AudioPlayer */

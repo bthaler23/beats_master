@@ -14,13 +14,17 @@
 
 
 .search_results {
-  color: #6C6C6C;
+  color: #ccccc7;
   display: flex;
   position: absolute;
   flex-direction: column;
   background-color: #111111;
   width: 100%;
   z-index: 1000;
+}
+
+.search_query {
+  background-color:#333;
 }
 
 .search_results li {
@@ -31,7 +35,7 @@
 
 .search_results li:hover {
   cursor: pointer;
-  background-color:#262626;
+  background-color:#333;
 }
 
 

@@ -4,13 +4,13 @@ class Api::SongsController < ApplicationController
     if params[:artist_id]
       @songs = Song.includes(:artist).where(artist_id: params[:artist_id])
     else
-      @songs = Song.includes(:artist).all
+      @songs = Song.includes(:artist).order(created_at: :desc)
     end
     render :index
   end
 
   def search
-    @songs = Song.where("title LIKE ?", "#{params[:search_term]}%")
+    @songs = Song.where("title LIKE ?", "%#{params[:search_term]}%")
     render :search
   end
 
@@ -33,7 +33,7 @@ class Api::SongsController < ApplicationController
 
   def update
     @song = Song.find(params[:id])
-    
+
     if @song.update(song_params)
       render :show
     else
@@ -43,7 +43,8 @@ class Api::SongsController < ApplicationController
   end
 
   def destroy
-
+    @song = Song.find(params[:id])
+    @song.destroy
   end
 
   private

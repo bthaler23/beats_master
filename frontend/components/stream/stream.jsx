@@ -13,8 +13,14 @@ class Stream extends React.Component {
   render() {
     return (
       <section className="stream">
-        <h1>Stream</h1>
-        <SongListContainer songs={this.props.songs}/>
+        <div className="stream_container">
+          <h1>Stream</h1>
+          <h2>Hear the latest posts from the people you're following </h2>
+          <SongListContainer songs={this.props.songs}/>
+        </div>
+        <div className="artists_to_follow">
+          Artists Here
+        </div>
       </section>
     );
   }

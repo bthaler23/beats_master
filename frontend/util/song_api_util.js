@@ -41,3 +41,10 @@ export const updateSong = (songId, song) => {
     data: song
   });
 };
+
+export const destroySong = (songId) => {
+  return $.ajax({
+    method: 'DELETE',
+    url: `api/songs/${songId}`
+  });
+};

@@ -35,6 +35,12 @@ class SearchBar extends React.Component {
     };
   }
 
+  handleFirst() {
+    if (this.state.inputValue.length > 0 ) {
+      return (<li className="search_query">Search for "{this.state.inputValue}"</li>);
+    }
+  }
+
 
   render() {
     const foundSongs = this.state.resultSongs.map((song) => (
@@ -46,6 +52,7 @@ class SearchBar extends React.Component {
         <div className="search_bar">
           <input type="text" placeholder="Search for songs, artists, bands, podcasts" value={this.state.inputValue} onChange={this.handleInput}/>
           <ul className="search_results">
+            {this.handleFirst()}
             {foundSongs}
           </ul>
         </div>

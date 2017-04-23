@@ -2,6 +2,7 @@ import React from 'react';
 import PlayButton from '../buttons/play_button';
 import Modal from '../modal/modal';
 import Edit from '../forms/edit';
+import { destroySong } from '../../util/song_api_util';
 
 class SongPage extends React.Component {
 
@@ -9,6 +10,7 @@ class SongPage extends React.Component {
     super(props);
 
     this.renderModal = this.renderModal.bind(this);
+    this.deleteSong = this.deleteSong.bind(this);
 
   }
 
@@ -38,6 +40,24 @@ class SongPage extends React.Component {
     this.props.showModal();
   }
 
+  deleteSong(e) {
+    e.preventDefault();
+    destroySong(this.props.params.song_id); 
+    this.props.router.push('/stream');
+  }
+
+  renderUserButtons() {
+    if ((this.props.currentUser) && (this.props.currentUser.id === this.props.song.artist_id)) {
+      return (
+        <div className="user_song_buttons">
+          <button className="edit_button" onClick={this.renderModal}>Edit</button>
+          <button className="delete_button" onClick={this.deleteSong}>Delete</button>
+        </div>
+      );
+    }
+  }
+
+
   render() {
 
     return(
@@ -62,8 +82,8 @@ class SongPage extends React.Component {
         </div>
         <section className="comments_section">
           <div className="comments_header">
-            { (this.props.currentUser) && ((this.props.currentUser.id === this.props.song.artist_id) &&
-              <button className="edit_button" onClick={this.renderModal}>Edit</button> )}
+            {this.renderUserButtons()}
+
           </div>
         </section>
       </section>

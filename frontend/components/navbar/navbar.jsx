@@ -42,18 +42,21 @@ class NavbarWithoutRouter extends React.Component {
   render() {
     //Replace search with search component
     return (
-      <ul className="navbar">
-        <button className="left_search" onClick={this.handleHome}>Logo</button>
-        <button className="left_search" onClick={this.handleHome}>Home</button>
-        <div className="navbar_search_container">
-          <div className="navbar_search">
-            <SearchBar />
+      <div className="navbar_container">
+        <div className="navbar_background" />
+        <ul className="navbar">
+          <button className="left_search" onClick={this.handleHome}>Logo</button>
+          <button className="left_search" onClick={this.handleHome}>Home</button>
+          <div className="navbar_search_container">
+            <div className="navbar_search">
+              <SearchBar />
+            </div>
           </div>
-        </div>
-        <button onClick={this.handleUpload}>Upload</button>
-        <button onClick={this.handleUserPage}>{this.props.username}</button>
-        <button onClick={this.handleLogout}>Logout</button>
-      </ul>
+          <button onClick={this.handleUpload}>Upload</button>
+          <button onClick={this.handleUserPage}>{this.props.username}</button>
+          <button onClick={this.handleLogout}>Logout</button>
+        </ul>
+      </div>
     );
   }
 }
