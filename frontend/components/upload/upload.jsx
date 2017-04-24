@@ -66,14 +66,26 @@ class Upload extends React.Component {
   render() {
     return (
       <section className="upload_page">
-        <form onSubmit={this.handleSubmit}>
-          <input type="text" onChange={this.handleTitle} value={this.state.title} placeholder="Title" />
-          <input type="text" onChange={this.handleGenre} value={this.state.genre} placeholder="Genre" />
-          <input type="file" onChange={this.updateSong}/>
-          <input type="file" onChange={this.updateImage}/>
-          <img src={this.state.imageUrl}/>
-          <input type="submit"/>
-        </form>
+        <div className="upload_form_container" >
+          <form className="upload_form" onSubmit={this.handleSubmit}>
+            <div className="upload_form_content" >
+            <div className="upload_img">
+              <img src={this.state.imageUrl}/>
+              <label className="image_file_container"> Upload Image
+                <input type="file" onChange={this.updateImage} />
+              </label>
+            </div>
+            <div className="upload_form_text">
+              <input type="file" onChange={this.updateSong}/>
+              <input type="text" onChange={this.handleTitle} value={this.state.title} placeholder="Title" />
+              <input type="text" onChange={this.handleGenre} value={this.state.genre} placeholder="Genre" />
+            </div>
+            </div>
+            <div className="upload_form_submit">
+              <input type="submit" value="Upload Song!"/>
+            </div>
+          </form>
+        </div>
       </section>
     );
   }

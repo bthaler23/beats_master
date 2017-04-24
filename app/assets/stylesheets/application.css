@@ -144,9 +144,3 @@ input[type="password"] {
 .audio_player img:hover {
   cursor: pointer;
 }
-
-.upload_page img {
-  width: 100px;
-  height: 100px;
-  border: none;
-}
