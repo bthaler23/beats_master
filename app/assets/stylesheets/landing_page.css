@@ -102,7 +102,7 @@
   margin-bottom: 50px;
 }
 
-.song_tile {
+.song_tile_container {
   box-sizing: border-box;
   position: relative;
   width: 16.666%;
@@ -110,10 +110,15 @@
   margin-bottom: 50px;
   /*border: #cccccc solid 1px;*/
 }
-.song_tile:before {
+
+.song_tile_container:before {
     display: block;
     padding-top: 100%; /* initial ratio of 1:1*/
+}
 
+.song_tile {
+  position: relative;
+  z-index: 10;
 }
 
 .song_tile img {
@@ -125,6 +130,7 @@
 
 .song_tile:hover {
   cursor: pointer;
+  z-index: 1;
 }
 
 .song_tile_info {
@@ -145,4 +151,26 @@
   margin: 0;
   font-size: 13px;
   color: #999;
+}
+
+.song_tile_play_button {
+  position: absolute;
+  top: 0;
+  margin-left:25%;
+  margin-top: 25%;
+  z-index: 3;
+  opacity: 0.00;
+  transition: opacity .1s;
+}
+
+.song_tile_play_button:hover {
+  cursor: pointer;
+  z-index: 12;
+  opacity: 1.00;
+}
+
+
+.song_tile_play_button img {
+  width: 80px;
+  height: 80px;
 }

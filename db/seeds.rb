@@ -8,12 +8,13 @@
 
 User.destroy_all
 
+image = open("https://s3.amazonaws.com/beatsmaster-dev/songs/songs/chance_the_rapper-acidrap.jpg")
+
 u = User.create(username: 'DJmixmixer', email: 'guest@guest.com', password: 'password' );
-c = User.create(username: 'Chance The Rapper', email: 'chance@rapping.com', password: 'cocoabutter')
+c = User.create(username: 'Chance The Rapper', email: 'chance@rapping.com', password: 'cocoabutter', image: image)
 
 Song.destroy_all
 
-image = open("https://s3.amazonaws.com/beatsmaster-dev/songs/songs/chance_the_rapper-acidrap.jpg")
 image2 = open("https://s3.amazonaws.com/beatsmaster-dev/songs/images/tassos.jpeg");
 
 songs = [
@@ -36,7 +37,7 @@ songs = [
 
 opened_songs = []
 songs.each_with_index do |song, i|
-  puts "opening #{song}, #{songs.length - i } songs left to go"
+  puts "Opening #{song}, #{songs.length - i} songs left to go"
   opened_songs[i] = open(song)
 end
 

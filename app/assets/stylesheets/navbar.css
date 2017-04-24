@@ -76,12 +76,14 @@
 }
 
 .right_nav button:nth-child(3){
-  padding-left: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .right_nav button {
   display: flex;
   padding: 0 20px;
+  padding-left: 10px;
   white-space: nowrap;
   justify-content: center;
 }

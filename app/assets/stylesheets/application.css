@@ -125,6 +125,7 @@ input[type="password"] {
   bottom: 0;
   left: 0;
   transition: height .3s;
+  z-index: 1000;
 }
 
 .shown {
