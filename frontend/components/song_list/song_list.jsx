@@ -8,7 +8,7 @@ class SongList extends React.Component {
     }
 
     render() {
-      const all_songs = this.props.songs.map((song) => (
+      const all_songs = this.props.songs.slice(0,15).map((song) => (
         <SongItem key={song.id} song={song} playlist={this.props.playlist}/>
       ));
 
