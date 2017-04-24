@@ -11,7 +11,7 @@ class Api::CommentsController < ApplicationController
     @comment = Comment.new(comment_params)
     @comment.user_id = current_user.id
     @comment.save
-
+    render :show
   end
 
   def destroy

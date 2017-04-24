@@ -3,6 +3,7 @@ import PlayButton from '../buttons/play_button';
 import Modal from '../modal/modal';
 import Edit from '../forms/edit';
 import AuthForm from '../session/auth_form';
+import CommentForm from '../comments/comment_form';
 import CommentsIndex from '../comments/comments_index';
 import { destroySong } from '../../util/song_api_util';
 
@@ -97,6 +98,7 @@ class SongPage extends React.Component {
           <div className="comments_header">
             {this.renderUserButtons()}
           </div>
+          <CommentForm songId={this.props.song.id}/>
           <CommentsIndex />
         </section>
       </section>

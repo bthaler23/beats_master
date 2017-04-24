@@ -3,11 +3,6 @@ import React from 'react';
 
 class CommentsIndex extends React.Component {
 
-  constructor(props) {
-    super(props);
-  }
-
-
   render() {
 
     const all_comments = this.props.comments.map((comment) => (
@@ -28,6 +23,7 @@ const mapStateToProps = ({comments}, ownProps) => {
     comments: Object.values(comments)
   };
 };
+
 
 export default connect(
   mapStateToProps,

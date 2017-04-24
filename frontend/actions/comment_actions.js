@@ -8,10 +8,14 @@ export const getComments = comments => ({
   comments
 });
 
+export const addComment = comment => ({
+  type: ADD_COMMENT,
+  comment
+});
 
-
-export const addComment = (comment) => dispatch => (
+export const createComment = (comment) => dispatch => (
   APIUtil.newComment(comment)
+    .then(comment => dispatch(addComment(comment)))
 );
 
 
