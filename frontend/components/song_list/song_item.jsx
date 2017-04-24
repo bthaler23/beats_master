@@ -37,6 +37,9 @@ class SongItem extends React.Component {
                   <div><Link to={`/users/${this.props.song.artist_id}`}>{this.props.song.artist}</Link></div>
                   <div><Link to={`/songs/${this.props.song.id}`}>{this.props.song.title}</Link></div>
                 </div>
+                <div className="song_header_genre" >
+                  <h5># {this.props.song.genre}</h5>
+                </div>
               </div>
             </div>
           </div>
