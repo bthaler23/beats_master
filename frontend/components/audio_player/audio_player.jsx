@@ -5,7 +5,7 @@ class AudioPlayer extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {played: false};
+    this.state = {played: false, song_length: "0:00"};
   }
 
   componentDidUpdate() {
@@ -18,6 +18,22 @@ class AudioPlayer extends React.Component {
     } else {
       audio.pause();
     }
+  }
+
+  getDuration(audio) {
+      if (audio) {
+        let duration = audio.duration;
+        let minutes = Math.floor(duration/60);
+        let seconds = Math.floor(duration%60);
+
+        if (minutes < 10) {
+          minutes = "0" + parseInt(minutes);
+        }
+        if (seconds < 10) {
+          seconds = "0" + parseInt(seconds);
+        }
+        this.setState({song_length: (`${minutes}` + ":" + `${seconds}`)});
+      }
   }
 
   played() {
@@ -36,9 +52,15 @@ class AudioPlayer extends React.Component {
         <div className="tracking_buttons">
           <PlayButton song={this.props.playlist.current_song} />
         </div>
+        <div className="audio_progress_bar">
+          <div>0:00 ----------------------------------------------------------------------------------------  </div>
+        </div>
         <div className="audio_player_info">
-          <div>{this.props.playlist.current_song.title}</div>
           <img src={this.props.playlist.current_song.image_url} />
+          <div className="audio_player_credits">
+            <h1>{this.props.playlist.current_song.artist}</h1>
+            <h2>{this.props.playlist.current_song.title}</h2>
+          </div>
         </div>
       </section>
     );

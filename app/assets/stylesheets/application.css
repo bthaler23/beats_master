@@ -117,9 +117,12 @@ input[type="password"] {
 .audio_player {
   display: flex;
   position: fixed;
+  box-sizing: border-box;
+  width: 100vw;
+  padding: 0 17%;
   border-top: rgba(0, 0, 0, 0.14902) 1px solid;
-  width: 100%;
   background: #f2f2f2;
+  justify-content: space-around;
   align-items: center;
   height: 0px;
   bottom: 0;
@@ -132,16 +135,45 @@ input[type="password"] {
   height: 47px;
 }
 
-.audio_player .play_button {
+.tracking_buttons {
+  display: flex;
   height: 90%;
+  flex-direction: row;
+  align-items: center;
 }
 
-.audio_player img {
-  height: 90%;
+.tracking_buttons .play_button {
+  height: 100%;
+}
+
+.tracking_buttons img {
+  height: 40px;
   width: 40px;
-  margin-left: 80px;
 }
 
-.audio_player img:hover {
-  cursor: pointer;
+.audio_player_info {
+  display: flex;
+  height: 90%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.audio_player_credits {
+  padding-left: 10px;
+}
+
+.audio_player_credits h1 {
+  color: #999;
+  font-size: 12px;
+}
+
+.audio_player_credits h2 {
+  color: #666;
+  font-size: 14px;
+}
+
+.audio_player_info img {
+  height: 95%;
+  width: 40px;
 }

@@ -33,7 +33,6 @@ class Edit extends React.Component {
     this.props.hideModal();
     const updated_song = {song: {title: this.state.title, genre: this.state.genre}};
     this.props.editSong(this.props.params.song_id, updated_song);
-      //shitty code - fix this later
   }
 
   render() {
