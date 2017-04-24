@@ -23,7 +23,11 @@ class PlayButton extends React.Component {
   }
 
   playSong(e) {
-    this.props.playSong(this.props.song);
+    if (this.props.playlist.current_song.id !== this.props.song.id) {
+      this.props.playSong(this.props.song, this.props.playlist.current_song);
+    } else {
+      this.props.playSong(this.props.song);
+    }
   }
 
   stopSong() {
@@ -52,7 +56,7 @@ const mapStateToProps = ({playlist}, ownProps) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    playSong: (song) => dispatch(playSong(song)),
+    playSong: (song, last_song) => dispatch(playSong(song, last_song)),
     stopSong: () => dispatch(stopSong())
   };
 };
