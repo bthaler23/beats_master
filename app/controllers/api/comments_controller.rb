@@ -12,7 +12,6 @@ class Api::CommentsController < ApplicationController
     @comment.user_id = current_user.id
     @comment.save
 
-
   end
 
   def destroy
@@ -24,7 +23,7 @@ class Api::CommentsController < ApplicationController
 
   def comment_params
     params.require(:comment).permit(:song_id, :user_id, :body)
-
+  end
 
 
 end

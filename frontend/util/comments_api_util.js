@@ -11,9 +11,9 @@ export const newComment = (comment) => {
 export const fetchComments = (song_id) => {
 
   return $.ajax({
-    method: 'POST',
+    method: 'GET',
     url: 'api/comments',
-    data: song_id
+    data: {song_id}
   });
 
 };

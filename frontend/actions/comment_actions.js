@@ -1,4 +1,4 @@
-import * as APIUtil from '../actions/comment_actions';
+import * as APIUtil from '../util/comments_api_util';
 export const GET_COMMENTS = "GET_COMMENTS";
 export const ADD_COMMENT = "ADD_COMMENT";
 

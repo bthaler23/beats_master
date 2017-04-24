@@ -3,6 +3,7 @@ import PlayButton from '../buttons/play_button';
 import Modal from '../modal/modal';
 import Edit from '../forms/edit';
 import AuthForm from '../session/auth_form';
+import CommentsIndex from '../comments/comments_index';
 import { destroySong } from '../../util/song_api_util';
 
 class SongPage extends React.Component {
@@ -23,6 +24,8 @@ class SongPage extends React.Component {
     } else {
       this.props.fetchSong(this.props.params.song_id);
     }
+    this.props.fetchComments(this.props.params.song_id);
+
   }
 
   //Check this if this is good
@@ -93,8 +96,8 @@ class SongPage extends React.Component {
         <section className="comments_section">
           <div className="comments_header">
             {this.renderUserButtons()}
-
           </div>
+          <CommentsIndex />
         </section>
       </section>
     );
