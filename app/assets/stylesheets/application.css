@@ -177,3 +177,14 @@ input[type="password"] {
   height: 95%;
   width: 40px;
 }
+
+.audio_progress_bar {
+  display: flex;
+  width: 70%;
+  flex-direction: row;
+}
+
+.audio_progress_bar progress {
+  width: 100%;
+  height: 25px;
+}

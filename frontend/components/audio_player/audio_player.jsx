@@ -63,7 +63,9 @@ class AudioPlayer extends React.Component {
           <PlayButton song={this.props.playlist.current_song} />
         </div>
         <div className="audio_progress_bar">
-          <div>{this.parseDuration(this.props.playlist.current_time)} ----------------------------------------------------------------------------------------{this.parseDuration(this.props.playlist.duration)} </div>
+          <h1>{this.parseDuration(this.props.playlist.current_time)}</h1>
+            <progress value={this.props.playlist.current_time} max={this.props.playlist.duration}/>
+          <h1>{this.parseDuration(this.props.playlist.duration)} </h1>
         </div>
         <div className="audio_player_info">
           <img src={this.props.playlist.current_song.image_url} />
