@@ -63,7 +63,7 @@ class SongPage extends React.Component {
     if (this.props.currentUser) {
       return (<Modal><Edit song={this.props.song} /></Modal>);
     } else {
-      return (<Modal form={AuthForm} />);
+      return (<Modal><AuthForm /></Modal>);
     }
   }
 

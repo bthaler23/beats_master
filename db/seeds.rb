@@ -9,13 +9,16 @@
 User.destroy_all
 
 image = open("https://s3.amazonaws.com/beatsmaster-dev/songs/songs/chance_the_rapper-acidrap.jpg")
+image3 = open("https://s3.amazonaws.com/beatsmaster-dev/songs/songs/bumpngrind.jpg")
 
 u = User.create(username: 'DJmixmixer', email: 'guest@guest.com', password: 'password' );
 c = User.create(username: 'Chance The Rapper', email: 'chance@rapping.com', password: 'cocoabutter', image: image)
+d = User.create(username: 'Golden God', email: 'rkelly@showers.com', password: 'showering', image: image3)
 
 Song.destroy_all
 
 image2 = open("https://s3.amazonaws.com/beatsmaster-dev/songs/images/tassos.jpeg");
+
 
 songs = [
   "https://s3.amazonaws.com/beatsmaster-dev/songs/songs/000/000/003/original/ghost.mp3",
@@ -32,7 +35,8 @@ songs = [
   "https://s3.amazonaws.com/beatsmaster-dev/songs/songs/smoke-again.mp3",
   "https://s3.amazonaws.com/beatsmaster-dev/songs/songs/acid-rain.mp3",
   "https://s3.amazonaws.com/beatsmaster-dev/songs/songs/chain-smoker.mp3",
-  "https://s3.amazonaws.com/beatsmaster-dev/songs/songs/everythings-good.mp3"
+  "https://s3.amazonaws.com/beatsmaster-dev/songs/songs/everythings-good.mp3",
+  "https://s3.amazonaws.com/beatsmaster-dev/songs/songs/bumpngrind.mp3"
 ]
 
 opened_songs = []
@@ -57,3 +61,4 @@ Song.create(title: "Smoke Again", artist_id: c.id, genre: "Hip-Hop", song: opene
 Song.create(title: "Acid Rain", artist_id: c.id, genre: "Hip-Hop", song: opened_songs[12], image: image)
 Song.create(title: "Chain Smoker", artist_id: c.id, genre: "Hip-Hop", song: opened_songs[13], image: image)
 Song.create(title: "Everything's Good", artist_id: c.id, genre: "Hip-Hop", song: opened_songs[14], image: image)
+Song.create(title: "Bump N Grind", artist_id: d.id, genre: "R&B", song: opened_songs[15], image: image3)

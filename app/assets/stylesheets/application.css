@@ -110,3 +110,7 @@ input[type="password"] {
   border-left: 1px solid #e6e6e6;
   margin-left: 40px;
 }
+
+.play_button:hover {
+  border-radius: 50px;
+}
