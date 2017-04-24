@@ -11,6 +11,7 @@ class NavbarWithoutRouter extends React.Component {
     this.handleUserPage = this.handleUserPage.bind(this);
     this.handleHome = this.handleHome.bind(this);
     this.handleUpload = this.handleUpload.bind(this);
+    this.showModal = this.showModal.bind(this);
 
   }
 
@@ -39,22 +40,47 @@ class NavbarWithoutRouter extends React.Component {
     this.props.router.push('/upload');
   }
 
+  checkLoggedIn() {
+    if (this.props.username) {
+      return (
+        <div className="right_nav">
+          <button onClick={this.handleUpload}>Upload</button>
+          <img src={this.props.user_image} />
+          <button onClick={this.handleUserPage}>{this.props.username}</button>
+          <button onClick={this.handleLogout}>Logout</button>
+        </div>
+      );
+    } else {
+      return (
+        // Is this a good way to do this - look to refactor later. Calling to show the modal on the Show Page that is rendered when there is no user logged in
+        <div className="right_nav logged_out">
+          <button onClick={this.showModal}>Sign In</button>
+          <button onClick={this.showModal}>Create Account</button>
+        </div>
+      );
+    }
+  }
+
+  showModal() {
+    this.props.showModal();
+  }
+
   render() {
     //Replace search with search component
     return (
       <div className="navbar_container">
         <div className="navbar_background" />
         <ul className="navbar">
-          <button className="left_search" onClick={this.handleHome}>Logo</button>
-          <button className="left_search" onClick={this.handleHome}>Home</button>
+          <div className="left_nav">
+            <button onClick={this.handleHome}>Logo</button>
+            <button onClick={this.handleHome}>Home</button>
+          </div>
           <div className="navbar_search_container">
             <div className="navbar_search">
               <SearchBar />
             </div>
           </div>
-          <button onClick={this.handleUpload}>Upload</button>
-          <button onClick={this.handleUserPage}>{this.props.username}</button>
-          <button onClick={this.handleLogout}>Logout</button>
+          {this.checkLoggedIn()}
         </ul>
       </div>
     );

@@ -2,6 +2,7 @@ import React from 'react';
 import PlayButton from '../buttons/play_button';
 import Modal from '../modal/modal';
 import Edit from '../forms/edit';
+import AuthForm from '../session/auth_form';
 import { destroySong } from '../../util/song_api_util';
 
 class SongPage extends React.Component {
@@ -42,7 +43,7 @@ class SongPage extends React.Component {
 
   deleteSong(e) {
     e.preventDefault();
-    destroySong(this.props.params.song_id); 
+    destroySong(this.props.params.song_id);
     this.props.router.push('/stream');
   }
 
@@ -57,13 +58,21 @@ class SongPage extends React.Component {
     }
   }
 
+  modalType() {
+    if (this.props.currentUser) {
+      return (<Modal form={Edit}/>);
+    } else {
+      return (<Modal form={AuthForm} />);
+    }
+  }
+
 
   render() {
 
     return(
       <section>
         <div className="song_page_splash">
-        <Modal form={Edit}/>
+        {this.modalType()}
           <div className="song_page_header">
           <PlayButton song={this.props.song}/>
             <div className="song_page_info">
