@@ -25,7 +25,7 @@ class LandingPage extends React.Component {
 
     return (
       <section className="landing_page">
-        <Modal form={ AuthForm }/>
+        <Modal><AuthForm /></Modal>
         <div className="splash_image">
           <img src={window.zeldaIcon}/>
             <div className="landing_nav">

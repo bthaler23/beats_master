@@ -30,7 +30,7 @@ class Modal extends React.Component {
       return (
         <div>
           <div className="background hide" onClick={this.handleClick}></div>
-          <div className="modal_form none"><this.props.form /></div>
+          <div className="modal_form none">{this.props.children}</div>
         </div>
       );
   }

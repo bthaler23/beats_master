@@ -24,6 +24,7 @@ export const saveSong = song => ({
   song
 });
 
+
 export const fetchSongs = (artist_id) => dispatch => (
   APIUtil.getSongs(artist_id)
     .then(songs => dispatch(receiveSongs(songs)))
@@ -37,4 +38,9 @@ export const fetchSong = songId => dispatch => (
 export const createSong = (song) => dispatch => (
   APIUtil.createSong(song)
     .then(song => dispatch(saveSong(song)))
+);
+
+export const editSong = (songId, song) => dispatch => (
+  APIUtil.updateSong(songId, song)
+    .then(song => dispatch(loadSong(song)))
 );

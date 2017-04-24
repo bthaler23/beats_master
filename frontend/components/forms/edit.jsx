@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { hideModal } from '../../actions/modal_actions';
-import { updateSong } from '../../util/song_api_util';
 import { withRouter } from 'react-router';
+import { editSong } from '../../actions/song_actions';
 
 class Edit extends React.Component {
 
@@ -12,6 +12,12 @@ class Edit extends React.Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleGenre = this.handleGenre.bind(this);
+  }
+
+  componentWillReceiveProps(newProps) {
+    if (this.props.song.id !== newProps.song.id) {
+      this.setState({title: newProps.song.title, genre: newProps.song.genre});
+    }
   }
 
   handleChange(e) {
@@ -26,8 +32,7 @@ class Edit extends React.Component {
     e.preventDefault();
     this.props.hideModal();
     const updated_song = {song: {title: this.state.title, genre: this.state.genre}};
-    updateSong(this.props.params.song_id, updated_song)
-      .then(() => window.location.reload());
+    this.props.editSong(this.props.params.song_id, updated_song);
       //shitty code - fix this later
   }
 
@@ -47,11 +52,11 @@ class Edit extends React.Component {
 }
 
 const mapStateToProps = ({songs}, ownProps) => ({
-  song: songs.songDetail
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
-  hideModal: () => dispatch(hideModal())
+  hideModal: () => dispatch(hideModal()),
+  editSong: (songId, song) => dispatch(editSong(songId, song))
 });
 
 

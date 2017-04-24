@@ -26,7 +26,8 @@ class SongPage extends React.Component {
   }
 
   //Check this if this is good
-  componentWillUpdate() {
+  //Use componetWillReceiveProps (newProps)
+  componentWillReceiveProps(newProps) {
 
     if (this.props.params.song_id != this.props.song.id) {
       if (this.props.preloaded) {
@@ -60,7 +61,7 @@ class SongPage extends React.Component {
 
   modalType() {
     if (this.props.currentUser) {
-      return (<Modal form={Edit}/>);
+      return (<Modal><Edit song={this.props.song} /></Modal>);
     } else {
       return (<Modal form={AuthForm} />);
     }
