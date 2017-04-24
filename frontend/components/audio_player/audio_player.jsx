@@ -1,7 +1,6 @@
 import React from 'react';
 import PlayButton from '../buttons/play_button';
 import { connect } from 'react-redux';
-import { startSong } from '../../actions/playlist_actions';
 class AudioPlayer extends React.Component {
 
   constructor(props) {
@@ -9,9 +8,17 @@ class AudioPlayer extends React.Component {
     this.state = {played: false};
   }
 
+  componentDidMount() {
+    //This interval is always running always - is this bad
+    setInterval(() => {
+      if (this.props.playlist.playing) {
+        this.props.getCurrentTime(this.refs.audio_player.currentTime);
+      }
+    }, 1000);
+  }
+
   componentDidUpdate(prevProps) {
-    // debugger
-    const audio = $('audio')[0];
+    const audio = this.refs.audio_player;
     if (this.props.playlist.playing) {
       audio.play().then(() => {
         if (prevProps.playlist.current_song.id != this.props.playlist.current_song.id) {
@@ -51,12 +58,12 @@ class AudioPlayer extends React.Component {
   render() {
     return (
       <section className={this.played()}>
-        <audio src={this.props.playlist.current_song.song_url}/>
+        <audio ref="audio_player" src={this.props.playlist.current_song.song_url}/>
         <div className="tracking_buttons">
           <PlayButton song={this.props.playlist.current_song} />
         </div>
         <div className="audio_progress_bar">
-          <div>0:00 ----------------------------------------------------------------------------------------{this.parseDuration(this.props.playlist.duration)} </div>
+          <div>{this.parseDuration(this.props.playlist.current_time)} ----------------------------------------------------------------------------------------{this.parseDuration(this.props.playlist.duration)} </div>
         </div>
         <div className="audio_player_info">
           <img src={this.props.playlist.current_song.image_url} />
