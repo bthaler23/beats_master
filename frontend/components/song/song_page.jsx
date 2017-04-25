@@ -6,6 +6,7 @@ import AuthForm from '../session/auth_form';
 import CommentForm from '../comments/comment_form';
 import CommentsIndex from '../comments/comments_index';
 import { destroySong } from '../../util/song_api_util';
+import { Link } from 'react-router';
 
 class SongPage extends React.Component {
 
@@ -83,7 +84,7 @@ class SongPage extends React.Component {
           <PlayButton song={song}/>
             <div className="song_page_info">
               <div className="song_page_credits">
-                <h2><span>{song.artist}</span></h2>
+                <h2><span><Link to={`users/${song.artist_id}`}>{song.artist}</Link></span></h2>
                 <h1><span>{song.title}</span></h1>
               </div>
               <div className="song_page_additional_info">
