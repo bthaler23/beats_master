@@ -20,3 +20,26 @@
   display: flex;
   justify-content: center;
 }
+
+.edit_user_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit_user_form h1 {
+ font-size: 40px;
+ margin-bottom: 40px;
+}
+
+.edit_user_form input {
+  margin-bottom: 20px;
+  height: 40px;
+  width: 60%;
+}
+
+.edit_user_form input[type="submit"] {
+  display: flex;
+  justify-content: center;
+}

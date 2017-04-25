@@ -24,14 +24,19 @@
   border-radius: 100%;
 }
 
-.user_splash_name span{
+.user_splash_details span {
   background: #1b1518;
   padding: 5px 8px;
 }
 
-.user_splash_name {
+.user_splash_details h2 {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.user_splash_details {
   color: #ffffff;
-  font-size: 30px;
+  font-size: 25px;
   margin-left: 30px;
   overflow: hidden;
   white-space: nowrap;
@@ -40,20 +45,33 @@
 .user_info_container {
   display: flex;
   flex-direction: column;
+  padding: 0 30px;
 }
 
 .user_info_header {
-  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  width: 97%;
   height: 33px;
-  padding: 15px 30px;
+  padding: 15px 0;
+  border-bottom: 1px #f2f2f2 solid;
 }
 
 .user_info_header h1 {
   display: flex;
   font-size: 20px;
   align-items: center;
-  border-bottom: 1px #f2f2f2 solid;
   padding-bottom: 5px;
+}
+
+.user_info_header button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px rgb(229, 229, 229) solid;
+  padding: 2px 10px;
+  background-color: white;
+  color: #333;
 }
 
 .user_info_section {
@@ -64,7 +82,6 @@
 .user_songs {
   width: 70%;
   border-right: 1px #f2f2f2 solid;
-  padding-right: 30px;
 }
 
 .user_stats {

@@ -14,7 +14,7 @@ class CommentsIndex extends React.Component {
 
     const comments = this.props.comments;
     const all_comments = comments.map((comment) => (
-        <Comment key={comment.id} comment={comment} deleteComment={this.props.deleteComment} current_user_id = {this.props.current_user_id} />
+        <Comment key={comment.id} comment={comment} deleteComment={this.props.deleteComment} current_user_id={this.props.current_user_id} />
     ));
 
     return (
