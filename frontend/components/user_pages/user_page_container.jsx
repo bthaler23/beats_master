@@ -5,8 +5,9 @@ import { showModal } from '../../actions/modal_actions';
 import UserPage from './user_page';
 
   //
-  const mapStateToProps = ({user, songs}, ownProps) => {
+  const mapStateToProps = ({session, user, songs}, ownProps) => {
     return {
+      currentUser: session.currentUser,
       user,
       songs: Object.values(songs.songs)
     };

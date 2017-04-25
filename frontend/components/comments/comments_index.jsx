@@ -28,10 +28,18 @@ class CommentsIndex extends React.Component {
 }
 
 const mapStateToProps = ({session, comments}, ownProps) => {
-  return {
-    comments: Object.values(comments),
-    current_user_id: session.currentUser.id
-  };
+  //Is this a bad implementation of this?
+  if (session.currentUser) {
+    return {
+      comments: Object.values(comments),
+      current_user_id: session.currentUser.id
+    };
+  } else {
+    return {
+      comments: Object.values(comments),
+      current_user_id: null
+    };
+  }
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {

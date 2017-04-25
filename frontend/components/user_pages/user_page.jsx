@@ -26,6 +26,12 @@ class UserPage extends React.Component {
     }
   }
 
+  renderEdit() {
+    if (this.props.currentUser && this.props.user.id === this.props.currentUser.id) {
+      return (<button onClick={this.props.showModal}>Edit User</button>);
+    }
+  }
+
   render() {
     return (
       <section className="user_page">
@@ -43,7 +49,7 @@ class UserPage extends React.Component {
         <section className="user_info_container">
           <article className="user_info_header">
             <h1>Songs</h1>
-            <button onClick={this.props.showModal}>Edit User</button>
+            {this.renderEdit()}
           </article>
           <article className="user_info_section">
             <div className="user_songs">
