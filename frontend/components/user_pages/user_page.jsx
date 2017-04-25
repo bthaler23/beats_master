@@ -14,9 +14,26 @@ class UserPage extends React.Component {
 
   render() {
     return (
-      <section>
-        <h1>{this.props.user.username}</h1>
-        <SongListContainer songs={this.props.songs}/>
+      <section className="user_page">
+        <section className="user_splash_container">
+          <div className="user_splash">
+          <img className="user_splash_image" src={this.props.user.image_url}/>
+          <h1 className="user_splash_name"><span>{this.props.user.username}</span></h1>
+          </div>
+        </section>
+        <section className="user_info_container">
+          <article className="user_info_header">
+            <h1>Songs</h1>
+          </article>
+          <article className="user_info_section">
+            <div className="user_songs">
+              <SongListContainer songs={this.props.songs}/>
+            </div>
+            <aside className="user_stats">
+              User Stats
+            </aside>
+          </article>
+        </section>
       </section>
     );
   }

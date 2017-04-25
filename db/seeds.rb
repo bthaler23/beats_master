@@ -11,7 +11,7 @@ User.destroy_all
 image = open("https://s3.amazonaws.com/beatsmaster-dev/songs/songs/chance_the_rapper-acidrap.jpg")
 image3 = open("https://s3.amazonaws.com/beatsmaster-dev/songs/songs/bumpngrind.jpg")
 
-u = User.create(username: 'DJmixmixer', email: 'guest@guest.com', password: 'password' );
+u = User.create(username: 'DJMixMixer', email: 'guest@guest.com', password: 'password' );
 c = User.create(username: 'Chance The Rapper', email: 'chance@rapping.com', password: 'cocoabutter', image: image)
 d = User.create(username: 'Golden God', email: 'rkelly@showers.com', password: 'showering', image: image3)
 

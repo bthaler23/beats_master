@@ -1,0 +1,74 @@
+.user_page_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.user_splash_container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  box-sizing: border-box;
+  height: 260px;
+  padding: 30px;
+  background: linear-gradient(135deg, #866774, #8d8284);
+}
+
+.user_splash {
+  display: flex;
+  flex-direction: row;
+}
+
+.user_splash_image {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+}
+
+.user_splash_name span{
+  background: #1b1518;
+  padding: 5px 8px;
+}
+
+.user_splash_name {
+  color: #ffffff;
+  font-size: 30px;
+  margin-left: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.user_info_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.user_info_header {
+  width: 95%;
+  height: 33px;
+  padding: 15px 30px;
+}
+
+.user_info_header h1 {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  border-bottom: 1px #f2f2f2 solid;
+  padding-bottom: 5px;
+}
+
+.user_info_section {
+  display: flex;
+  flex-direction: row;
+}
+
+.user_songs {
+  width: 70%;
+  border-right: 1px #f2f2f2 solid;
+  padding-right: 30px;
+}
+
+.user_stats {
+  font-size: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+}

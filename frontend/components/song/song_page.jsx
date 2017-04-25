@@ -72,31 +72,34 @@ class SongPage extends React.Component {
 
 
   render() {
+
+    const song = this.props.song;
+
     return(
       <section className="song_page_container">
         <div className="song_page_splash">
         {this.modalType()}
           <div className="song_page_header">
-          <PlayButton song={this.props.song}/>
+          <PlayButton song={song}/>
             <div className="song_page_info">
               <div className="song_page_credits">
-                <h2><span>{this.props.song.artist}</span></h2>
-                <h1><span>{this.props.song.title}</span></h1>
+                <h2><span>{song.artist}</span></h2>
+                <h1><span>{song.title}</span></h1>
               </div>
               <div className="song_page_additional_info">
-                <h2># {this.props.song.genre}</h2>
+                <h2># {song.genre}</h2>
               </div>
             </div>
           </div>
           <div className="song_image">
-            <img src={this.props.song.image_url} />
+            <img src={song.image_url} />
           </div>
         </div>
         <section className="song_page_bottom">
           <div className="comments_section">
             <div className="comments_header">
               <div className="add_comment_form">
-                <CommentForm songId={this.props.song.id}/>
+                <CommentForm songId={song.id}/>
               </div>
               <div className="user_buttons">
                 {this.renderUserButtons()}
@@ -104,8 +107,8 @@ class SongPage extends React.Component {
             </div>
             <div className="comments">
               <div className="user_info">
-                <img src={this.props.song.artist_img_url} />
-                <h1>{this.props.song.artist}</h1>
+                <img src={song.artist_img_url} />
+                <h1>{song.artist}</h1>
               </div>
               <div className="comments_index_container">
                 <CommentsIndex songId={this.props.params.song_id} />
