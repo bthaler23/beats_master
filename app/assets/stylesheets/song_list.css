@@ -66,7 +66,7 @@
   margin-left: 20px;
 }
 
-.song_item_image img:hover {
+.song_item_info img:hover {
   cursor: pointer;
 }
 

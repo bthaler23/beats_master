@@ -2,7 +2,7 @@
 json.id song.id
 json.title song.title
 json.artist song.artist.username
-json.num_comments song.comments.count
+json.num_comments song.comments.length
 json.artist_id song.artist.id
 json.artist_img_url asset_path(song.artist.image.url)
 json.genre song.genre
