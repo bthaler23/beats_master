@@ -4,7 +4,7 @@ class Api::SongsController < ApplicationController
     if params[:artist_id]
       @songs = Song.includes(:artist).where(artist_id: params[:artist_id])
     else
-      @songs = Song.includes(:artist).order(created_at: :desc)
+      @songs = Song.includes(:artist).order("created_at DESC").all
     end
     render :index
   end

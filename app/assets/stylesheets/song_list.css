@@ -8,64 +8,77 @@
 
 }
 
-
-.song_item:first-child {
-  /*Temporary padding until I put something in*/
-  /*padding-top: 20px;*/
-}
-
 .song_item {
   display: flex;
+  box-sizing: none;
   flex-direction: column;
   width: 100%;
   height: 210px;
   margin-bottom: 60px;
 }
 
-.song_header_all {
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-
-.song_item img {
-  width: 170px;
-  height: 170px;
-}
-
-.song_item img:hover {
-  cursor: pointer;
-}
-
-.song_date {
+.song_item_date {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 10px;
-  padding-left: 0px;
+  padding-left: 5px;
+  padding-bottom: 15px;
+  padding-right: 5px;
 }
 
-.song_date h4 {
+.song_item_date h4 {
+  color: #999;
   font-size: 12px;
   padding-left: 8px;
+  margin: 0px;
 }
 
-.song_date img {
+.song_date_link {
+  color: black;
+}
+
+.song_item_date img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
 
 }
 
-.song_header {
+.song_item_body {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.song_item_image {
+  padding: 0 5px;
+}
+
+.song_item_image img {
+  width: 160px;
+  height: 160px;
+}
+
+.song_item_info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.song_item_image img:hover {
+  cursor: pointer;
+}
+
+.song_item_details {
   display: flex;
   width: 100%;
   height: 50%;
-  margin-left: 20px;
   align-items: center;
 }
 
-.song_header img {
+
+.song_item_details img {
   width: 50px;
   height: 50px;
 }
@@ -96,4 +109,32 @@
   padding: 1px 7px;
   background-color: #999;
   color: #fff;
+}
+
+.song_item_waveform {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+
+.song_item_footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  color: grey;
+}
+
+.song_item_footer h5 {
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.song_item_footer h5 i {
+  padding-top: 1px;
+  font-size: 18px;
+  padding-right: 4px;
 }

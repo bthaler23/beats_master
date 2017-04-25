@@ -81,6 +81,7 @@
 
 .user_songs {
   width: 70%;
+  padding-top: 20px;
   padding-right: 20px;
   border-right: 1px #f2f2f2 solid;
 }
