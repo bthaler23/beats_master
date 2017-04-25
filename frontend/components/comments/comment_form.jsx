@@ -20,13 +20,15 @@ class CommentForm extends React.Component {
   addComment(e) {
     e.preventDefault();
     let comment = {comment: {song_id: this.props.songId, body: this.state.body}};
-    this.props.createComment(comment);
+    this.props.createComment(comment).then(() => {
+      this.setState({body: ""});
+    });
   }
 
   render() {
     return (
       <form onSubmit={this.addComment}>
-        <input type="text" value={this.state.body} onChange={this.handleBody} placeholder="Add Comments Here"/>
+        <input type="text" value={this.state.body} onChange={this.handleBody} placeholder="Write a comment"/>
         <input type="submit"/>
       </form>
     );

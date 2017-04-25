@@ -73,9 +73,8 @@ class SongPage extends React.Component {
 
 
   render() {
-
     return(
-      <section>
+      <section className="song_page_container">
         <div className="song_page_splash">
         {this.modalType()}
           <div className="song_page_header">
@@ -94,12 +93,29 @@ class SongPage extends React.Component {
             <img src={this.props.song.image_url} />
           </div>
         </div>
-        <section className="comments_section">
-          <div className="comments_header">
-            {this.renderUserButtons()}
+        <section className="song_page_bottom">
+          <div className="comments_section">
+            <div className="comments_header">
+              <div className="add_comment_form">
+                <CommentForm songId={this.props.song.id}/>
+              </div>
+              <div className="user_buttons">
+                {this.renderUserButtons()}
+              </div>
+            </div>
+            <div className="comments">
+              <div className="user_info">
+                <img src={this.props.song.artist_img_url} />
+                <h1>{this.props.song.artist}</h1>
+              </div>
+              <div className="comments_index_container">
+                <CommentsIndex />
+              </div>
+            </div>
           </div>
-          <CommentForm songId={this.props.song.id}/>
-          <CommentsIndex />
+          <div className="comments_side_bar">
+            Side Bar
+          </div>
         </section>
       </section>
     );

@@ -18,7 +18,6 @@ class SearchBar extends React.Component {
     if (e.target.value.length > 0 ) {
       searchSongs(e.target.value).then((foundSongs) => {
         this.setState({resultSongs: foundSongs});
-        console.log(this.state.resultSongs);
       });
     } else {
       this.setState({resultSongs: []});

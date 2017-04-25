@@ -5,14 +5,16 @@ class CommentsIndex extends React.Component {
 
   render() {
 
-    const all_comments = this.props.comments.map((comment) => (
-      <li key={comment.id}>{comment.body} {comment.user}</li>
+    const comments = this.props.comments;
+    const all_comments = comments.slice(comments.length/2, comments.length).map((comment) => (
+      <li className="comment" key={comment.id}><h1>{comment.user}</h1><h2>{comment.body}</h2></li>
     ));
 
     return (
-      <div>
+      <ul className="comments_index">
         {all_comments}
-      </div>
+        <li className="comments_number">{this.props.comments.length} comments</li>
+      </ul>
     );
   }
 
