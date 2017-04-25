@@ -6,6 +6,8 @@ class AudioPlayer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {played: false};
+
+    // this.endSong = this.endSong.bind(this);
   }
 
   componentDidMount() {
@@ -54,11 +56,15 @@ class AudioPlayer extends React.Component {
     }
   }
 
+  // endSong() {
+  //   this.props.playSong(this.props.playlist.last_song, this.props.playlist.current_song);
+  // }
+
 
   render() {
     return (
       <section className={this.played()}>
-        <audio ref="audio_player" src={this.props.playlist.current_song.song_url}/>
+        <audio ref="audio_player" src={this.props.playlist.current_song.song_url} />
         <div className="tracking_buttons">
           <PlayButton song={this.props.playlist.current_song} />
         </div>

@@ -13,6 +13,7 @@ const mapStateToProps = ({playlist}, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
 
   return {
+    playSong: (song, last_song) => dispatch(playSong(song, last_song)),
     startSong: (song_duration) => dispatch(startSong(song_duration)),
     getCurrentTime: (current_time) => dispatch(getCurrentTime(current_time))
   };

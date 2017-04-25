@@ -99,7 +99,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin-left: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .song_tile_container {
@@ -173,4 +173,15 @@
 .song_tile_play_button img {
   width: 80px;
   height: 80px;
+}
+
+.landing_footer {
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+  justify-content: center;
+  border-top: #ccc solid 1px;
+  font-size: 14px;
+  color: #ccc;
+  padding-bottom: 50px;
 }

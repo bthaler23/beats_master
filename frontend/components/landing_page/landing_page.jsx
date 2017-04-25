@@ -41,9 +41,12 @@ class LandingPage extends React.Component {
             <SearchBar />
           </div>
         </div>
-        <div>
+        <div className="song_tile_index_container">
           <SongTileIndexContainer />
         </div>
+        <footer className="landing_footer">
+
+        </footer>
       </section>
 
     );
