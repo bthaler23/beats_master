@@ -17,3 +17,12 @@ export const fetchComments = (song_id) => {
   });
 
 };
+
+export const deleteComment = (commentId) => {
+
+  return $.ajax({
+    method: 'DELETE',
+    url: `api/comments/${commentId}`
+  });
+
+};

@@ -25,7 +25,6 @@ class SongPage extends React.Component {
     } else {
       this.props.fetchSong(this.props.params.song_id);
     }
-    this.props.fetchComments(this.props.params.song_id);
 
   }
 
@@ -109,7 +108,7 @@ class SongPage extends React.Component {
                 <h1>{this.props.song.artist}</h1>
               </div>
               <div className="comments_index_container">
-                <CommentsIndex />
+                <CommentsIndex songId={this.props.params.song_id} />
               </div>
             </div>
           </div>

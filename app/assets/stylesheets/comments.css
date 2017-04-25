@@ -97,16 +97,32 @@
 
 
 .comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px;
+  margin-right: 60px;
 }
 
-.comment h1 {
+.comment_body h1 {
   font-size: 12px;
   color: #999;
 }
 
-.comment h2 {
+.comment_body h1 span {
+  padding: 0 10px;
+}
+
+.comment_body h2 {
   font-size: 14px;
+  color: #333;
+}
+
+.comment_buttons button {
+  padding: 2px 5px;
+  font-size: 10px;
+  border: 1px rgb(229, 229, 229) solid;
+  background-color: white;
   color: #333;
 
 }

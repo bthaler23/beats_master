@@ -71,11 +71,11 @@ input[type="password"] {
   z-index: 9999;
   background: white;
   transition: top .5s;
-
 }
 
 .none {
-  top: -100%;
+  opacity: 0;
+  top: -150%;
 }
 
 

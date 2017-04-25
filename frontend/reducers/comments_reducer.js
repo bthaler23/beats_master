@@ -1,4 +1,4 @@
-import { GET_COMMENTS, ADD_COMMENT } from '../actions/comment_actions';
+import { GET_COMMENTS, ADD_COMMENT, REMOVE_COMMENT } from '../actions/comment_actions';
 
 const defaultState = {};
 
@@ -11,6 +11,10 @@ const CommentsReducer = (state = defaultState, action) => {
       const newState = Object.assign({}, state);
       newState[action.comment.id] = action.comment;
       return newState;
+    case REMOVE_COMMENT:
+      const newerState = Object.assign({}, state);
+      delete newerState[action.commentId];
+      return newerState;
     default:
       return state;
   }
