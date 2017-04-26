@@ -2,7 +2,7 @@ class Api::CommentsController < ApplicationController
 
 
   def index
-    @comments = Comment.where(song_id: params[:song_id])
+    @comments = Comment.includes(:user).where(song_id: params[:song_id])
     render :index
   end
 
