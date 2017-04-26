@@ -19,10 +19,39 @@
 }
 
 .user_splash_image {
+  display: flex;
+  position: relative;
+  justify-content: center;
   height: 200px;
   width: 200px;
   border-radius: 100%;
 }
+
+.image_update {
+  overflow: hidden;
+  padding: 2px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
+  background-color: #DDD;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  bottom: 0;
+}
+
+.image_update input[type=file] {
+  position: absolute;
+  display: block;
+  cursor: inherit;
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 0;
+  top: 0;
+  right: 0;
+}
+
 
 .user_splash_details span {
   background: #1b1518;

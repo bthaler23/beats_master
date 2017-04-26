@@ -7,6 +7,8 @@ class UserPage extends React.Component {
 
   constructor(props) {
     super(props);
+
+    this.updateImage = this.updateImage.bind(this);
   }
 
   componentDidMount() {
@@ -32,13 +34,36 @@ class UserPage extends React.Component {
     }
   }
 
+  renderUpdateImage() {
+    if (this.props.currentUser && this.props.user.id === this.props.currentUser.id) {
+      return (<label className="image_update"> Update Image
+                <input type="file" onChange={this.updateImage} />
+              </label>
+              );
+    }
+
+  }
+
+  updateImage(e) {
+    var file = e.currentTarget.files[0];
+
+    if (file) {
+      var formData = new FormData();
+      formData.append("user[image]", file);
+      this.props.updateUser(this.props.user.id, formData);
+    }
+  }
+
   render() {
     return (
       <section className="user_page">
         <Modal><EditUser user={this.props.user}/></Modal>
         <section className="user_splash_container">
           <div className="user_splash">
-          <img className="user_splash_image" src={this.props.user.image_url}/>
+          <div className="user_splash_image">
+            <img className="user_splash_image" src={this.props.user.image_url}/>
+            {this.renderUpdateImage()}
+          </div>
           <div className="user_splash_details">
             <h1><span>{this.props.user.username}</span></h1>
             {this.renderCity()}
