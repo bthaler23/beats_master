@@ -38,6 +38,14 @@
   height: 0;
 }
 
+.skip_buttons {
+  display: flex;
+  align-items: center;
+}
+
+.skip_buttons i {
+  font-size: 36px;
+}
 .shown .tracking_buttons img {
   height: 30px;
   width: 30px;

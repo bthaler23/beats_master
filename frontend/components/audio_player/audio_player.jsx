@@ -6,7 +6,8 @@ class AudioPlayer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {played: false};
-    this.setQCount = this.setQCount.bind(this);
+    this.playNextSong = this.playNextSong.bind(this);
+    this.playPreviousSong = this.playPreviousSong.bind(this);
   }
 
   componentDidMount() {
@@ -55,7 +56,7 @@ class AudioPlayer extends React.Component {
     }
   }
 
-  setQCount() {
+  playNextSong() {
     if (this.props.q_counter < this.props.q.length - 1) {
       this.props.setQCount(this.props.q_counter + 1);
       this.props.playSong(this.props.q[this.props.q_counter + 1]);
@@ -65,12 +66,24 @@ class AudioPlayer extends React.Component {
     }
   }
 
+  playPreviousSong() {
+    if (this.props.q_counter === 0 ) {
+      this.props.setQCount(this.props.q.length - 1);
+      this.props.playSong(this.props.q[this.props.q.length - 1]);
+    } else {
+      this.props.setQCount(this.props.q_counter - 1);
+      this.props.playSong(this.props.q[this.props.q_counter -1]);
+    }
+  }
+
   render() {
     return (
       <section className={this.played()}>
-        <audio ref="audio_player" src={this.props.current_song.current_song.song_url} onEnded={this.setQCount}/>
+        <audio ref="audio_player" src={this.props.current_song.current_song.song_url} onEnded={this.playNextSong}/>
         <div className="tracking_buttons">
-          <PlayButton song={this.props.current_song.current_song} />
+          <button className="skip_buttons" onClick={this.playPreviousSong}><i className="material-icons">skip_previous</i></button>
+          <PlayButton song={this.props.current_song.current_song}/>
+          <button className="skip_buttons" onClick={this.playNextSong} ><i className="material-icons">skip_next</i></button>
         </div>
         <div className="audio_progress_bar">
           <h1>{this.parseDuration(this.props.current_song.current_time)}</h1>
