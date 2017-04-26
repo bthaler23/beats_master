@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import { createComment } from '../../actions/comment_actions';
+import { showModal } from '../../actions/modal_actions';
 import React from 'react';
 
 
@@ -26,24 +27,41 @@ class CommentForm extends React.Component {
   }
 
   render() {
-    return (
-      <form onSubmit={this.addComment}>
-        <input type="text" value={this.state.body} onChange={this.handleBody} placeholder="Write a comment"/>
-        <input type="submit"/>
-      </form>
-    );
+
+    if (this.props.currentUser) {
+      return (
+        <form onSubmit={this.addComment}>
+          <input type="text" value={this.state.body} onChange={this.handleBody} placeholder="Write a comment"/>
+          <input type="submit"/>
+        </form>
+      );
+    } else {
+      return (
+          <p className="comments_auth">
+            <button onClick={this.props.showModal}>Sign in</button>
+             or
+            <button onClick={this.props.showModal}>Create an Account</button>
+            to write comments!
+          </p>
+
+
+      );
+    }
   }
 
 
 }
 
-const mapStateToProps = (state, ownProps) => ({
-
-});
+const mapStateToProps = ({session}, ownProps) => {
+  return {
+    currentUser: session.currentUser
+  };
+};
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    createComment: (comment) => dispatch(createComment(comment))
+    createComment: (comment) => dispatch(createComment(comment)),
+    showModal: () => dispatch(showModal())
   };
 };
 

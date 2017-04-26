@@ -76,6 +76,37 @@
   margin: 10px;
 }
 
+.comments_auth {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.comments_auth button {
+  margin: 0 10px;
+  font-size: 13px;
+  width: 43px;
+  padding: 0 15px;
+  height: 28px;
+  color: #FF5500;
+  border: #FF5500 1px solid;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.comments_auth button:last-child {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  white-space: nowrap;
+  width: 95px;
+  color: white;
+  background: #FF5500;
+  border: #FF5500 1px solid;
+}
+
 .comments {
   display: flex;
   flex-direction: row;
