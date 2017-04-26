@@ -1,3 +1,5 @@
 json.array! @comments do |comment|
-  json.partial! "api/comments/comment", comment: comment
+  json.comment.id.set! {
+    json.partial! "api/comments/comment", comment: comment
+  }
 end

@@ -18,7 +18,7 @@ import UserPage from './user_page';
       fetchUser: (userId) => dispatch(fetchUser(userId)),
       fetchSongs: (artist_id) => dispatch(fetchSongs(artist_id)),
       showModal: () => dispatch(showModal()),
-      updateUser: (userId, user) => dispatch(updateUser(userId, user))
+      updateUser: (userId, user, form) => dispatch(updateUser(userId, user, form))
     };
 
   };

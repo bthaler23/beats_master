@@ -17,14 +17,22 @@ export const getUsers = () => {
   });
 };
 
-export const updateUser = (userId, user) => {
-
-  return $.ajax({
-    method: 'PATCH',
-    url: `api/users/${userId}`,
-    contentType: false,
-    processData: false,
-    data: user
-  });
+export const updateUser = (userId, user, form)  => {
+  if (form === "image") {
+    return $.ajax({
+      method: 'PATCH',
+      url: `api/users/${userId}`,
+      contentType: false,
+      processData: false,
+      data: user
+    });
+  }
+  else {
+    return $.ajax({
+      method: 'PATCH',
+      url: `api/users/${userId}`,
+      data: user
+    });
+  }
 
 };

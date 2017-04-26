@@ -37,7 +37,7 @@ class EditUser extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const updatedUser = { user: { city: this.state.city, country: this.state.country, bio: this.state.bio }};
-    this.props.updateUser(this.props.user.id, updatedUser).then(() => this.props.hideModal());
+    this.props.updateUser(this.props.user.id, updatedUser, "info").then(() => this.props.hideModal());
   }
 
 
@@ -61,7 +61,7 @@ class EditUser extends React.Component {
 const mapStateToProps = (state, ownProps) => ({});
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
-  updateUser: (userId, user) => dispatch(updateUser(userId, user)),
+  updateUser: (userId, user, form) => dispatch(updateUser(userId, user, form)),
   hideModal: () => dispatch(hideModal())
 });
 

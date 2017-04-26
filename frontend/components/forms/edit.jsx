@@ -8,7 +8,7 @@ class Edit extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { title: props.song.title, genre: props.song.genre };
+    this.state = { title: "", genre: "" };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleGenre = this.handleGenre.bind(this);

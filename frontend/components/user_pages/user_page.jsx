@@ -50,7 +50,7 @@ class UserPage extends React.Component {
     if (file) {
       var formData = new FormData();
       formData.append("user[image]", file);
-      this.props.updateUser(this.props.user.id, formData);
+      this.props.updateUser(this.props.user.id, formData, "image");
     }
   }
 
