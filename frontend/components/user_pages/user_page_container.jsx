@@ -8,7 +8,7 @@ import UserPage from './user_page';
   const mapStateToProps = ({session, user, songs}, ownProps) => {
     return {
       currentUser: session.currentUser,
-      user,
+      user: user.userDetail,
       songs: Object.values(songs.songs)
     };
   };

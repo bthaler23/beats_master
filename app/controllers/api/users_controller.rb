@@ -1,5 +1,10 @@
 class Api::UsersController < ApplicationController
 
+  def index
+    @users = User.limit(3).order("RANDOM()")
+    render :index
+  end
+
   def create
     @user = User.new(user_params)
     if @user.save

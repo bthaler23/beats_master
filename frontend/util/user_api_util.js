@@ -9,6 +9,14 @@ export const getUser = (userId) => {
 
 };
 
+export const getUsers = () => {
+
+  return $.ajax({
+    method: 'GET',
+    url: 'api/users'
+  });
+};
+
 export const updateUser = (userId, user) => {
 
   return $.ajax({

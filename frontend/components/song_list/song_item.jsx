@@ -46,7 +46,7 @@ class SongItem extends React.Component {
                 </div>
               </div>
               <div className="song_item_waveform">
-                <h3>--^_--_-^__^__^_--_^_^^^__--^-__-__^^^_-_^__^_^__^__^---_^__^_^_</h3>
+                <h3>--^_--_-^__^__^_--_^_^^^__--^-__-__^^^_-_^__^_^__^</h3>
               </div>
               <footer className="song_item_footer">
                 <h5><i className="material-icons">message</i>{this.props.song.num_comments}</h5>
