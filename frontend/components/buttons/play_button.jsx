@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { playSong, stopSong }  from '../../actions/playlist_actions';
+import { playSong, stopSong }  from '../../actions/current_song_actions';
 
 
 class PlayButton extends React.Component {
@@ -15,7 +15,7 @@ class PlayButton extends React.Component {
 
   currentSongCheck() {
 
-    if (this.props.playlist.current_song.id === this.props.song.id && this.props.playlist.playing) {
+    if (this.props.current_song.current_song.id === this.props.song.id && this.props.current_song.playing) {
       return (<img src={window.pause_button} onClick={this.stopSong}/>);
     } else {
       return (<img src={window.playButton} onClick={this.playSong}/>);
@@ -23,8 +23,8 @@ class PlayButton extends React.Component {
   }
 
   playSong(e) {
-    if (this.props.playlist.current_song.id !== this.props.song.id) {
-      this.props.playSong(this.props.song, this.props.playlist.current_song);
+    if (this.props.current_song.current_song.id !== this.props.song.id) {
+      this.props.playSong(this.props.song, this.props.current_song.current_song);
     } else {
       this.props.playSong(this.props.song);
     }
@@ -46,9 +46,9 @@ class PlayButton extends React.Component {
 }
 
 
-const mapStateToProps = ({playlist}, ownProps) => {
+const mapStateToProps = ({current_song}, ownProps) => {
   return {
-    playlist,
+    current_song,
     song: ownProps.song
   };
 };

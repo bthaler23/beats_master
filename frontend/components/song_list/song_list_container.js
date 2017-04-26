@@ -2,10 +2,10 @@ import { connect } from 'react-redux';
 import SongList from './song_list';
 
 
-const mapStateToProps = ({playlist}, {songs}) => {
+const mapStateToProps = ({current_song}, {songs}) => {
   return {
     songs: songs,
-    playlist
+    current_song
   };
 };
 

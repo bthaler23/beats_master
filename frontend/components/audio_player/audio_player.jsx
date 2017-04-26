@@ -13,7 +13,7 @@ class AudioPlayer extends React.Component {
   componentDidMount() {
     //This interval is always running always - is this bad
     setInterval(() => {
-      if (this.props.playlist.playing) {
+      if (this.props.current_song.playing) {
         this.props.getCurrentTime(this.refs.audio_player.currentTime);
       }
     }, 1000);
@@ -21,9 +21,9 @@ class AudioPlayer extends React.Component {
 
   componentDidUpdate(prevProps) {
     const audio = this.refs.audio_player;
-    if (this.props.playlist.playing) {
+    if (this.props.current_song.playing) {
       audio.play().then(() => {
-        if (prevProps.playlist.current_song.id != this.props.playlist.current_song.id) {
+        if (prevProps.current_song.current_song.id != this.props.current_song.current_song.id) {
           this.props.startSong(audio.duration);
         }
       });
@@ -57,27 +57,27 @@ class AudioPlayer extends React.Component {
   }
 
   // endSong() {
-  //   this.props.playSong(this.props.playlist.last_song, this.props.playlist.current_song);
+  //   this.props.playSong(this.props.current_song.last_song, this.props.current_song.current_song);
   // }
 
 
   render() {
     return (
       <section className={this.played()}>
-        <audio ref="audio_player" src={this.props.playlist.current_song.song_url} />
+        <audio ref="audio_player" src={this.props.current_song.current_song.song_url} />
         <div className="tracking_buttons">
-          <PlayButton song={this.props.playlist.current_song} />
+          <PlayButton song={this.props.current_song.current_song} />
         </div>
         <div className="audio_progress_bar">
-          <h1>{this.parseDuration(this.props.playlist.current_time)}</h1>
-            <progress value={this.props.playlist.current_time} max={this.props.playlist.duration}/>
-          <h1>{this.parseDuration(this.props.playlist.duration)} </h1>
+          <h1>{this.parseDuration(this.props.current_song.current_time)}</h1>
+            <progress value={this.props.current_song.current_time} max={this.props.current_song.duration}/>
+          <h1>{this.parseDuration(this.props.current_song.duration)} </h1>
         </div>
         <div className="audio_player_info">
-          <img src={this.props.playlist.current_song.image_url} />
+          <img src={this.props.current_song.current_song.image_url} />
           <div className="audio_player_credits">
-            <h1>{this.props.playlist.current_song.artist}</h1>
-            <h2>{this.props.playlist.current_song.title}</h2>
+            <h1>{this.props.current_song.current_song.artist}</h1>
+            <h2>{this.props.current_song.current_song.title}</h2>
           </div>
         </div>
       </section>

@@ -1,11 +1,11 @@
 import { connect } from 'react-redux';
-import { playSong, stopSong, startSong, getCurrentTime } from '../../actions/playlist_actions';
+import { playSong, stopSong, startSong, getCurrentTime } from '../../actions/current_song_actions';
 import AudioPlayer from './audio_player';
 
-const mapStateToProps = ({playlist}, ownProps) => {
+const mapStateToProps = ({current_song}, ownProps) => {
 
   return {
-    playlist
+    current_song
   };
 
 };

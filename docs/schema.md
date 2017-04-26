@@ -37,7 +37,7 @@ song_id         | string    | not null, indexed, foreign key(song)
 
 ## Bonus
 
-## playlists
+## current_songs
 
 column name     | data type | details
 -----------     | --------- | -------
@@ -46,12 +46,12 @@ title           | string    | not null
 user_id         | string    | not null, indexed, foreign key(users)
 
 
-## playlist_track
+## current_song_track
 
 column name     | data type | details
 -----------     | --------- | -------
 id              | integer   | not null, primary key
-playlist_id     | string    | not null, indexed, foreign key(playlist)
+current_song_id     | string    | not null, indexed, foreign key(current_song)
 song_id         | string    | not null, indexed, foreign key(song)
 
 ## likes

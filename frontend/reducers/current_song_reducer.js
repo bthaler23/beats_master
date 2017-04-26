@@ -1,4 +1,4 @@
-import { PLAY_SONG, STOP_SONG, START_SONG, GET_CURRENT_TIME } from '../actions/playlist_actions';
+import { PLAY_SONG, STOP_SONG, START_SONG, GET_CURRENT_TIME } from '../actions/current_song_actions';
 
 const defaultState = {
   current_song: {},
@@ -8,7 +8,7 @@ const defaultState = {
   last_song: {}
 };
 
-const PlaylistReducer = (state = defaultState, action) => {
+const CurrentSongReducer = (state = defaultState, action) => {
   Object.freeze(state);
 
   switch(action.type) {
@@ -30,4 +30,4 @@ const PlaylistReducer = (state = defaultState, action) => {
 
 };
 
-export default PlaylistReducer;
+export default CurrentSongReducer;
