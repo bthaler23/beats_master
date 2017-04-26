@@ -6,8 +6,7 @@ class AudioPlayer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {played: false};
-
-    // this.endSong = this.endSong.bind(this);
+    this.setQCount = this.setQCount.bind(this);
   }
 
   componentDidMount() {
@@ -56,15 +55,20 @@ class AudioPlayer extends React.Component {
     }
   }
 
-  // endSong() {
-  //   this.props.playSong(this.props.current_song.last_song, this.props.current_song.current_song);
-  // }
-
+  setQCount() {
+    if (this.props.q_counter < this.props.q.length - 1) {
+      this.props.setQCount(this.props.q_counter + 1);
+      this.props.playSong(this.props.q[this.props.q_counter + 1]);
+    } else {
+      this.props.setQCount(0);
+      this.props.playSong(this.props.q[0]);
+    }
+  }
 
   render() {
     return (
       <section className={this.played()}>
-        <audio ref="audio_player" src={this.props.current_song.current_song.song_url} />
+        <audio ref="audio_player" src={this.props.current_song.current_song.song_url} onEnded={this.setQCount}/>
         <div className="tracking_buttons">
           <PlayButton song={this.props.current_song.current_song} />
         </div>

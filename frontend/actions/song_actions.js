@@ -1,8 +1,11 @@
 import * as APIUtil from '../util/song_api_util';
+
 export const RECEIVE_SONGS = "RECEIVE_SONGS";
 export const RECEIVE_SONG = "RECEIVE_SONG";
 export const SAVE_SONG = "SAVE_SONG";
 export const LOAD_SONG = "LOAD_SONG";
+export const POPULATE_Q = "POPULATE_Q";
+export const SET_Q_COUNT = "SET_Q_COUNT";
 
 export const receiveSongs = (songs) => ({
   type: RECEIVE_SONGS,
@@ -22,6 +25,16 @@ export const loadSong = song => ({
 export const saveSong = song => ({
   type: SAVE_SONG,
   song
+});
+
+export const populateQ = song => ({
+  type: POPULATE_Q,
+  song
+});
+
+export const setQCount = (count) => ({
+  type: SET_Q_COUNT,
+  count
 });
 
 

@@ -5,11 +5,9 @@ export const GET_CURRENT_TIME = "GET_CURRENT_TIME";
 
 
 export const playSong = (song, last_song) => ({
-
   type: PLAY_SONG,
   song,
   last_song
-
 });
 
 export const stopSong = () => ({

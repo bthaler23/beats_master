@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { populateQ } from '../../actions/song_actions';
 import { playSong, stopSong }  from '../../actions/current_song_actions';
 
 
@@ -28,6 +29,7 @@ class PlayButton extends React.Component {
     } else {
       this.props.playSong(this.props.song);
     }
+    this.props.populateQ(this.props.song);
   }
 
   stopSong() {
@@ -57,7 +59,9 @@ const mapStateToProps = ({current_song}, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     playSong: (song, last_song) => dispatch(playSong(song, last_song)),
-    stopSong: () => dispatch(stopSong())
+    stopSong: () => dispatch(stopSong()),
+    populateQ: (song) => dispatch(populateQ(song))
+
   };
 };
 
