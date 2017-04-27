@@ -122,6 +122,10 @@
 }
 
 .song_tile img {
+  height: 184.984px;
+}
+
+.song_tile img {
   top: 0;
   left: 0;
   right: 0;
@@ -129,9 +133,13 @@
 }
 
 .song_tile:hover {
-  cursor: pointer;
   z-index: 1;
 }
+
+.song_tile img:hover {
+  cursor: pointer;
+}
+
 
 .song_tile_info {
   display: flex;
@@ -174,6 +182,7 @@
   width: 80px;
   height: 80px;
 }
+
 
 .landing_footer {
   display: flex;

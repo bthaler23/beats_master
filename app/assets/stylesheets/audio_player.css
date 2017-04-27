@@ -28,10 +28,15 @@
   align-items: center;
 }
 
+
 .tracking_buttons .play_button {
   display: flex;
   height: 100%;
   align-items: center;
+}
+
+.tracking_buttons .play_button:hover {
+  cursor: pointer;
 }
 
 .tracking_buttons img {
@@ -49,6 +54,14 @@
 .shown .tracking_buttons img {
   height: 30px;
   width: 30px;
+}
+
+.skip_buttons i {
+  font-size: 0;
+}
+
+.shown .skip_buttons i {
+  font-size: 36px
 }
 
 
