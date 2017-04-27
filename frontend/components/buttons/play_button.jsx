@@ -26,10 +26,10 @@ class PlayButton extends React.Component {
   playSong(e) {
     if (this.props.current_song.current_song.id !== this.props.song.id) {
       this.props.playSong(this.props.song, this.props.current_song.current_song);
+      this.props.populateQ(this.props.song);
     } else {
       this.props.playSong(this.props.song);
     }
-    this.props.populateQ(this.props.song);
   }
 
   stopSong() {
