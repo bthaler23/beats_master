@@ -17,6 +17,7 @@
   z-index: 1000;
 }
 
+
 .shown {
   height: 47px;
 }
@@ -98,16 +99,32 @@
   height: 0;
 }
 
+.audio_progress_bar h1 {
+  font-size: 14px;
+}
+
+.audio_progress_bar h1:first-child {
+  color: #f50;
+}
+
 .shown .audio_progress_bar {
   display: flex;
-  width: 800px;
+  width: 700px;
   height: 100%;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
-.audio_progress_bar progress {
-  width: 90%;
-  margin: 0 10px;
+.progress_bar_container {
+  margin: 0 15px;
+  height: 1px;
+  width: 100%;
+  background-color: #ccc;
+}
+
+.progress_bar {
+  width: 0;
+  height: 100%;
+  background-color: #f50;
 }

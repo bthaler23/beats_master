@@ -1,6 +1,9 @@
 import React from 'react';
 import PlayButton from '../buttons/play_button';
 import { connect } from 'react-redux';
+import ProgressBar from './progress_bar';
+
+
 class AudioPlayer extends React.Component {
 
   constructor(props) {
@@ -39,9 +42,6 @@ class AudioPlayer extends React.Component {
   parseDuration(duration) {
     let minutes = Math.floor(duration/60);
     let seconds = Math.floor(duration%60);
-    if (minutes < 10) {
-      minutes = "0" + parseInt(minutes);
-    }
     if (seconds < 10) {
       seconds = "0" + parseInt(seconds);
     }
@@ -87,7 +87,7 @@ class AudioPlayer extends React.Component {
         </div>
         <div className="audio_progress_bar">
           <h1>{this.parseDuration(this.props.current_song.current_time)}</h1>
-            <progress value={this.props.current_song.current_time} max={this.props.current_song.duration}/>
+            <ProgressBar current_time={this.props.current_song.current_time} duration={this.props.current_song.duration}/>
           <h1>{this.parseDuration(this.props.current_song.duration)} </h1>
         </div>
         <div className="audio_player_info">
