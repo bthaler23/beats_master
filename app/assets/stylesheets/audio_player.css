@@ -116,12 +116,26 @@
   justify-content: center;
 }
 
-.progress_bar_container {
+
+.progress_bar_outside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60%;
   margin: 0 15px;
+}
+
+.progress_bar_outside:hover {
+  cursor: pointer;
+}
+
+.progress_bar_container {
   height: 1px;
   width: 100%;
   background-color: #ccc;
 }
+
 
 .progress_bar {
   width: 0;

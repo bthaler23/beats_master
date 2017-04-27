@@ -87,7 +87,7 @@ class AudioPlayer extends React.Component {
         </div>
         <div className="audio_progress_bar">
           <h1>{this.parseDuration(this.props.current_song.current_time)}</h1>
-            <ProgressBar current_time={this.props.current_song.current_time} duration={this.props.current_song.duration}/>
+            <ProgressBar current_time={this.props.current_song.current_time} duration={this.props.current_song.duration} getCurrentTime={this.props.getCurrentTime}/>
           <h1>{this.parseDuration(this.props.current_song.duration)} </h1>
         </div>
         <div className="audio_player_info">
