@@ -24,6 +24,7 @@ class Song < ActiveRecord::Base
   validates :title, uniqueness: { scope: :artist_id }
 
   has_many :comments
+  has_many :likes
 
   belongs_to :artist,
     primary_key: :id,

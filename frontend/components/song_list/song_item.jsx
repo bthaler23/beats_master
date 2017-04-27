@@ -7,6 +7,8 @@ class SongItem extends React.Component {
   constructor(props) {
     super(props);
 
+    this.likeSong = this.likeSong.bind(this);
+    this.unlikeSong = this.unlikeSong.bind(this);
   }
 
   dateCreate() {
@@ -18,6 +20,22 @@ class SongItem extends React.Component {
       } else {
         return (<h4><Link className="song_date_link" to={`users/${this.props.song.artist_id}`}>{this.props.song.artist}</Link> posted this {Math.floor(time_diff/60/60)} hours ago</h4>);
       }
+  }
+
+  likeSong() {
+    this.props.likeSong(this.props.song.id);
+  }
+
+  unlikeSong() {
+    this.props.unlikeSong(this.props.song.id);
+  }
+
+  renderLikeButton() {
+    if (this.props.song.liked) {
+      return (<button onClick={this.unlikeSong}>Unlike Song</button>);
+    } else {
+      return (<button onClick={this.likeSong}>Like Song</button>);
+    }
   }
 
 
@@ -50,6 +68,7 @@ class SongItem extends React.Component {
               </div>
               <footer className="song_item_footer">
                 <h5><i className="material-icons">message</i>{this.props.song.num_comments}</h5>
+                {this.renderLikeButton()}
               </footer>
             </div>
 

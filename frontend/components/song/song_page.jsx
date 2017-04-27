@@ -15,6 +15,8 @@ class SongPage extends React.Component {
 
     this.renderModal = this.renderModal.bind(this);
     this.deleteSong = this.deleteSong.bind(this);
+    this.likeSong = this.likeSong.bind(this);
+    this.unlikeSong = this.unlikeSong.bind(this);
 
   }
 
@@ -71,6 +73,23 @@ class SongPage extends React.Component {
     }
   }
 
+  likeSong() {
+    this.props.likeSong(this.props.song.id);
+  }
+
+  unlikeSong() {
+    this.props.unlikeSong(this.props.song.id);
+  }
+
+  renderLikeButton() {
+    if (this.props.song.liked) {
+      return (<button onClick={this.unlikeSong}>Unlike Song</button>);
+    } else {
+      return (<button onClick={this.likeSong}>Like Song</button>);
+    }
+  }
+
+
 
   render() {
 
@@ -104,6 +123,7 @@ class SongPage extends React.Component {
               </div>
               <div className="user_buttons">
                 {this.renderUserButtons()}
+                {this.renderLikeButton()}
               </div>
             </div>
             <div className="comments">

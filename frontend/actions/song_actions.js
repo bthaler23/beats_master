@@ -1,5 +1,5 @@
 import * as APIUtil from '../util/song_api_util';
-
+import * as LikeAPIUtil from '../util/like_api_util';
 export const RECEIVE_SONGS = "RECEIVE_SONGS";
 export const RECEIVE_SONG = "RECEIVE_SONG";
 export const SAVE_SONG = "SAVE_SONG";
@@ -36,6 +36,21 @@ export const setQCount = (count) => ({
   type: SET_Q_COUNT,
   count
 });
+
+export const createLike = (song_id) => dispatch => (
+  LikeAPIUtil.likeSong(song_id)
+    .then((song) => {
+      return (dispatch(saveSong(song)));
+    })
+);
+
+export const destroyLike = (song_id) => dispatch => (
+  LikeAPIUtil.unlikeSong(song_id)
+    .then((song) => {
+      return (dispatch(saveSong(song)));
+    })
+);
+
 
 
 export const fetchSongs = (artist_id) => dispatch => (

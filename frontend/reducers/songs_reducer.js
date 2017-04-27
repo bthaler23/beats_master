@@ -1,5 +1,5 @@
 import { RECEIVE_SONG, RECEIVE_SONGS,
-  SAVE_SONG, LOAD_SONG, POPULATE_Q, SET_Q_COUNT} from "../actions/song_actions";
+  SAVE_SONG, LOAD_SONG, POPULATE_Q, SET_Q_COUNT } from "../actions/song_actions";
 
 const defaultState = {
   songs: {},
@@ -18,7 +18,12 @@ const SongsReducer = (state = defaultState, action ) => {
     case LOAD_SONG:
       return Object.assign({}, state, {songDetail: action.song});
     case SAVE_SONG:
-      const newState = Object.assign({}, state);
+      let newSong = {};
+      if (state.songDetail && state.songDetail.id === action.song.id) {
+        newSong = Object.assign(newSong, {songDetail: action.song});
+      }
+      // debugger
+      const newState = Object.assign({}, state, newSong);
       newState.songs[action.song.id] = action.song;
       return newState;
     case POPULATE_Q:
