@@ -38,4 +38,10 @@ class Song < ActiveRecord::Base
   has_attached_file :image, default_url: "tassos.jpeg"
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
 
+
+
+  def liked_by_user?(user_likes)
+    self.likes.pluck(:user_id).include?(current_user.id)
+  end
+
 end

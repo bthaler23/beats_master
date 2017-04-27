@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { createLike, destroyLike } from '../../actions/song_actions';
+import { createListLike, destroyListLike } from '../../actions/song_actions';
 import SongList from './song_list';
 
 
@@ -13,8 +13,8 @@ const mapStateToProps = ({current_song}, {songs}) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
 
   return {
-    likeSong: (song_id) => dispatch(createLike(song_id)),
-    unlikeSong: (song_id) => dispatch(destroyLike(song_id))
+    likeSong: (song_id) => dispatch(createListLike(song_id)),
+    unlikeSong: (song_id) => dispatch(destroyListLike(song_id))
   };
 
 };

@@ -18,12 +18,12 @@ const SongsReducer = (state = defaultState, action ) => {
     case LOAD_SONG:
       return Object.assign({}, state, {songDetail: action.song});
     case SAVE_SONG:
-      let newSong = {};
-      if (state.songDetail && state.songDetail.id === action.song.id) {
-        newSong = Object.assign(newSong, {songDetail: action.song});
-      }
-      // debugger
-      const newState = Object.assign({}, state, newSong);
+      // let newSong = {};
+      // if (state.songDetail.id === action.song.id) {
+      //   newSong.songDetail = action.song;
+      // }
+      // // debugger
+      const newState = Object.assign({}, state);
       newState.songs[action.song.id] = action.song;
       return newState;
     case POPULATE_Q:

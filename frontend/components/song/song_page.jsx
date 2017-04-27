@@ -22,7 +22,7 @@ class SongPage extends React.Component {
 
   componentDidMount() {
     //Fetches from server if no songs were preloaded - Fetches songs from state if songs were preloaded
-    //Going to have to do a check later to see if song was in the state
+    //Going to have to do a check later to see if song was in the state - Fixed
     if (this.props.preloaded) {
       this.props.receiveSong(this.props.params.song_id);
     } else {

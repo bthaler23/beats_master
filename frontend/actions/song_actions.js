@@ -3,6 +3,7 @@ import * as LikeAPIUtil from '../util/like_api_util';
 export const RECEIVE_SONGS = "RECEIVE_SONGS";
 export const RECEIVE_SONG = "RECEIVE_SONG";
 export const SAVE_SONG = "SAVE_SONG";
+export const DELETE_SONG = "DELETE_SONG";
 export const LOAD_SONG = "LOAD_SONG";
 export const POPULATE_Q = "POPULATE_Q";
 export const SET_Q_COUNT = "SET_Q_COUNT";
@@ -37,17 +38,32 @@ export const setQCount = (count) => ({
   count
 });
 
-export const createLike = (song_id) => dispatch => (
+
+export const createListLike = (song_id) => dispatch => (
   LikeAPIUtil.likeSong(song_id)
     .then((song) => {
       return (dispatch(saveSong(song)));
     })
 );
 
-export const destroyLike = (song_id) => dispatch => (
+export const destroyListLike = (song_id) => dispatch => (
   LikeAPIUtil.unlikeSong(song_id)
     .then((song) => {
       return (dispatch(saveSong(song)));
+    })
+);
+
+export const createPageLike = (song_id) => dispatch => (
+  LikeAPIUtil.likeSong(song_id)
+    .then((song) => {
+      return (dispatch(loadSong(song)));
+    })
+);
+
+export const destroyPageLike = (song_id) => dispatch => (
+  LikeAPIUtil.unlikeSong(song_id)
+    .then((song) => {
+      return (dispatch(loadSong(song)));
     })
 );
 

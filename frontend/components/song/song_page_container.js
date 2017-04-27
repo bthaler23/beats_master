@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import SongPage from './song_page';
-import { fetchSong, receiveSong, saveSong, createLike, destroyLike } from '../../actions/song_actions';
+import { fetchSong, receiveSong, saveSong, createPageLike, destroyPageLike } from '../../actions/song_actions';
 import { showModal } from '../../actions/modal_actions';
 
 
@@ -19,8 +19,8 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
   fetchSong: (songId) => dispatch(fetchSong(songId)),
   receiveSong: (song) => dispatch(receiveSong(song)),
   showModal: () => dispatch(showModal()),
-  likeSong: (song_id) => dispatch(createLike(song_id)),
-  unlikeSong: (song_id) => dispatch(destroyLike(song_id))
+  likeSong: (song_id) => dispatch(createPageLike(song_id)),
+  unlikeSong: (song_id) => dispatch(destroyPageLike(song_id))
 
 });
 

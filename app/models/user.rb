@@ -65,6 +65,10 @@ attr_reader :password
     self.session_token
   end
 
+  def get_liked_song_ids
+    @likes ||= self.likes.pluck(:song_id)
+  end
+
 private
 
   def ensure_session_token

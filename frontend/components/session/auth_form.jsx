@@ -46,8 +46,7 @@ class AuthFormWithoutRouter extends React.Component {
     } else {
       path = this.props.location.pathname;
     }
-    console.log(path);
-    
+
     const guest = {user: {email: 'guest@guest.com', password: 'password'}};
     this.props.login(guest).then(() => {
       this.props.hideModal();
