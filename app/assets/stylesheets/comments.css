@@ -37,6 +37,7 @@
   margin-right: 10px;
   background: white;
   border: 1px solid #e5e5e5;
+  padding-left: 10px;
 }
 
 .add_comment_form input[type=text]:focus {

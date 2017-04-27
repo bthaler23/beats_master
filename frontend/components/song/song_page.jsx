@@ -58,13 +58,13 @@ class SongPage extends React.Component {
     if ((this.props.currentUser) && (this.props.currentUser.id === this.props.song.artist_id)) {
       return (
         <div className="user_buttons">
-          {this.renderCurrentUserButtons()}
           {this.renderLikeButton()}
+          {this.renderCurrentUserButtons()}
         </div>
       );
-    } elsif (this.props.currentUser) {
+    } else if (this.props.currentUser) {
       return (
-        <div>
+        <div className="user_buttons">
           {this.renderLikeButton()}
         </div>
       );
@@ -72,14 +72,12 @@ class SongPage extends React.Component {
   }
 
   renderCurrentUserButtons() {
-    if ((this.props.currentUser) && (this.props.currentUser.id === this.props.song.artist_id)) {
       return (
         <div className="current_user_buttons">
           <button className="edit_button" onClick={this.renderModal}>Edit</button>
           <button className="delete_button" onClick={this.deleteSong}>Delete</button>
         </div>
       );
-    }
   }
 
   modalType() {
@@ -138,10 +136,7 @@ class SongPage extends React.Component {
               <div className="add_comment_form">
                 <CommentForm songId={song.id}/>
               </div>
-              <div className="user_buttons">
-
-                {this.renderCurrentUserButtons()}
-              </div>
+              {this.renderUserButtons()}
             </div>
             <div className="comments">
               <div className="user_info">
