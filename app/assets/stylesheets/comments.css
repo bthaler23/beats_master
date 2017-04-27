@@ -50,31 +50,6 @@
   padding: 0 5px;
 }
 
-.edit_button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px rgb(229, 229, 229) solid;
-  width: 51px;
-  height: 20px;
-  padding: 2px 6px;
-  background-color: white;
-  color: #333;
-  margin: 10px;
-}
-
-.delete_button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px rgb(229, 229, 229) solid;
-  width: 51px;
-  height: 20px;
-  padding: 2px 6px;
-  background-color: white;
-  color: #333;
-  margin: 10px;
-}
 
 .comments_auth {
   display: flex;

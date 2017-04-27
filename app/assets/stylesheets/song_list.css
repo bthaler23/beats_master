@@ -120,9 +120,10 @@
 
 .song_item_footer {
   display: flex;
+  padding: 0 5px;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   color: grey;
 }
 
@@ -137,4 +138,32 @@
   padding-top: 1px;
   font-size: 18px;
   padding-right: 4px;
+}
+
+.list_like {
+  /*font-size: 13px;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 8px;
+  font-size: 10px;
+  border: 1px rgb(229, 229, 229) solid;
+  border-radius: 4px;
+  background-color: white;
+  color: #333;
+}
+
+.list_like i {
+  font-size: 16px;
+}
+
+.list_like span {
+  font-size: 14px;
+  padding-left: 5px;
+  /*margin: 0 10px;*/
+}
+
+.liked {
+  color: #f50;
+  border: #f50 1px solid;
 }

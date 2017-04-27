@@ -32,9 +32,9 @@ class SongItem extends React.Component {
 
   renderLikeButton() {
     if (this.props.song.liked) {
-      return (<button onClick={this.unlikeSong}>Unlike Song</button>);
+      return (<button className="list_like liked" onClick={this.unlikeSong}><i className="material-icons">favorite</i><span>{this.props.song.likes}</span></button>);
     } else {
-      return (<button onClick={this.likeSong}>Like Song</button>);
+      return (<button className="list_like unliked" onClick={this.likeSong}><i className="material-icons">favorite</i><span>{this.props.song.likes}</span></button>);
     }
   }
 
@@ -67,8 +67,8 @@ class SongItem extends React.Component {
                 <h3>--^_--_-^__^__^_--_^_^^^__--^-__-__^^^_-_^__^_^__^</h3>
               </div>
               <footer className="song_item_footer">
-                <h5><i className="material-icons">message</i>{this.props.song.num_comments}</h5>
                 {this.renderLikeButton()}
+                <h5><i className="material-icons">message</i>{this.props.song.num_comments}</h5>
               </footer>
             </div>
 

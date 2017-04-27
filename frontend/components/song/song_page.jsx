@@ -57,7 +57,7 @@ class SongPage extends React.Component {
   renderUserButtons() {
     if ((this.props.currentUser) && (this.props.currentUser.id === this.props.song.artist_id)) {
       return (
-        <div className="user_song_buttons">
+        <div className="current_user_buttons">
           <button className="edit_button" onClick={this.renderModal}>Edit</button>
           <button className="delete_button" onClick={this.deleteSong}>Delete</button>
         </div>
@@ -83,9 +83,9 @@ class SongPage extends React.Component {
 
   renderLikeButton() {
     if (this.props.song.liked) {
-      return (<button onClick={this.unlikeSong}>Unlike Song</button>);
+      return (<button className="page_like liked" onClick={this.unlikeSong}><i className="material-icons">favorite</i><span>Liked</span></button>);
     } else {
-      return (<button onClick={this.likeSong}>Like Song</button>);
+      return (<button className="page_like unliked" onClick={this.likeSong}><i className="material-icons">favorite</i><span>Like</span></button>);
     }
   }
 
@@ -122,8 +122,8 @@ class SongPage extends React.Component {
                 <CommentForm songId={song.id}/>
               </div>
               <div className="user_buttons">
-                {this.renderUserButtons()}
                 {this.renderLikeButton()}
+                {this.renderUserButtons()}
               </div>
             </div>
             <div className="comments">
