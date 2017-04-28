@@ -62,3 +62,6 @@ Song.create(title: "Acid Rain", artist_id: c.id, genre: "Hip-Hop", song: opened_
 Song.create(title: "Chain Smoker", artist_id: c.id, genre: "Hip-Hop", song: opened_songs[13], image: image)
 Song.create(title: "Everything's Good", artist_id: c.id, genre: "Hip-Hop", song: opened_songs[14], image: image)
 Song.create(title: "Bump N Grind", artist_id: d.id, genre: "R&B", song: opened_songs[15], image: image3)
+
+Comment.destroy_all
+Like.destroy_all

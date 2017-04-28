@@ -3,6 +3,9 @@ class Api::SongsController < ApplicationController
   def index
     if params[:artist_id]
       @songs = Song.includes(:artist, :comments, :likes).order("created_at DESC").limit(15).where(artist_id: params[:artist_id])
+    elsif params[:top_songs]
+      @songs = Song.find_by_sql("SELECT songs.* FROM songs JOIN likes ON likes.song_id = songs.id
+        GROUP BY songs.id ORDER BY count(*) DESC LIMIT #{params[:top_songs]}");
     else
       @songs = Song.includes(:artist, :comments, :likes).order("created_at DESC").limit(15).all
     end
