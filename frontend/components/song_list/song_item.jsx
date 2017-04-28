@@ -17,8 +17,10 @@ class SongItem extends React.Component {
         return (<h4><Link className="song_date_link" to={`users/${this.props.song.artist_id}`}>{this.props.song.artist}</Link> posted this {Math.floor(time_diff)} seconds ago</h4>);
       } else if (time_diff/60 < 60) {
         return (<h4><Link className="song_date_link" to={`users/${this.props.song.artist_id}`}>{this.props.song.artist}</Link> posted this {Math.floor(time_diff/60)} minutes ago</h4>);
-      } else {
+      } else if (time_dif/60/60 < 24 ){
         return (<h4><Link className="song_date_link" to={`users/${this.props.song.artist_id}`}>{this.props.song.artist}</Link> posted this {Math.floor(time_diff/60/60)} hours ago</h4>);
+      } else {
+        return (<h4><Link className="song_date_link" to={`users/${this.props.song.artist_id}`}>{this.props.song.artist}</Link> posted this {Math.floor(time_diff/60/60/24)} days ago</h4>);
       }
   }
 

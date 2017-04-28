@@ -2,6 +2,7 @@ import React from 'react';
 import SongListContainer from '../song_list/song_list_container';
 import EditUser from './edit_user';
 import Modal from '../modal/modal';
+import AuthForm from '../session/auth_form';
 
 class UserPage extends React.Component {
 
@@ -54,10 +55,21 @@ class UserPage extends React.Component {
     }
   }
 
+  modalType() {
+    if (this.props.currentUser) {
+      if (this.props.user.id === this.props.currentUser.id) {
+        // debugger
+        return (<Modal><EditUser user={this.props.user}/></Modal>);
+      }
+    } else {
+        return (<Modal><AuthForm /></Modal>);
+    }
+  }
+
   render() {
     return (
       <section className="user_page">
-        <Modal><EditUser user={this.props.user}/></Modal>
+        {this.modalType()}
         <section className="user_splash_container">
           <div className="user_splash">
           <div className="user_splash_image">

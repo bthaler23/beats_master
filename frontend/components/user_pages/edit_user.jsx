@@ -17,6 +17,7 @@ class EditUser extends React.Component {
   }
 
   componentWillReceiveProps(newProps) {
+
     if (this.props.user.id !== newProps.user.id) {
       this.setState({city: newProps.user.city, country: newProps.user.country, bio: newProps.user.bio});
     }
@@ -42,6 +43,7 @@ class EditUser extends React.Component {
 
 
   render() {
+
     return(
       <form className="edit_user_form" onSubmit={this.handleSubmit}>
         <h1> Update User </h1>
