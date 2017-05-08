@@ -62,7 +62,7 @@ songs = [
   ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/07-the-legend-of-zelda-main-theme-me.mp3", 'Zelda Main Theme', z.id, 'Zelda', zelda_image],
   ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/halo/03+-+Installation+04.mp3", "Installation 04", h.id, 'Halo', halo1_image],
   ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/undertale/toby+fox+-+UNDERTALE+Soundtrack+-+100+MEGALOVANIA.mp3", 'MEGALOVANIA', t.id, 'Undertale', undertale_image],
-  ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/06-twilight-princess-symphonic-movem.mp3", 'Twilight Princess', z.id, 'Zelda', zelda_image]
+  ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/06-twilight-princess-symphonic-movem.mp3", 'Twilight Princess', z.id, 'Zelda', zelda_image],
   ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/undertale/toby+fox+-+UNDERTALE+Soundtrack+-+31+Waterfall.mp3", 'Waterfall', t.id, 'Undertale', undertale_image]
 
   # "https://s3.amazonaws.com/beatsmaster-dev/songs/songs/000/000/003/original/ghost.mp3",
