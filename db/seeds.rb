@@ -35,7 +35,7 @@ songs = [
   ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/01-the-legend-of-zelda-25th-annivers.mp3", "Zelda 25th Anniversary", z.id, 'Zelda', zelda_image],
   ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/undertale/toby+fox+-+UNDERTALE+Soundtrack+-+51+Another+Medium.mp3", 'Another Medium', t.id, 'Undertale', undertale_image],
   ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/undertale/toby+fox+-+UNDERTALE+Soundtrack+-+01+Once+Upon+a+Time.mp3", 'Once Upon a Time', t.id, 'Undertale', undertale_image],
-  ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/05-great-fairy-s-fountain-theme.mp3",, 'Great Fairy Fountain Theme', z.id, 'Zelda', zelda_image],
+  ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/05-great-fairy-s-fountain-theme.mp3", 'Great Fairy Fountain Theme', z.id, 'Zelda', zelda_image],
   ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/undertale/toby+fox+-+UNDERTALE+Soundtrack+-+10+Ghost+Fight.mp3", 'Ghost Fight', t.id, 'Undertale', undertale_image],
   ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/undertale/toby+fox+-+UNDERTALE+Soundtrack+-+63+It's+Raining+Somewhere+Else.mp3", "It's Raining Somewhere Else", t.id, 'Undertale', undertale_image],
   ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/04-gerudo-valley.mp3", 'Gerudo Valley', z.id, 'Zelda', zelda_image],
