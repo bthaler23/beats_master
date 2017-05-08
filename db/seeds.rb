@@ -8,9 +8,9 @@
 
 User.destroy_all
 
-image = open("https://s3.amazonaws.com/beatsmaster-dev/songs/songs/chance_the_rapper-acidrap.jpg")
+# image = open("https://s3.amazonaws.com/beatsmaster-dev/songs/songs/chance_the_rapper-acidrap.jpg")
 image2 = open("https://s3.amazonaws.com/beatsmaster-dev/songs/images/tassos.jpeg");
-image3 = open("https://s3.amazonaws.com/beatsmaster-dev/songs/songs/bumpngrind.jpg")
+# image3 = open("https://s3.amazonaws.com/beatsmaster-dev/songs/songs/bumpngrind.jpg")
 zelda_image = open("https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/zelda_image.jpg");
 toby_img = open("https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/undertale/toby_img.jpg")
 undertale_image = open("https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/undertale/toby+fox+-+UNDERTALE+Soundtrack+-+cover.png")
@@ -20,8 +20,8 @@ halo1_image = open("https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/hal
 halo3_image = open("https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/halo/halo3original.jpg")
 
 u = User.create(username: 'DJMixMixer', email: 'guest@guest.com', password: 'password' )
-c = User.create(username: 'Chance The Rapper', email: 'chance@rapping.com', password: 'cocoabutter', image: image)
-d = User.create(username: 'Golden God', email: 'rkelly@showers.com', password: 'showering', image: image3)
+# c = User.create(username: 'Chance The Rapper', email: 'chance@rapping.com', password: 'cocoabutter', image: image)
+# d = User.create(username: 'Golden God', email: 'rkelly@showers.com', password: 'showering', image: image3)
 z = User.create(username: 'Zelda', email: 'zelda@link.com', password: 'ocarina', image: zelda_author)
 t = User.create(username: 'Toby Fox', email: 'undertale@undertale.com', password: 'doggos', image: toby_img)
 h = User.create(username: 'Halo', email: 'halo@halo.com', password: 'killaliens', image: halo_user_image)
