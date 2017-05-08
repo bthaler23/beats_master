@@ -13,7 +13,7 @@ class Api::SongsController < ApplicationController
   end
 
   def search
-    @songs = Song.where("lower(title) LIKE lower(?)", "%#{params[:search_term]}%")
+    @songs = Song.where("lower(title) LIKE lower(?)", "%#{params[:search_term]}%").limit(8)
     render :search
   end
 

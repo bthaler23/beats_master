@@ -30,7 +30,6 @@ Song.destroy_all
 
 
 songs = [
-  ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/undertale/toby+fox+-+UNDERTALE+Soundtrack+-+71+Undertale.mp3", 'Undertale', t.id, 'Undertale', undertale_image],
   ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/halo/Halo+-+Combat+Evolved+soundtrackHalo.mp3", "Halo", h.id, 'Halo', halo1_image],
   ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/01-the-legend-of-zelda-25th-annivers.mp3", "Zelda 25th Anniversary", z.id, 'Zelda', zelda_image],
   ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/undertale/toby+fox+-+UNDERTALE+Soundtrack+-+51+Another+Medium.mp3", 'Another Medium', t.id, 'Undertale', undertale_image],
@@ -38,7 +37,7 @@ songs = [
   ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/05-great-fairy-s-fountain-theme.mp3", 'Great Fairy Fountain Theme', z.id, 'Zelda', zelda_image],
   ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/undertale/toby+fox+-+UNDERTALE+Soundtrack+-+10+Ghost+Fight.mp3", 'Ghost Fight', t.id, 'Undertale', undertale_image],
   ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/undertale/toby+fox+-+UNDERTALE+Soundtrack+-+63+It's+Raining+Somewhere+Else.mp3", "It's Raining Somewhere Else", t.id, 'Undertale', undertale_image],
-  ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/04-gerudo-valley.mp3", 'Gerudo Valley', z.id, 'Zelda', zelda_image],
+  ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/04-gerudo-valley.mp3", 'Gerudo Valley', z.id, 'Zelda', zelda_image]
   ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/undertale/toby+fox+-+UNDERTALE+Soundtrack+-+14+Heartache.mp3", 'Heartache', t.id, 'Undertale', undertale_image],
   ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/08-ballad-of-the-goddess-from-skyway.mp3", 'Ballad of the Goddess', z.id, 'Zelda', zelda_image],
   ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/undertale/toby+fox+-+UNDERTALE+Soundtrack+-+98+Battle+Against+a+True+Hero.mp3", 'Battle Against a True Hero', t.id, 'Undertale', undertale_image],
@@ -63,6 +62,7 @@ songs = [
   ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/halo/03+-+Installation+04.mp3", "Installation 04", h.id, 'Halo', halo1_image],
   ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/undertale/toby+fox+-+UNDERTALE+Soundtrack+-+100+MEGALOVANIA.mp3", 'MEGALOVANIA', t.id, 'Undertale', undertale_image],
   ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/06-twilight-princess-symphonic-movem.mp3", 'Twilight Princess', z.id, 'Zelda', zelda_image],
+  ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/undertale/toby+fox+-+UNDERTALE+Soundtrack+-+71+Undertale.mp3", 'Undertale', t.id, 'Undertale', undertale_image],
   ["https://s3.amazonaws.com/beatsmaster-pro/songs/seed_data/undertale/toby+fox+-+UNDERTALE+Soundtrack+-+31+Waterfall.mp3", 'Waterfall', t.id, 'Undertale', undertale_image]
 
   # "https://s3.amazonaws.com/beatsmaster-dev/songs/songs/000/000/003/original/ghost.mp3",
