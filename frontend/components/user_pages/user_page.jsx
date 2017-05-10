@@ -93,7 +93,6 @@ class UserPage extends React.Component {
               <SongListContainer songs={this.props.songs}/>
             </div>
             <aside className="user_stats">
-              User Stats
             </aside>
           </article>
         </section>

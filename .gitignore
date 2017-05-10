@@ -5,7 +5,7 @@ node_modules/
 tmp/
 log/
 .DS_Store
-byebug_history
+.byebug_history
 
 # Ignore application configuration
 /config/application.yml

@@ -6,6 +6,29 @@
   height: 100%;
 }
 
+.search_bar_input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.navbar .search_bar_input i {
+  position: absolute;
+  color: #666;
+  right: 10px;
+}
+
+.landing_page .search_bar_input i {
+  position: absolute;
+  color: #666;
+  font-size: 30px;
+  right: 10px;
+}
+
 .search_bar_container input[type="text"], textarea {
   padding-left: 15px;
 }

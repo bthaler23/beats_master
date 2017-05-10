@@ -35,6 +35,20 @@ input[type="submit"] {
   border-radius: 5px;
 }
 
+.form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  text-align: center;
+}
+
+.form input[type="text"], textarea:focus {
+  padding-left: 15px;
+  text-align: left;
+}
+
+.form input[type="password"], textarea:focus {
+  padding-left: 15px;
+  text-align: left;
+}
+
 .form input:last-child {
   display: flex;
   justify-content: center;

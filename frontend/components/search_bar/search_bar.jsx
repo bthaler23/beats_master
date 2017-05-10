@@ -49,7 +49,10 @@ class SearchBar extends React.Component {
 
     return (
         <div className="search_bar_container">
-          <input className="search_bar" type="text" placeholder="Search for songs, artists, bands, podcasts" value={this.state.inputValue} onChange={this.handleInput}/>
+          <div className="search_bar_input">
+            <input className="search_bar" type="text" placeholder="Search for songs, artists, bands, podcasts" value={this.state.inputValue} onChange={this.handleInput}/>
+            <i className="material-icons">search</i>
+          </div>
           <ul className="search_results">
             {this.handleFirst()}
             {foundSongs}
