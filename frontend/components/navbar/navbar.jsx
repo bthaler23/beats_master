@@ -72,7 +72,7 @@ class NavbarWithoutRouter extends React.Component {
         <div className="navbar_background" />
         <ul className="navbar">
           <div className="left_nav">
-            <button onClick={this.handleHome}>Logo</button>
+            <button onClick={this.handleHome}><img className="navbar_logo"src={window.beatsMaster}/></button>
             <button onClick={this.handleHome}>Home</button>
           </div>
           <div className="navbar_search_container">

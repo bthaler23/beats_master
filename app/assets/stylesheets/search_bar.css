@@ -15,14 +15,13 @@
 }
 
 
-
-.navbar .search_bar_input i {
+.navbar .search_bar_input > i {
   position: absolute;
   color: #666;
   right: 10px;
 }
 
-.landing_page .search_bar_input i {
+.landing_page .search_bar_input > i {
   position: absolute;
   color: #666;
   font-size: 30px;

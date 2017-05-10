@@ -80,10 +80,22 @@
   margin: 20px;
 }
 
+.upload_form_text input[type=file] {
+  cursor: pointer;
+  background-color: #DDD;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+}
+
 .upload_form_text input[type=text] {
   border: #ccc 1px solid;
+  height: 30px;
   width: 90%;
   border-radius: 4px;
+}
+
+.upload_form_text input[type="text"], textarea {
+  padding-left: 5px;
 }
 
 .upload_form_submit {

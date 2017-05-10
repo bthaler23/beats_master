@@ -29,7 +29,10 @@ class LandingPage extends React.Component {
         <div className="splash_image">
           <img src={window.zeldaIcon}/>
             <div className="landing_nav">
-              <h1>BeatsMaster</h1>
+              <div className="landing_nav_logo">
+                <img src={window.beatsMaster}/>
+                <h1>BeatsMaster</h1>
+              </div>
               <div className="landing_nav_buttons">
                 <button onClick={this.handleAuth}>Sign in</button>
                 <button onClick={this.handleAuth}>Create Account</button>

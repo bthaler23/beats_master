@@ -30,6 +30,10 @@
   width: 20%;
 }
 
+.navbar_logo {
+  height: 35px;
+  width: 35px;
+}
 
 .left_nav button {
   display: flex;
@@ -41,7 +45,7 @@
 
 .left_nav button:first-child {
   background-color: #ff4000;
-  width: 69px;
+  width: 60px;
 }
 
 .navbar button:hover {
@@ -56,7 +60,7 @@
 }
 
 .navbar_search {
-  width: 93%;
+  width: 95%;
   height: 65%;
 }
 

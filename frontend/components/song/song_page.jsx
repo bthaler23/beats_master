@@ -149,7 +149,6 @@ class SongPage extends React.Component {
             </div>
           </div>
           <div className="comments_side_bar">
-            Side Bar
           </div>
         </section>
       </section>

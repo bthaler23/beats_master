@@ -20,17 +20,33 @@
 .landing_nav {
   width: 100%;
   display: flex;
+  margin-top: 10px;
   justify-content: space-between;
+  align-items: center;
   flex-direction: row;
   position: absolute;
 }
 
+.landing_nav_logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px 30px;
+}
 
-.landing_nav h1 {
-  margin: 25px 40px;
+.landing_nav_logo h1 {
   color: white;
   font-size: 20px;
   font-family: 'Poppins', sans-serif;
+  padding: 0;
+}
+
+.landing_nav_logo img {
+  padding-right: 15px;
+  width: 45px;
+  height: 45px;
+  border-top: none;
 }
 
 .landing_nav_buttons {
