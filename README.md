@@ -8,7 +8,7 @@ Link to [Beatsmaster][beatsmaster]
 BeatsMaster is a web application inspired by SoundCloud. It main goals are to allow user's to share music with each other, play music seamlessly throughout the site, and to leave comments and likes on each song.
 
 ### Structure
-
+h
 BeatsMaster is being developed with a Ruby Rails backend, and a React Redux frontend. The authentication system is encrypted with BCrypt. Songs and images are stored using paperclip, sending it to Amazon Web Services.
 
 ### Primary Components
