@@ -3,7 +3,7 @@
 
 Link to [Beatsmaster][beatsmaster]
 
-[beatsmaster]: https://beats-master.herokuapp.com/#/
+[beatsmaster]: www.beatsmaster.us
 
 BeatsMaster is a web application inspired by SoundCloud. It main goals are to allow user's to share music with each other, play music seamlessly throughout the site, and to leave comments and likes on each song.
 
