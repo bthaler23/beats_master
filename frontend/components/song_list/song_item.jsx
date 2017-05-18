@@ -70,7 +70,9 @@ class SongItem extends React.Component {
               </div>
               <footer className="song_item_footer">
                 {this.renderLikeButton()}
-                <h5><i className="material-icons">message</i>{this.props.song.num_comments}</h5>
+                <h5>
+                  <Link to={`/songs/${this.props.song.id}`}><i className="material-icons">message</i></Link>{this.props.song.num_comments}
+                </h5>
               </footer>
             </div>
 

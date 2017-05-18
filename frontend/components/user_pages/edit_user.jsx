@@ -8,7 +8,7 @@ class EditUser extends React.Component {
   constructor(props) {
 
     super(props);
-    this.state = {city: "", country: "", bio: ""};
+    this.state = {city: this.props.user.city, country: this.props.user.country, bio: this.props.user.bio};
 
     this.handleCity = this.handleCity.bind(this);
     this.handleCountry = this.handleCountry.bind(this);
@@ -16,8 +16,7 @@ class EditUser extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  componentWillReceiveProps(newProps) {
-
+  componentWillUpdate(newProps) {
     if (this.props.user.id !== newProps.user.id) {
       this.setState({city: newProps.user.city, country: newProps.user.country, bio: newProps.user.bio});
     }
